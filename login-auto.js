@@ -5,7 +5,7 @@ const fs = require('fs');
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
-    timeout: 0 // sin límite de tiempo al lanzar navegador
+    timeout: 0
   });
 
   const page = await browser.newPage();
@@ -13,19 +13,23 @@ const fs = require('fs');
   try {
     await page.goto('https://pvo.osinergmin.gob.pe/seguridad/login', {
       waitUntil: 'networkidle2',
-      timeout: 60000 // espera hasta 60 segundos
+      timeout: 60000
     });
 
     await page.type('input[name="j_username"]', '0322100');
     await page.type('input[name="j_password"]', '12597083');
 
-    // Enviar el formulario y esperar navegación
     await Promise.all([
-      page.click('button[type="submit"]'), // asegúrate que sea el botón correcto
+      page.click('button[type="submit"]'),
       page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 60000 })
     ]);
 
     console.log('✅ Login completado');
+
+    // ✅ Ir a la página donde luego haces la consulta POST
+    await page.goto('https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp', {
+      waitUntil: 'networkidle2'
+    });
 
     const cookies = await page.cookies();
     fs.writeFileSync('cookies.json', JSON.stringify(cookies, null, 2));

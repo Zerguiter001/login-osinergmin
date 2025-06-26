@@ -1,0 +1,151 @@
+<html><head>
+<title>GLP</title>
+
+<link href="../../include/GLP5.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../include/scripts/general_script.js"></script><script type="text/javascript" src="/scopglp3/include/scripts/paginador.min.js"></script><script type="text/javascript" src="/scopglp3/include/scripts/sortable.min.js"></script>
+<script type="text/javascript">
+
+/* function verDetalle(codigoAutorizacion){
+  var param="?codigoAutorizacion="+codigoAutorizacion+"&opc=2"; 
+  ruta="../../servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet"+param;
+  window.open(ruta,"detalle","status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,resizable=yes,width=1010 height=690,top=0,left=0");
+} */
+
+
+function verDetalle(indice,codAutorizacion, opeCodOPe){ 
+	
+	    	 var param="?codigoAutorizacion="+codAutorizacion+"&opc=2"; 
+			  ruta="../../servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet"+param;
+			  window.open(ruta,"detalle","status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,resizable=yes,width=1010 height=690,top=0,left=0");	
+	
+}
+
+
+
+
+function verMovimiento(codigoAutorizacion){
+  var param="?codigoAutorizacion="+codigoAutorizacion+"&opc=3"; 
+  ruta="../../servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet"+param;
+  window.open(ruta,"movConsulta","scrollbars=yes,toolbar=no,status=no,menubar=no,location=no,directories=no,resizable=no,width=600,height=400,top=100,left=200");
+}
+
+function eliminar(indice){
+    var f       = document.forms[0];
+    f.ind.value = indice;
+    f.action    = "../../servlet/com.osinerg.scopglp.servlets.MantenimientoAgenteArchivoServlet";
+    f.opc.value = "7";
+    f.submit();
+}
+
+function configurar(indice){
+    parent.configurar(indice);
+}
+
+function showMessage(){
+    var msj = '';
+    if (msj != ''){
+        alert("Existen detalles asociados");
+    }
+}
+
+function activarBuscar(){
+    parent.activarBuscar();
+}
+	
+</script>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="author" content="OSINERG">
+
+<meta http-equiv="Content-Type" content="text/html">
+
+</head>
+<body bgcolor="#EEEEEE" topmargin="0" marginheight="0" marginwidth="0" bottommargin="0" onload="showMessage();activarBuscar();">
+
+<form name="frm" method="POST">
+<input type="hidden" name="hid_pagina" value="1">
+<input type="hidden" name="indice" value="">
+<input type="hidden" name="opc" value="">
+	
+
+	
+	
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody><tr class="campos"> 
+      <td align="left"></td>
+    </tr>
+  </tbody></table>	 
+	
+	
+	
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+		  <tbody><tr> 
+			<td align="right" class="paginado">&nbsp;</td>
+      <td width="85" align="right" class="paginado">
+	    &nbsp;
+	  </td>
+			<td width="85" align="center" class="paginado">
+					
+	 
+			</td>
+			<td width="85" align="left" class="paginado">&nbsp;
+				
+
+			</td>
+		  </tr>
+	  </tbody></table>	 
+  <table width="100%" border="0" cellpadding="2" cellspacing="2" bordercolor="#FFFFFF" class="TblResultado">
+    <tbody><tr bordercolor="#FFFFFF" bgcolor="#CCCCCC" class="Fila"> 
+		<td width="8%" class="Celda">Código Autorizacion</td>
+		<td width="9%" class="Celda">Codigo Referencia</td>
+		
+		<!-- 26-12-2009: AMC169 - ENT02 - RF031 - INICIO  -->
+		
+		<!-- 26-12-2009: AMC169 - ENT02 - RF031 - FIN  -->		
+		
+		
+		<td width="18%" class="Celda">Comprador</td>
+		
+		<td width="18%" class="Celda">Vendedor</td>
+		<td width="5%" class="Celda">Tipo Pedido</td>
+		<td width="4%" class="Celda">Canal</td>
+		<td width="9%" class="Celda">Fecha de Pedido</td>
+		<td width="7%" class="Celda">Fecha Entrega</td>
+		<td width="10%" class="Celda">Estado</td>
+		<td width="5%" class="Celda">Ver Mov.</td>
+		<td width="7%" class="Celda">Ver Detalle</td>
+    </tr>
+    
+    <tr class="Fila" onmouseover="this.className = 'ActivateTextEffect'" onmouseout="this.className = 'Fila'"> 
+		<td align="center" class="Celda1">&nbsp;60825331621</td>
+		<td align="center" class="Celda1">&nbsp;</td>
+
+		
+
+		
+		<td class="Celda1">&nbsp;Distribuidor Granel 
+		- LUMIGAS S.A.C.</td>
+		
+		<td align="left" class="Celda1">Planta Envasadora 
+		- <br>&nbsp;LLAMA GAS S.A. - PLANTA PISCO </td>
+		<td align="center" class="Celda1">&nbsp;Simple</td>
+		<td align="center" class="Celda1">&nbsp;I</td>
+		<td align="center" class="Celda1">&nbsp;27/01/2020 08:23:17</td>
+		<td align="center" class="Celda1">&nbsp;27/01/2020</td>
+		<td align="center" class="Celda1">&nbsp;CERRADO</td>
+		<td align="center" class="Celda1" style="cursor:pointer"><img src="../../images/lupita.gif" width="10" height="10" onclick="javascript:verMovimiento('60825331621')"></td>
+		
+		
+			
+				<td align="center" class="Celda1" style="cursor:pointer"><a href="javascript:verDetalle('0','60825331621')"><img src="../../images/otros/lupita.gif" width="10" height="10" border="0"></a></td>
+			
+	
+			
+		
+    </tr>
+    
+  </tbody></table>
+
+</form>
+
+</body></html>
