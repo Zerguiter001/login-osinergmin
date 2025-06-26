@@ -1,27 +1,52 @@
+const fs = require('fs');
+
+// Redefinir console.log desde el inicio para capturar todos los mensajes, incluyendo dotenv
+const originalConsoleLog = console.log;
+const originalConsoleError = console.error;
+console.log = (...args) => {
+  fs.appendFileSync('logs.txt', `${new Date().toISOString()} - ${args.join(' ')}\n`, 'utf8');
+};
+console.error = (...args) => {
+  fs.appendFileSync('logs.txt', `${new Date().toISOString()} - ERROR: ${args.join(' ')}\n`, 'utf8');
+};
+
+// Cargar módulos después de redefinir console.log
 require('dotenv').config({ path: 'C:/Users/HOME/Documents/login-osinergmin/.env' });
 const express = require('express');
 const puppeteer = require('puppeteer');
 const qs = require('qs');
-const fs = require('fs');
+
+// Mostrar mensaje inicial en pantalla con el puerto
+const port = process.env.PORT || 3000;
+originalConsoleLog(`🚀 SERVER PRENDIDO EN EL PUERTO ${port}`);
+
+// Definir browser en el ámbito global
+let browser = null;
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Depurar archivo .env
-console.log('🔍 Contenido del archivo .env:', fs.readFileSync('C:/Users/HOME/Documents/login-osinergmin/.env', 'utf8'));
-console.log('🔍 Variables de entorno:', process.env.OSINERGMIN_USERNAME, process.env.OSINERGMIN_PASSWORD);
+// Función para escribir logs en el archivo
+const writeLogToFile = (message) => {
+  fs.appendFileSync('logs.txt', `${new Date().toISOString()} - ${message}\n`, 'utf8');
+};
 
 app.post('/api/scrape', async (req, res) => {
   const { codigo_autorizacion, txt_fecini, txt_fecfin } = req.body;
 
+  // Limpiar el archivo de logs al inicio de cada consulta
+  fs.writeFileSync('logs.txt', '', 'utf8');
+
+  // Redefinir console.log para esta consulta
+  console.log = (...args) => writeLogToFile(args.join(' '));
+
   // Validar parámetros de entrada
   if (!codigo_autorizacion || !txt_fecini || !txt_fecfin) {
+    console.log = originalConsoleLog; // Restaurar para la respuesta
     return res.status(400).json({ error: 'Faltan parámetros requeridos: codigo_autorizacion, txt_fecini, txt_fecfin' });
   }
 
-  let browser;
   let retries = 3;
   let attempt = 1;
 
@@ -33,18 +58,18 @@ app.post('/api/scrape', async (req, res) => {
 
     while (attempt <= retries) {
       try {
-        console.log(`🔄 Intento ${attempt} de ${retries}...`);
+        console.log(`Intento ${attempt} de ${retries}...`);
         const page = await browser.newPage();
 
         // Habilitar logs de red
         page.on('request', request => {
-          console.log(`➡️ Solicitud: ${request.method()} ${request.url()}`);
+          console.log(`Solicitud: ${request.method()} ${request.url()}`);
         });
         page.on('response', async response => {
-          console.log(`⬅️ Respuesta: ${response.url()} - Status: ${response.status()}`);
+          console.log(`Respuesta: ${response.url()} - Status: ${response.status()}`);
           if (!response.ok()) {
             const text = await response.text().catch(() => 'No se pudo leer el cuerpo de la respuesta');
-            console.log(`⚠️ Respuesta fallida: ${text}`);
+            console.log(`Respuesta fallida: ${text}`);
           }
         });
 
@@ -52,12 +77,15 @@ app.post('/api/scrape', async (req, res) => {
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
 
         // 1. Login
-        console.log('🔗 Accediendo a login...');
+        console.log('Accediendo a login...');
         await page.goto('https://pvo.osinergmin.gob.pe/seguridad/login', { waitUntil: 'networkidle2', timeout: 30000 });
+        console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
+        console.log('🌐 1. SE INGRESÓ A LA PÁGINA');
+        console.log = (...args) => writeLogToFile(args.join(' ')); // Volver a redirigir
 
         // Esperar formulario
         await page.waitForSelector('input[name="j_username"]', { timeout: 15000 });
-        console.log('📝 Formulario de login cargado');
+        console.log('Formulario de login cargado');
 
         // Verificar credenciales
         console.log('Credenciales:', process.env.OSINERGMIN_USERNAME, process.env.OSINERGMIN_PASSWORD);
@@ -79,9 +107,9 @@ app.post('/api/scrape', async (req, res) => {
               });
             });
           });
-          console.log('🔑 Token reCAPTCHA:', recaptchaToken || 'No se obtuvo token');
+          console.log('Token reCAPTCHA:', recaptchaToken || 'No se obtuvo token');
         } catch (err) {
-          console.log('⚠️ Error al obtener token reCAPTCHA:', err.message);
+          console.log('Error al obtener token reCAPTCHA:', err.message);
         }
 
         // Agregar token al formulario
@@ -99,11 +127,11 @@ app.post('/api/scrape', async (req, res) => {
         await Promise.all([
           page.click('button[type="submit"]'),
           page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 }).catch(() => {
-            console.log('⚠️ Navegación después del login no completada, continuando...');
+            console.log('Navegación después del login no completada, continuando...');
           }),
         ]);
-        console.log('✅ Login enviado');
-        console.log(`📍 URL después del login: ${page.url()}`);
+        console.log('Login enviado');
+        console.log(`URL después del login: ${page.url()}`);
 
         // Verificar si el login falló
         if (page.url().includes('login?error=UP')) {
@@ -111,13 +139,16 @@ app.post('/api/scrape', async (req, res) => {
         }
 
         // 2. Activar módulo de consulta
-        console.log('📄 Activando módulo de consulta...');
+        console.log('Activando módulo de consulta...');
         await page.waitForFunction('typeof muestraPagina === "function"', { timeout: 15000 });
         await page.evaluate(() => muestraPagina('163', 'NO', 'NO'));
         await new Promise(resolve => setTimeout(resolve, 3000));
+        console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
+        console.log('📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA');
+        console.log = (...args) => writeLogToFile(args.join(' ')); // Volver a redirigir
 
         // 3. Enviar POST con el formulario
-        console.log('📤 Enviando formulario POST...');
+        console.log('Enviando formulario POST...');
         const payload = qs.stringify({
           ind: '',
           opc: '1',
@@ -160,9 +191,9 @@ app.post('/api/scrape', async (req, res) => {
         await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 });
 
         // 4. Esperar explícitamente a que la tabla esté presente
-        console.log('⏳ Esperando tabla de resultados...');
+        console.log('Esperando tabla de resultados...');
         await page.waitForSelector('table.TblResultado', { timeout: 15000 }).catch(() => {
-          console.log('⚠️ No se encontró la tabla TblResultado');
+          console.log('No se encontró la tabla TblResultado');
         });
 
         // 5. Extraer resultado con manejo de errores
@@ -195,9 +226,8 @@ app.post('/api/scrape', async (req, res) => {
               estado: cells[8]?.innerText.trim() || ''
             });
           });
-          // Depurar filas con errores
           if (errors.length > 0) {
-            console.log('⚠️ Errores en filas:', errors);
+            console.log('Errores en filas:', errors);
           }
           if (validResults.length === 0) {
             return { error: 'No se encontraron filas válidas con 9 celdas' };
@@ -207,18 +237,22 @@ app.post('/api/scrape', async (req, res) => {
 
         // Depurar el contenido de la página
         const pageContent = await page.content();
-        console.log('📄 Contenido de la página:', pageContent.substring(0, 500), '...'); // Limitar a 500 caracteres para los logs
+        console.log('Contenido de la página:', pageContent.substring(0, 500), '...');
 
         if (results.error) {
+          console.log = originalConsoleLog; // Restaurar console.log
           return res.status(200).json({ results: [], message: results.error });
         }
 
-        console.log('✅ Resultados obtenidos:', results);
+        console.log('Resultados obtenidos:', results);
+        console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
+        console.log('✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE');
         return res.status(200).json({ results });
 
       } catch (err) {
-        console.error(`❌ Error en intento ${attempt}:`, err.message);
+        console.error(`Error en intento ${attempt}:`, err.message);
         if (attempt === retries) {
+          console.log = originalConsoleLog; // Restaurar console.log
           return res.status(500).json({ error: `Error tras ${retries} intentos: ${err.message}` });
         }
         attempt++;
@@ -228,7 +262,9 @@ app.post('/api/scrape', async (req, res) => {
   } finally {
     if (browser) {
       await browser.close();
-      console.log('🧹 Navegador cerrado');
+      browser = null; // Limpiar la variable global
+      console.log = originalConsoleLog; // Restaurar console.log
+      console.log('🧹 NAVEGADOR CERRADO');
     }
   }
 });
@@ -238,7 +274,11 @@ app.listen(port, () => {
 });
 
 process.on('SIGINT', async () => {
-  if (browser) await browser.close();
-  console.log('🧹 Servidor cerrado');
+  if (browser) {
+    await browser.close();
+    browser = null; // Limpiar la variable global
+  }
+  console.log = originalConsoleLog; // Restaurar console.log
+  console.log('🛑 SERVER CERRADO');
   process.exit();
 });
