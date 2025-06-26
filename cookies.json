@@ -1,0 +1,72 @@
+[
+  {
+    "name": "TS01d7c07e",
+    "value": "01308456daaf69eb067c69de003861bff22951ff5557a47b5eb6d50879c13c9df3b74da94c8b229906c42052cd924efe7ae0f09f5f0ee1756c990c08c2211c5d0a8f2c78d6",
+    "domain": "pvo.osinergmin.gob.pe",
+    "path": "/",
+    "expires": -1,
+    "size": 148,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "JSEGUID",
+    "value": "segu01",
+    "domain": "pvo.osinergmin.gob.pe",
+    "path": "/",
+    "expires": -1,
+    "size": 13,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "TSa40a3193027",
+    "value": "0859162bfbab2000f493c9cf86fc8d8e69099dae27dbb2508d7085504fea8d256b946cdf8ca8ea3a0887cc665f11300022f2ad9a2d3f69f670c27e39443ab4c046f8ea779b71d30caa860e340af311e2f96487dfa04bc0bea83b3b2a13dee682",
+    "domain": "pvo.osinergmin.gob.pe",
+    "path": "/",
+    "expires": -1,
+    "size": 205,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "TS01f3ba7f",
+    "value": "01308456da573c81ba9657792f814c55d77d52d71a57a47b5eb6d50879c13c9df3b74da94c8b229906c42052cd924efe7ae0f09f5f91d3ba1545bc80109a6bff3be86a0326901e17748a99fb474fc2e6ff30baff67",
+    "domain": "pvo.osinergmin.gob.pe",
+    "path": "/seguridad",
+    "expires": -1,
+    "size": 180,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "039FED4395268086C05FE1804508B7E8",
+    "domain": "pvo.osinergmin.gob.pe",
+    "path": "/seguridad",
+    "expires": -1,
+    "size": 42,
+    "httpOnly": true,
+    "secure": false,
+    "session": true,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  }
+]

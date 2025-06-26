@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html">
+<title>:: SCOP ::</title>
+<style type="text/css">
+.padre {
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blur{
+   background-color: #ccc; /*shadow color*/
+   color: inherit;
+   margin-left: 4px;
+   margin-top: 4px;
+   width: 25%;
+   border-radius: 5px;
+}
+.shadow, .content{
+   position: relative;
+   bottom: 2px;
+   right: 2px;
+   border-radius: 5px;
+}
+.shadow{
+   background-color: #666; /*shadow color*/
+   color: inherit;
+}
+.content{
+   	background-color: #fff; /*background color of content*/
+   	color: #000; /*text color of content*/
+   	border: 1px solid #000; /*border color*/
+   	padding: .5em 2ex;
+   	text-align: center;
+   	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:20pt;;
+}
+@media screen and (max-width: 1400px) {
+	.blur{
+	   width: 30%;
+	}	
+}
+@media screen and (max-width: 1200px) {
+	.blur{
+	   width: 35%;
+	}	
+}
+@media screen and (max-width: 1000px) {
+	.blur{
+	   width: 50%;
+	}	
+}
+@media screen and (max-width: 800px) {
+	.blur{
+	   width: 70%;
+	}	
+}
+@media screen and (max-width: 600px) {
+	.blur{
+	   width: 90%;
+	}	
+}
+@media screen and (max-width: 400px) {
+	.blur{
+	   width: 95%;
+	}	
+}
+</style>
+<script type="text/javascript">
+function cerrar() { 
+     setTimeout(function(){
+        window.close();
+    },4000); //Dejara un tiempo de 4 seg para que el usuario vea el mensaje
+
+}
+</script>
+</head>
+<body onload="javascript:cerrar();">
+<div class="padre">
+<div class="blur">
+<div class="shadow">
+<div class="content">Tu sesi�n ha expirado</div>
+</div>
+</div>
+</div>
+</body>
+</html>
