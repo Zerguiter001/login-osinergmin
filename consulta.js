@@ -4,9 +4,10 @@ const qs = require('qs');
 const fs = require('fs');
 
 (async () => {
+  let browser;
   try {
-    // 1. Iniciar el navegador con Puppeteer en modo visible
-    const browser = await puppeteer.launch({ headless: false });
+    // 1. Iniciar el navegador con Puppeteer en modo headless
+    browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     // 2. Ir a la página de login
@@ -85,6 +86,7 @@ const fs = require('fs');
 
     // 9. Intentar solicitud POST desde Puppeteer
     console.log('📤 Enviando solicitud POST desde Puppeteer...');
+    let pageContent;
     try {
       await consultaPage.goto('https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp', { waitUntil: 'networkidle2' });
       await consultaPage.evaluate((payload) => {
@@ -102,13 +104,13 @@ const fs = require('fs');
         form.submit();
       }, payload);
       await consultaPage.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 });
-      const pageContent = await consultaPage.content();
+      pageContent = await consultaPage.content();
       fs.writeFileSync('respuesta-puppeteer.html', pageContent);
       console.log('✅ Resultado de Puppeteer guardado en respuesta-puppeteer.html');
     } catch (error) {
       console.error('⚠️ Error en la solicitud POST desde Puppeteer:', error.message);
-      const errorContent = await consultaPage.content();
-      fs.writeFileSync('error-puppeteer.html', errorContent);
+      pageContent = await consultaPage.content();
+      fs.writeFileSync('error-puppeteer.html', pageContent);
       console.log('📝 Error de Puppeteer guardado en error-puppeteer.html');
     }
 
@@ -143,22 +145,21 @@ const fs = require('fs');
       }
     }
 
-    // 11. Realizar acciones adicionales en la página
-    console.log('🖥️ Navegador y páginas abiertas. Agrega tus acciones aquí.');
-    // Ejemplo: Tomar una captura de pantalla de la página activa
-    await consultaPage.screenshot({ path: 'captura-consulta.png' });
-    console.log('✅ Captura guardada como captura-consulta.png');
-
-    // Ejemplo: Extraer contenido de la página
+    // 11. Extraer contenido de la página (resultado final)
+    console.log('📋 Extrayendo contenido de la página activa...');
     const pageText = await consultaPage.evaluate(() => document.body.innerText);
     console.log('📋 Contenido de la página activa:', pageText);
-
-    // 12. Mantener el script activo hasta que lo detengas manualmente
-    console.log('🔄 Presiona Ctrl+C para cerrar el navegador y finalizar el script.');
-    await new Promise(resolve => {});
+    fs.writeFileSync('contenido-pagina.txt', pageText);
+    console.log('✅ Contenido de la página guardado en contenido-pagina.txt');
 
   } catch (error) {
     console.error('❌ Error general en el script:', error.message);
-    // No cerrar el navegador para permitir inspección
+  } finally {
+    // 12. Cerrar el navegador para liberar recursos
+    if (browser) {
+      console.log('🖥️ Cerrando el navegador...');
+      await browser.close();
+      console.log('✅ Navegador cerrado');
+    }
   }
 })();
