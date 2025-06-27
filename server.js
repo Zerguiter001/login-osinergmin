@@ -1,4 +1,4 @@
-require('dotenv').config({ path: 'C:/Users/HOME/Documents/login-osinergmin/.env' });
+require('dotenv').config();
 const express = require('express');
 const puppeteer = require('puppeteer');
 const qs = require('qs');
