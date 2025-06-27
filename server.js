@@ -1,6 +1,10 @@
+require('dotenv').config({ path: 'C:/Users/HOME/Documents/login-osinergmin/.env' });
+const express = require('express');
+const puppeteer = require('puppeteer');
+const qs = require('qs');
 const fs = require('fs');
 
-// Redefinir console.log desde el inicio para capturar todos los mensajes, incluyendo dotenv
+// Redefinir console.log desde el inicio para capturar todos los mensajes
 const originalConsoleLog = console.log;
 const originalConsoleError = console.error;
 console.log = (...args) => {
@@ -9,12 +13,6 @@ console.log = (...args) => {
 console.error = (...args) => {
   fs.appendFileSync('logs.txt', `${new Date().toISOString()} - ERROR: ${args.join(' ')}\n`, 'utf8');
 };
-
-// Cargar módulos después de redefinir console.log
-require('dotenv').config({ path: 'C:/Users/HOME/Documents/login-osinergmin/.env' });
-const express = require('express');
-const puppeteer = require('puppeteer');
-const qs = require('qs');
 
 // Mostrar mensaje inicial en pantalla con el puerto
 const port = process.env.PORT || 3000;
@@ -37,9 +35,6 @@ app.post('/api/scrape', async (req, res) => {
 
   // Limpiar el archivo de logs al inicio de cada consulta
   fs.writeFileSync('logs.txt', '', 'utf8');
-
-  // Redefinir console.log para esta consulta
-  console.log = (...args) => writeLogToFile(args.join(' '));
 
   // Validar parámetros de entrada
   if (!codigo_autorizacion || !txt_fecini || !txt_fecfin) {
