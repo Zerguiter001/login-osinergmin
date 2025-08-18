@@ -1,243 +1,243 @@
-2025-08-18T22:06:27.253Z - Intento 1 de 3...
-2025-08-18T22:06:27.402Z - Accediendo a login...
-2025-08-18T22:06:27.422Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/login
-2025-08-18T22:06:27.700Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 200
-2025-08-18T22:06:27.724Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
-2025-08-18T22:06:27.737Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
-2025-08-18T22:06:27.745Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css
-2025-08-18T22:06:27.751Z - Solicitud: GET https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
-2025-08-18T22:06:27.758Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
-2025-08-18T22:06:27.769Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
-2025-08-18T22:06:27.776Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js
-2025-08-18T22:06:27.782Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
-2025-08-18T22:06:27.789Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
-2025-08-18T22:06:27.795Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png
-2025-08-18T22:06:27.827Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
-2025-08-18T22:06:27.854Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css - Status: 200
-2025-08-18T22:06:27.869Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
-2025-08-18T22:06:27.877Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
-2025-08-18T22:06:27.886Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
-2025-08-18T22:06:27.892Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
-2025-08-18T22:06:27.897Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js - Status: 200
-2025-08-18T22:06:27.905Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
-2025-08-18T22:06:27.912Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
-2025-08-18T22:06:27.918Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
-2025-08-18T22:06:27.924Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png - Status: 200
-2025-08-18T22:06:27.929Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
-2025-08-18T22:06:27.936Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
-2025-08-18T22:06:27.942Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
-2025-08-18T22:06:27.953Z - Respuesta: https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
-2025-08-18T22:06:27.960Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js
-2025-08-18T22:06:27.978Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
-2025-08-18T22:06:28.033Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg
-2025-08-18T22:06:28.040Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png
-2025-08-18T22:06:28.050Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png
-2025-08-18T22:06:28.060Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf
-2025-08-18T22:06:28.067Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png - Status: 200
-2025-08-18T22:06:28.071Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg - Status: 200
-2025-08-18T22:06:28.096Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png - Status: 200
-2025-08-18T22:06:28.194Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf - Status: 200
-2025-08-18T22:06:28.395Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js - Status: 200
-2025-08-18T22:06:28.473Z - Solicitud: GET https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J&size=invisible&anchor-ms=20000&execute-ms=15000&cb=9s22ang7u3ln
-2025-08-18T22:06:28.662Z - Respuesta: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J&size=invisible&anchor-ms=20000&execute-ms=15000&cb=9s22ang7u3ln - Status: 200
-2025-08-18T22:06:28.685Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/styles__ltr.css
-2025-08-18T22:06:28.691Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js
-2025-08-18T22:06:28.858Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/styles__ltr.css - Status: 200
-2025-08-18T22:06:29.118Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js - Status: 200
-2025-08-18T22:06:29.279Z - Solicitud: GET https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J
-2025-08-18T22:06:29.307Z - Solicitud: GET https://www.gstatic.com/recaptcha/api2/logo_48.png
-2025-08-18T22:06:29.313Z - Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2
-2025-08-18T22:06:29.317Z - Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2
-2025-08-18T22:06:29.345Z - Respuesta: https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J - Status: 200
-2025-08-18T22:06:29.352Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js
-2025-08-18T22:06:29.358Z - Respuesta: https://www.gstatic.com/recaptcha/api2/logo_48.png - Status: 200
-2025-08-18T22:06:29.483Z - Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2 - Status: 200
-2025-08-18T22:06:29.497Z - Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2 - Status: 200
-2025-08-18T22:06:29.507Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico
-2025-08-18T22:06:29.513Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js - Status: 200
-2025-08-18T22:06:29.528Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico - Status: 200
-2025-08-18T22:06:29.793Z - Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
-2025-08-18T22:06:29.884Z - Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
-2025-08-18T22:06:29.904Z - Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
-2025-08-18T22:06:30.018Z - Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
-2025-08-18T22:06:30.354Z - Formulario de login cargado
-2025-08-18T22:06:30.361Z - Credenciales: 0322100 12597083
-2025-08-18T22:06:30.479Z - Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
-2025-08-18T22:06:30.605Z - Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
-2025-08-18T22:06:30.614Z - Token reCAPTCHA: 0cAFcWeA5fF_zJq1x6-Hy1TxZEm2xt8M6OmEUHwUGbhF2gRof7Y9crmLr2s9zvzK8Z_x3h84XoZX7PBAYRi7lqfW1K5uJQlYMJNUMHkZrWLTmt44fEBIv7QWFmMgW_tnDkpuNfzYD0eNZiMewVSPod5SjPhAMUBwc1QXfgUe9iEthstV11W2IyO1wfFp34NhpS8N31lqUED8ehB0NaZCj2xIJw1o_tna1AIryIzAKAgKch6XA85A24UatcRRg6zybLan7cZ5_1bKdYjW_Vxh2pAFQ3Z4bqla7yiqI4tCA3qo4CKqhttzwNvS61A0TEoAn2j8yDXPr86iFWDoUy6-NKyzn2DX1YRCv3--UYo-x9JJ6iLVWW4NtDXb4IzZCxkz8XplmGyr0bH8LHqH6IeB6sFn9-gFQx4xqvEkF5fOZiQlE6izvM38hthD1Ni3naYcr6o4wAsUuVaZ0CEuAp0mCOpPcqraENL17WUtCgu3xTkae-9wF_RKK1_eIwlcb6qDZSW2vq3cmR6yhMM7FPtxNwiI-IN0ViU4ZXl5C0Lflsfc3HAJUokredUmikTGDgt-nrC1YwQ42oxEM6100o155A239kK941ge_2Nrx-dreCfNoPyQUcJr1471HbreDAy-W_QI0KRkBvWjn23XylHJ96mRAveHq9dfwJrMtA088Pt0SEgf3QgahKazUbMJgi0RsHsva0EVfvwIPFFO-ZUIoD9f8nFdp7wAuVfAS3PNcrDnFnvDkBZXnuXOlXqebGFff_Oib3aHKs8VtrkJy4cSkKD51ihuOuV3vvXyAHZRwKXXNoh7szyodEtBqujO-kGhMo-CbjY1jTOhoM
-2025-08-18T22:06:30.620Z - Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
-2025-08-18T22:06:30.670Z - Solicitud: POST https://pvo.osinergmin.gob.pe/seguridad/login
-2025-08-18T22:06:30.680Z - Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
-2025-08-18T22:06:30.721Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 302
-2025-08-18T22:06:30.729Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
-2025-08-18T22:06:30.737Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
-2025-08-18T22:06:30.838Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario - Status: 200
-2025-08-18T22:06:30.874Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
-2025-08-18T22:06:30.890Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
-2025-08-18T22:06:30.902Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css
-2025-08-18T22:06:30.931Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/modernizr/modernizr.custom.js
-2025-08-18T22:06:30.940Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery.js
-2025-08-18T22:06:30.961Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-ui.js
-2025-08-18T22:06:30.971Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/general.js
-2025-08-18T22:06:30.990Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
-2025-08-18T22:06:30.998Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
-2025-08-18T22:06:31.018Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/login/principal.css
-2025-08-18T22:06:31.039Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/estilo_menu_principal_seguridad.css
-2025-08-18T22:06:31.067Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/plantilla_seguridad.css
-2025-08-18T22:06:31.079Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/menu/menuAplicaciones.css
-2025-08-18T22:06:31.094Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg
-2025-08-18T22:06:31.124Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/page_principal.jpg
-2025-08-18T22:06:31.142Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
-2025-08-18T22:06:31.151Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
-2025-08-18T22:06:31.158Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/js/jquery-ui.js
-2025-08-18T22:06:31.166Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/jquery.mCustomScrollbar.js
-2025-08-18T22:06:31.172Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/placeholder.js
-2025-08-18T22:06:31.179Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/common.js
-2025-08-18T22:06:31.186Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/componente/componentes.js
-2025-08-18T22:06:31.193Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-download.js
-2025-08-18T22:06:31.200Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-migrate-1.0.0.min.js
-2025-08-18T22:06:31.212Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
-2025-08-18T22:06:31.220Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
-2025-08-18T22:06:31.227Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
-2025-08-18T22:06:31.234Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
-2025-08-18T22:06:31.241Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
-2025-08-18T22:06:31.248Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css - Status: 200
-2025-08-18T22:06:31.255Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/modernizr/modernizr.custom.js - Status: 200
-2025-08-18T22:06:31.266Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/plantilla_seguridad.css - Status: 200
-2025-08-18T22:06:31.276Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/menu/menuAplicaciones.css - Status: 200
-2025-08-18T22:06:31.284Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/estilo_menu_principal_seguridad.css - Status: 200
-2025-08-18T22:06:31.292Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/login/principal.css - Status: 200
-2025-08-18T22:06:31.300Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery.js - Status: 200
-2025-08-18T22:06:31.309Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
-2025-08-18T22:06:31.316Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
-2025-08-18T22:06:31.340Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/general.js - Status: 200
-2025-08-18T22:06:31.360Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
-2025-08-18T22:06:31.371Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg - Status: 200
-2025-08-18T22:06:31.382Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/page_principal.jpg - Status: 200
-2025-08-18T22:06:31.389Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
-2025-08-18T22:06:31.396Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
-2025-08-18T22:06:31.404Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-ui.js - Status: 200
-2025-08-18T22:06:31.416Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/logotipo_osinergmin.png
-2025-08-18T22:06:31.423Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/sprite_osinergmin.png
-2025-08-18T22:06:31.430Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Medium.woff
-2025-08-18T22:06:31.437Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Regular.woff
-2025-08-18T22:06:31.444Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/placeholder.js - Status: 200
-2025-08-18T22:06:31.451Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
-2025-08-18T22:06:31.458Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/common.js - Status: 200
-2025-08-18T22:06:31.466Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-download.js - Status: 200
-2025-08-18T22:06:31.476Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/componente/componentes.js - Status: 200
-2025-08-18T22:06:31.484Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/jquery.mCustomScrollbar.js - Status: 200
-2025-08-18T22:06:31.493Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
-2025-08-18T22:06:31.503Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/logotipo_osinergmin.png - Status: 200
-2025-08-18T22:06:31.512Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/sprite_osinergmin.png - Status: 200
-2025-08-18T22:06:31.519Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-migrate-1.0.0.min.js - Status: 200
-2025-08-18T22:06:31.528Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Medium.woff - Status: 200
-2025-08-18T22:06:31.536Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Regular.woff - Status: 200
-2025-08-18T22:06:31.545Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/js/jquery-ui.js - Status: 200
-2025-08-18T22:06:31.555Z - Solicitud: GET https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js?_=1755554791096
-2025-08-18T22:06:31.564Z - Solicitud: POST https://pvo.osinergmin.gob.pe/seguridad/usuario/loadImgUsuario
-2025-08-18T22:06:31.572Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/loading.gif
-2025-08-18T22:06:31.579Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/arrow-tab.png
-2025-08-18T22:06:31.589Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/loading.gif - Status: 200
-2025-08-18T22:06:31.597Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/arrow-tab.png - Status: 200
-2025-08-18T22:06:31.605Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/usuario/loadImgUsuario - Status: 200
-2025-08-18T22:06:31.613Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg
-2025-08-18T22:06:31.620Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg - Status: 200
-2025-08-18T22:06:31.632Z - Respuesta: https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js?_=1755554791096 - Status: 200
-2025-08-18T22:06:31.648Z - Solicitud: GET https://pvo.osinergmin.gob.pe/favicon.ico
-2025-08-18T22:06:31.665Z - Respuesta: https://pvo.osinergmin.gob.pe/favicon.ico - Status: 404
-2025-08-18T22:06:31.675Z - Respuesta fallida: No favicon
-2025-08-18T22:06:31.971Z - Login enviado
-2025-08-18T22:06:31.995Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
-2025-08-18T22:06:32.008Z - Activando módulo de consulta...
-2025-08-18T22:06:32.026Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/homeController/validaSesion?_=1755554791097
-2025-08-18T22:06:32.052Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/homeController/validaSesion?_=1755554791097 - Status: 200
-2025-08-18T22:06:35.037Z - Enviando formulario POST...
-2025-08-18T22:06:35.053Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
-2025-08-18T22:06:35.084Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
-2025-08-18T22:06:35.098Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
-2025-08-18T22:06:35.106Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
-2025-08-18T22:06:35.113Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js
-2025-08-18T22:06:35.121Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
-2025-08-18T22:06:35.129Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg
-2025-08-18T22:06:35.136Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/camion.gif
-2025-08-18T22:06:35.147Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_limpiar_r.jpg
-2025-08-18T22:06:35.159Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg
-2025-08-18T22:06:35.168Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
-2025-08-18T22:06:35.177Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/camion.gif - Status: 200
-2025-08-18T22:06:35.186Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
-2025-08-18T22:06:35.195Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg - Status: 200
-2025-08-18T22:06:35.203Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js - Status: 200
-2025-08-18T22:06:35.210Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
-2025-08-18T22:06:35.219Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
-2025-08-18T22:06:35.227Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
-2025-08-18T22:06:35.236Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_limpiar_r.jpg - Status: 200
-2025-08-18T22:06:35.243Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
-2025-08-18T22:06:35.253Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg - Status: 200
-2025-08-18T22:06:35.262Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
-2025-08-18T22:06:35.273Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
-2025-08-18T22:06:35.283Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js
-2025-08-18T22:06:35.290Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js
-2025-08-18T22:06:35.298Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css
-2025-08-18T22:06:35.306Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css - Status: 200
-2025-08-18T22:06:35.314Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js - Status: 200
-2025-08-18T22:06:35.323Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
-2025-08-18T22:06:35.333Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js - Status: 200
-2025-08-18T22:06:35.344Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp
-2025-08-18T22:06:35.353Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/combo/cmbAgente.jsp?defaultLabel=--%20Seleccione%20--
-2025-08-18T22:06:35.362Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg
-2025-08-18T22:06:35.371Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
-2025-08-18T22:06:35.380Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp - Status: 200
-2025-08-18T22:06:35.391Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/show-calendar.gif
-2025-08-18T22:06:35.400Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/combo/cmbAgente.jsp?defaultLabel=--%20Seleccione%20-- - Status: 200
-2025-08-18T22:06:35.410Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
-2025-08-18T22:06:35.420Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
-2025-08-18T22:06:35.430Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
-2025-08-18T22:06:35.439Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
-2025-08-18T22:06:35.448Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
-2025-08-18T22:06:35.457Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png
-2025-08-18T22:06:35.467Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg - Status: 200
-2025-08-18T22:06:35.478Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
-2025-08-18T22:06:35.488Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
-2025-08-18T22:06:35.497Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
-2025-08-18T22:06:35.507Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
-2025-08-18T22:06:35.516Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/show-calendar.gif - Status: 200
-2025-08-18T22:06:35.528Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png - Status: 200
-2025-08-18T22:06:35.539Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
-2025-08-18T22:06:35.549Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
-2025-08-18T22:06:35.560Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
-2025-08-18T22:06:35.570Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
-2025-08-18T22:06:35.580Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
-2025-08-18T22:06:35.590Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
-2025-08-18T22:06:35.600Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
-2025-08-18T22:06:35.611Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
-2025-08-18T22:06:35.621Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
-2025-08-18T22:06:35.632Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
-2025-08-18T22:06:35.643Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
-2025-08-18T22:06:35.654Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
-2025-08-18T22:06:35.664Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
-2025-08-18T22:06:35.672Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
-2025-08-18T22:06:35.680Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
-2025-08-18T22:06:35.691Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
-2025-08-18T22:06:36.162Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
-2025-08-18T22:06:36.211Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 302
-2025-08-18T22:06:36.221Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
-2025-08-18T22:06:36.230Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
-2025-08-18T22:06:36.240Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
-2025-08-18T22:06:36.271Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
-2025-08-18T22:06:36.281Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
-2025-08-18T22:06:36.291Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
-2025-08-18T22:06:36.301Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
-2025-08-18T22:06:36.312Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
-2025-08-18T22:06:36.323Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
-2025-08-18T22:06:36.333Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
-2025-08-18T22:06:36.344Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
-2025-08-18T22:06:36.355Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif - Status: 200
-2025-08-18T22:06:36.365Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif - Status: 200
-2025-08-18T22:06:36.375Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
-2025-08-18T22:06:36.385Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
-2025-08-18T22:06:37.113Z - Esperando tabla de resultados...
-2025-08-18T22:06:37.187Z - Contenido de la página: <html><head>
+2025-08-18T22:45:20.269Z - Intento 1 de 3...
+2025-08-18T22:45:20.338Z - Accediendo a login...
+2025-08-18T22:45:20.346Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/login
+2025-08-18T22:45:20.458Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 200
+2025-08-18T22:45:20.472Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
+2025-08-18T22:45:20.475Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
+2025-08-18T22:45:20.477Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css
+2025-08-18T22:45:20.479Z - Solicitud: GET https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-08-18T22:45:20.480Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
+2025-08-18T22:45:20.481Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
+2025-08-18T22:45:20.482Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js
+2025-08-18T22:45:20.484Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
+2025-08-18T22:45:20.487Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
+2025-08-18T22:45:20.489Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png
+2025-08-18T22:45:20.575Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css - Status: 200
+2025-08-18T22:45:20.578Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js - Status: 200
+2025-08-18T22:45:20.581Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
+2025-08-18T22:45:20.583Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
+2025-08-18T22:45:20.585Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
+2025-08-18T22:45:20.588Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
+2025-08-18T22:45:20.591Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
+2025-08-18T22:45:20.593Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
+2025-08-18T22:45:20.597Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
+2025-08-18T22:45:20.599Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
+2025-08-18T22:45:20.602Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png - Status: 200
+2025-08-18T22:45:20.605Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
+2025-08-18T22:45:20.611Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
+2025-08-18T22:45:20.619Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
+2025-08-18T22:45:20.642Z - Respuesta: https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-08-18T22:45:20.645Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js
+2025-08-18T22:45:20.718Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
+2025-08-18T22:45:20.752Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg
+2025-08-18T22:45:20.755Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png
+2025-08-18T22:45:20.760Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png
+2025-08-18T22:45:20.763Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf
+2025-08-18T22:45:20.774Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg - Status: 200
+2025-08-18T22:45:20.777Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png - Status: 200
+2025-08-18T22:45:20.781Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png - Status: 200
+2025-08-18T22:45:20.887Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf - Status: 200
+2025-08-18T22:45:21.085Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js - Status: 200
+2025-08-18T22:45:21.142Z - Solicitud: GET https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J&size=invisible&anchor-ms=20000&execute-ms=15000&cb=p541nzhu8nk4
+2025-08-18T22:45:21.350Z - Respuesta: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J&size=invisible&anchor-ms=20000&execute-ms=15000&cb=p541nzhu8nk4 - Status: 200
+2025-08-18T22:45:21.366Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/styles__ltr.css
+2025-08-18T22:45:21.368Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js
+2025-08-18T22:45:21.607Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/styles__ltr.css - Status: 200
+2025-08-18T22:45:21.812Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js - Status: 200
+2025-08-18T22:45:21.970Z - Solicitud: GET https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J
+2025-08-18T22:45:22.004Z - Solicitud: GET https://www.gstatic.com/recaptcha/api2/logo_48.png
+2025-08-18T22:45:22.007Z - Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2
+2025-08-18T22:45:22.008Z - Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2
+2025-08-18T22:45:22.048Z - Respuesta: https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=07cvpCr3Xe3g2ttJNUkC6W0J - Status: 200
+2025-08-18T22:45:22.051Z - Solicitud: GET https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js
+2025-08-18T22:45:22.059Z - Respuesta: https://www.gstatic.com/recaptcha/api2/logo_48.png - Status: 200
+2025-08-18T22:45:22.167Z - Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2 - Status: 200
+2025-08-18T22:45:22.179Z - Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2 - Status: 200
+2025-08-18T22:45:22.190Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico
+2025-08-18T22:45:22.210Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico - Status: 200
+2025-08-18T22:45:22.222Z - Respuesta: https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__es_419.js - Status: 200
+2025-08-18T22:45:22.530Z - Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-08-18T22:45:22.648Z - Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-08-18T22:45:22.667Z - Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-08-18T22:45:22.771Z - Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-08-18T22:45:23.176Z - Formulario de login cargado
+2025-08-18T22:45:23.178Z - Credenciales: 0322100 12597083
+2025-08-18T22:45:23.341Z - Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-08-18T22:45:23.435Z - Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-08-18T22:45:23.446Z - Token reCAPTCHA: 0cAFcWeA6hS97xKSK4-pk24iWGzo0hDqUN2TUT6ljQZmOXX26oJilMlEz76f8uafQbMGF3dWTy1nfHmnmTcQEVk26Re5FcYHKPn8l8do5Eda0M2llXZDNBClbPggx0tMrPEaE4UkvKqTJ7iKlQcKCv_0nJijdpMsNZtFjLvXRJewRdfnGMLnDl3tdpgRr-eBJTKcTIDm5cy6lQz9xDbcHigFaJLFzz3mp_X765ZU24qBcZU7zItWZYb1wB-Y7byktcAdhjJI-2fV7epL8uZ8P_S01yG3rqH5Dq3CkNwxnVBC86CErwYpZA_MJN03cbAUT8MMplb_OKv80bMjEYQ181FI1y6_JTYuqRaYAuhuns608nCOcWuvf-y2CrPMiwo7i3uIgrhTqZg8DVGGAMEXCV5xQ841auelOXfU2NojA4lA8zntL0JNmTtGGfXgQwOFpKBxwEybFUoYQ7pmGUOe8sJih767HJzoIQnzLU8wBte-GQ_NayLeSohliVjY3IsNAhlwT2tY9bi0ygavZJB3WjDwF255LRT5CTcpeu7R4FWGTUraHpYfB1nwrnS0vzvaubzDhlE-_VA33epb4nKQHXBY14Y-01RvYuJA_EtlYOyZ1wzFFqWyAQVEfd5Qjk6AWcAhe8RQB26PHuoATA62tB2Om97cuAkCkXnlIt9frowHGM2mdMa6SS4ukH1HmALPPhO9Hkj7Uhd9563nQot6L2LCjCw0H87arvAYtAUM_Dp_mKfLpNFZqc27b0BC6ITiHESbYrtTmR49qgtOzsTXeKc_BOm3zx84WIWA
+2025-08-18T22:45:23.450Z - Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-08-18T22:45:23.495Z - Solicitud: POST https://pvo.osinergmin.gob.pe/seguridad/login
+2025-08-18T22:45:23.511Z - Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-08-18T22:45:23.563Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 302
+2025-08-18T22:45:23.565Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-08-18T22:45:23.566Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-08-18T22:45:23.668Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario - Status: 200
+2025-08-18T22:45:23.698Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
+2025-08-18T22:45:23.700Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
+2025-08-18T22:45:23.702Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css
+2025-08-18T22:45:23.708Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/modernizr/modernizr.custom.js
+2025-08-18T22:45:23.710Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery.js
+2025-08-18T22:45:23.711Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-ui.js
+2025-08-18T22:45:23.713Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/general.js
+2025-08-18T22:45:23.715Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
+2025-08-18T22:45:23.717Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
+2025-08-18T22:45:23.719Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/login/principal.css
+2025-08-18T22:45:23.722Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/estilo_menu_principal_seguridad.css
+2025-08-18T22:45:23.724Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/plantilla_seguridad.css
+2025-08-18T22:45:23.725Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/stylesheets/menu/menuAplicaciones.css
+2025-08-18T22:45:23.726Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg
+2025-08-18T22:45:23.728Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/page_principal.jpg
+2025-08-18T22:45:23.730Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
+2025-08-18T22:45:23.733Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
+2025-08-18T22:45:23.735Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/js/jquery-ui.js
+2025-08-18T22:45:23.738Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/jquery.mCustomScrollbar.js
+2025-08-18T22:45:23.740Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/placeholder.js
+2025-08-18T22:45:23.742Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/common.js
+2025-08-18T22:45:23.743Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/componente/componentes.js
+2025-08-18T22:45:23.746Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-download.js
+2025-08-18T22:45:23.748Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-migrate-1.0.0.min.js
+2025-08-18T22:45:23.755Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/modernizr/modernizr.custom.js - Status: 200
+2025-08-18T22:45:23.759Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
+2025-08-18T22:45:23.762Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
+2025-08-18T22:45:23.766Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
+2025-08-18T22:45:23.768Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
+2025-08-18T22:45:23.772Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
+2025-08-18T22:45:23.774Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/css/custom-theme/jquery-ui-1.10.0.custom.css - Status: 200
+2025-08-18T22:45:23.778Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/estilo_menu_principal_seguridad.css - Status: 200
+2025-08-18T22:45:23.780Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/menu/menuAplicaciones.css - Status: 200
+2025-08-18T22:45:23.794Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/login/principal.css - Status: 200
+2025-08-18T22:45:23.796Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/stylesheets/general/plantilla_seguridad.css - Status: 200
+2025-08-18T22:45:23.799Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery.js - Status: 200
+2025-08-18T22:45:23.813Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
+2025-08-18T22:45:23.815Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
+2025-08-18T22:45:23.819Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
+2025-08-18T22:45:23.829Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-ui.js - Status: 200
+2025-08-18T22:45:23.832Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/general.js - Status: 200
+2025-08-18T22:45:23.836Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
+2025-08-18T22:45:23.845Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg - Status: 200
+2025-08-18T22:45:23.848Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/page_principal.jpg - Status: 200
+2025-08-18T22:45:23.850Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
+2025-08-18T22:45:23.858Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/logotipo_osinergmin.png
+2025-08-18T22:45:23.861Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/sprite_osinergmin.png
+2025-08-18T22:45:23.866Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Medium.woff
+2025-08-18T22:45:23.868Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Regular.woff
+2025-08-18T22:45:23.874Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/placeholder.js - Status: 200
+2025-08-18T22:45:23.876Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
+2025-08-18T22:45:23.879Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/common.js - Status: 200
+2025-08-18T22:45:23.881Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/app/jquery.mCustomScrollbar.js - Status: 200
+2025-08-18T22:45:23.886Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/componente/componentes.js - Status: 200
+2025-08-18T22:45:23.890Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-download.js - Status: 200
+2025-08-18T22:45:23.893Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
+2025-08-18T22:45:23.896Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/logotipo_osinergmin.png - Status: 200
+2025-08-18T22:45:23.899Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/sprite_osinergmin.png - Status: 200
+2025-08-18T22:45:23.901Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Regular.woff - Status: 200
+2025-08-18T22:45:23.906Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/fonts/Roboto-Medium.woff - Status: 200
+2025-08-18T22:45:23.909Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-migrate-1.0.0.min.js - Status: 200
+2025-08-18T22:45:23.912Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/bootstrap-jquery-ui/js/jquery-ui.js - Status: 200
+2025-08-18T22:45:23.916Z - Solicitud: GET https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js?_=1755557123862
+2025-08-18T22:45:23.961Z - Solicitud: POST https://pvo.osinergmin.gob.pe/seguridad/usuario/loadImgUsuario
+2025-08-18T22:45:23.964Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/loading.gif
+2025-08-18T22:45:23.966Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/arrow-tab.png
+2025-08-18T22:45:23.969Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/loading.gif - Status: 200
+2025-08-18T22:45:23.973Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/arrow-tab.png - Status: 200
+2025-08-18T22:45:23.975Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/usuario/loadImgUsuario - Status: 200
+2025-08-18T22:45:23.976Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg
+2025-08-18T22:45:24.019Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/images/system/foto-default.jpg - Status: 200
+2025-08-18T22:45:24.212Z - Respuesta: https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js?_=1755557123862 - Status: 200
+2025-08-18T22:45:24.216Z - Solicitud: GET https://pvo.osinergmin.gob.pe/favicon.ico
+2025-08-18T22:45:24.227Z - Respuesta: https://pvo.osinergmin.gob.pe/favicon.ico - Status: 404
+2025-08-18T22:45:24.230Z - Respuesta fallida: No favicon
+2025-08-18T22:45:24.578Z - Login enviado
+2025-08-18T22:45:24.580Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-08-18T22:45:24.581Z - Activando módulo de consulta...
+2025-08-18T22:45:24.601Z - Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/homeController/validaSesion?_=1755557123863
+2025-08-18T22:45:24.617Z - Respuesta: https://pvo.osinergmin.gob.pe/seguridad/homeController/validaSesion?_=1755557123863 - Status: 200
+2025-08-18T22:45:27.612Z - Enviando formulario POST...
+2025-08-18T22:45:27.617Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-08-18T22:45:27.657Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-08-18T22:45:27.672Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-08-18T22:45:27.674Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-08-18T22:45:27.675Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js
+2025-08-18T22:45:27.677Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-08-18T22:45:27.679Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg
+2025-08-18T22:45:27.680Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/camion.gif
+2025-08-18T22:45:27.682Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_limpiar_r.jpg
+2025-08-18T22:45:27.683Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg
+2025-08-18T22:45:27.687Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg - Status: 200
+2025-08-18T22:45:27.690Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/camion.gif - Status: 200
+2025-08-18T22:45:27.691Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
+2025-08-18T22:45:27.693Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js - Status: 200
+2025-08-18T22:45:27.731Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-08-18T22:45:27.744Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-08-18T22:45:27.748Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-08-18T22:45:27.751Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-08-18T22:45:27.752Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_limpiar_r.jpg - Status: 200
+2025-08-18T22:45:27.765Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg - Status: 200
+2025-08-18T22:45:27.767Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-08-18T22:45:27.770Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-08-18T22:45:27.773Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-08-18T22:45:27.774Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js
+2025-08-18T22:45:27.776Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js
+2025-08-18T22:45:27.777Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css
+2025-08-18T22:45:27.785Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js - Status: 200
+2025-08-18T22:45:27.788Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css - Status: 200
+2025-08-18T22:45:27.819Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-08-18T22:45:27.858Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js - Status: 200
+2025-08-18T22:45:27.866Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp
+2025-08-18T22:45:27.871Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/combo/cmbAgente.jsp?defaultLabel=--%20Seleccione%20--
+2025-08-18T22:45:27.877Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg
+2025-08-18T22:45:27.882Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-08-18T22:45:27.887Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp - Status: 200
+2025-08-18T22:45:27.890Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/show-calendar.gif
+2025-08-18T22:45:27.893Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/combo/cmbAgente.jsp?defaultLabel=--%20Seleccione%20-- - Status: 200
+2025-08-18T22:45:27.896Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg - Status: 200
+2025-08-18T22:45:27.899Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-08-18T22:45:27.902Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-08-18T22:45:27.906Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-08-18T22:45:27.908Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-08-18T22:45:27.910Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-08-18T22:45:27.912Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png
+2025-08-18T22:45:27.916Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-08-18T22:45:27.918Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-08-18T22:45:27.924Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-08-18T22:45:27.925Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-08-18T22:45:27.927Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/show-calendar.gif - Status: 200
+2025-08-18T22:45:27.929Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
+2025-08-18T22:45:27.931Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png - Status: 200
+2025-08-18T22:45:27.932Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-08-18T22:45:27.934Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-08-18T22:45:27.938Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
+2025-08-18T22:45:27.941Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
+2025-08-18T22:45:27.944Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-08-18T22:45:27.946Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-08-18T22:45:27.949Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-08-18T22:45:27.951Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-08-18T22:45:27.955Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-08-18T22:45:27.959Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-08-18T22:45:27.961Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-08-18T22:45:27.962Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-08-18T22:45:27.964Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-08-18T22:45:27.968Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-08-18T22:45:27.971Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-08-18T22:45:28.727Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-08-18T22:45:28.762Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 302
+2025-08-18T22:45:28.764Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-08-18T22:45:28.765Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-08-18T22:45:28.780Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-08-18T22:45:28.813Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-08-18T22:45:28.815Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-08-18T22:45:28.816Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-08-18T22:45:28.818Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-08-18T22:45:28.824Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-08-18T22:45:28.826Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css - Status: 200
+2025-08-18T22:45:28.828Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-08-18T22:45:28.829Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-08-18T22:45:28.831Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif - Status: 200
+2025-08-18T22:45:28.833Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif - Status: 200
+2025-08-18T22:45:28.842Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-08-18T22:45:28.844Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-08-18T22:45:29.694Z - Esperando tabla de resultados...
+2025-08-18T22:45:29.722Z - Contenido de la página: <html><head>
 <title>GLP</title>
 
 <link href="../../include/GLP5.css" rel="stylesheet" type="text/css">
@@ -246,5 +246,5 @@
 
 /* function verDetalle(codigoAutorizacion){
   var param="?codigoAutorizacion="+codigoAutorizacion+"& ...
-2025-08-18T22:06:37.242Z - Abriendo detalle 61546241422: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61546241422&opc=2
-2025-08-18T22:06:38.247Z - Resultados obtenidos: [object Object]
+2025-08-18T22:45:29.793Z - Abriendo detalle 61546241422: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61546241422&opc=2
+2025-08-18T22:45:30.857Z - Resultados obtenidos: [object Object]

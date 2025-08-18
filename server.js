@@ -75,7 +75,7 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
     const htmlPath = `${base}.html`;
     const pngPath = `${base}.png`;
     const html = await page.content();
-    fs.writeFileSync(htmlPath, html, 'utf8');
+    // fs.writeFileSync(htmlPath, html, 'utf8');
     await page.screenshot({ path: pngPath, fullPage: true });
 
     // Parsear contenido a JSON
@@ -85,6 +85,9 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
         .replace(/\s+/g, ' ')
         .trim();
 
+      const limpiarParentesis=(texto)=> {
+        return texto.replace(/[()]/g, '').toUpperCase();
+      }
       const out = {
         cabeceraTitulo: '',
         agenteVendedor: '',
@@ -98,7 +101,7 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
         fechaEmisionFactura: '',
         numeroGuiaRemision: '',
         agenteComprador: '',
-        camion: { placa: '', capacidadKg: '' },
+        camion: { placa: '', capacidadKg: '',un:'' },
         productos: [],
         totales: {}
       };
@@ -141,8 +144,10 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
         const tds = Array.from(camionTable.querySelectorAll('td.Celda2'));
         // Estructura esperada: [ "Placa del Camión", "AUT-705", "Capacidad Autorizada del Camión", "2520 (kg.)" ]
         if (tds.length >= 4) {
+          let weigth = norm(tds[3].innerText)
           out.camion.placa = norm(tds[1].innerText || tds[1].textContent);
-          out.camion.capacidadKg = norm(tds[3].innerText || tds[3].textContent);
+          out.camion.capacidadKg = norm(weigth.split[0] || tds[3].textContent.split(" ")[0]);
+          out.camion.un = limpiarParentesis(weigth.split(" ")[1]) || "";
         } else {
           // Alternativa por posiciones (algunas páginas usan 4 celdas en una sola fila)
           const tr = camionTable.querySelector('tr.Fila');
@@ -150,7 +155,8 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
             const c = Array.from(tr.querySelectorAll('td.Celda2')).map((x) => norm(x.innerText || x.textContent));
             if (c.length >= 4) {
               out.camion.placa = c[1] || '';
-              out.camion.capacidadKg = c[3] || '';
+              out.camion.capacidadKg = c[3].split(" ")[0] || '';
+              out.camion.un = limpiarParentesis(c[3].split(" ")[1]) || '';
             }
           }
         }
@@ -459,16 +465,14 @@ app.post('/api/scrape', async (req, res) => {
           // Inyectar en JSON
           if (det.detalle) r.detalle = det.detalle;
           else r.detalle = { error: det.error || 'No se pudo parsear detalle' };
-          r.detalleArchivos = { url: det.url, htmlPath: det.htmlPath, pngPath: det.pngPath };
+          // r.detalleArchivos = { url: det.url, htmlPath: det.htmlPath, pngPath: det.pngPath };
         }
 
         console.log('Resultados obtenidos:', results);
         console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
         console.log('✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE');
         return res.status(200).json({
-          results,
-          detallesGuardadosEn: outDir
-        });
+          results        });
 
       } catch (err) {
         console.error(`Error en intento ${attempt}:`, err.message);
