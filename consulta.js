@@ -35,7 +35,7 @@ const fs = require('fs');
       codigoAgente: '',
       tipoUsuario: 'C',
       codigo_referencia: '',
-      codigo_autorizacion: '60825331621',
+      codigo_autorizacion: '61546241422',
       tipoOperacion: '',
       tipoAgente: '',
       nombreAgente: '',
@@ -46,8 +46,8 @@ const fs = require('fs');
       tipoOrdenPedido: '',
       txt_placa: '',
       tipoFecha: '',
-      txt_fecini: '27/01/2020',
-      txt_fecfin: '27/01/2020'
+      txt_fecini: '12/08/2021',
+      txt_fecfin: '18/08/2025'
     });
  
     await page.goto('https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp', { waitUntil: 'networkidle2' });

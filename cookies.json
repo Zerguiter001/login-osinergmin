@@ -1,7 +1,7 @@
 [
   {
     "name": "TS01d7c07e",
-    "value": "01308456daf053292577907e18eba5426a229f2b79fd2ec84d540c35f4b744f6fa0b521a1c999342566d17596d1688abaadabfff0ce5efd6612f0e85f965c26ba077204b7d",
+    "value": "01308456dabcd5d7b4932f5c631a95c2cab0aa1e3128258fac674bd6b73a65d20752478e32f50fd32485f87933302d993b45a3e9109400247b5fa410e0c2399ee5ce920dde",
     "domain": "pvo.osinergmin.gob.pe",
     "path": "/",
     "expires": -1,
@@ -29,7 +29,7 @@
   },
   {
     "name": "TSa40a3193027",
-    "value": "0859162bfbab20001695eb7bfe71076145f6c9fecf50c6e899f0920a1e9db63f7aab0cd3efaf412b0887fb5c85113000418d47d535bd8117ffd15b719e355d769d8c5fd6510283f4b9c3e59f72bcf75ed443cdca4cd247edccee90190542f0de",
+    "value": "0859162bfbab2000742ac8a7b8efd758f82b58a4acf0eceb393a418192e53ddcdb4b9d68b46568d2084be3f39a11300018bda5b3c6e9ace532c1321340ee6abab7f51ace3a698cfc60308ed0dd33a3b41871622f3acb3814cedb5eada9641e8c",
     "domain": "pvo.osinergmin.gob.pe",
     "path": "/",
     "expires": -1,
@@ -43,7 +43,7 @@
   },
   {
     "name": "TS0114c36c",
-    "value": "01308456da461d953723bd4db68135d41520ade309fd2ec84d540c35f4b744f6fa0b521a1c999342566d17596d1688abaadabfff0c3b3df30cbafa783ebc60c10d9731bd739503ecc1ae364727adf8a65d04d39b05",
+    "value": "01308456da15c0ecfddf7078af127da7a72be2e20328258fac674bd6b73a65d20752478e32f50fd32485f87933302d993b45a3e910d4cd63d379de549254e9921d2ce08e8e43924f92552ab65d70f4687ca9d18610",
     "domain": "pvo.osinergmin.gob.pe",
     "path": "/scopglp3",
     "expires": -1,
@@ -57,7 +57,7 @@
   },
   {
     "name": "JSCOPGLP3ID",
-    "value": "9B61F3218113658F39C679633997CB94.jvmSCOPGLP32",
+    "value": "8C55223C4BA1D8B1BD0602E71124D640.jvmSCOPGLP34",
     "domain": "pvo.osinergmin.gob.pe",
     "path": "/scopglp3",
     "expires": -1,

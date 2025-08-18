@@ -1,4 +1,4 @@
  	 		 
 Código Autorizacion	Codigo Referencia	Comprador	Vendedor	Tipo Pedido	Canal	Fecha de Pedido	Fecha Entrega	Estado	Ver Mov.	Ver Detalle
- 60825331621	 	 Distribuidor Granel - LUMIGAS S.A.C.	Planta Envasadora -
- LLAMA GAS S.A. - PLANTA PISCO	 Simple	 I	 27/01/2020 08:23:17	 27/01/2020	 CERRADO		
+ 61546241422	 	 Local de Venta - FLORES VASQUEZ EDELMIRA	Planta Envasadora -
+ LLAMA GAS S.A. - PLANTA PISCO	 Simple	 I	 26/07/2025 09:17:04	 26/07/2025	 CERRADO		
