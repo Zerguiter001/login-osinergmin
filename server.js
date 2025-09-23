@@ -34,6 +34,7 @@ const writeLogToFile = (message) => {
 const OSINERG_BASE = 'https://pvo.osinergmin.gob.pe';
 const DETALLE_ENDPOINT = `${OSINERG_BASE}/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet`;
 const MAX_DETALLES = Number.parseInt(process.env.MAX_DETALLES || '999999', 10);
+const SHOW_FULL_DETAILS = process.env.SHOW_FULL_DETAILS === 'true'; // Bandera para mostrar detalles completos
 
 // Utilidades para guardar archivos
 function ensureDir(dirPath) {
@@ -85,9 +86,9 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
         .replace(/\s+/g, ' ')
         .trim();
 
-      const limpiarParentesis=(texto)=> {
+      const limpiarParentesis = (texto) => {
         return texto.replace(/[()]/g, '').toUpperCase();
-      }
+      };
       const out = {
         cabeceraTitulo: '',
         agenteVendedor: '',
@@ -101,7 +102,7 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
         fechaEmisionFactura: '',
         numeroGuiaRemision: '',
         agenteComprador: '',
-        camion: { placa: '', capacidadKg: '',un:'' },
+        camion: { placa: '', capacidadKg: '', un: '' },
         productos: [],
         totales: {}
       };
@@ -125,7 +126,7 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
             if (label.includes('agente vendedor')) out.agenteVendedor = value;
             else if (label.includes('tipo vendedor')) out.tipoVendedor = value;
             else if (label.includes('código autorización')) out.codigoAutorizacion = value;
-            else if (label.includes('código referencia')) out.codigoReferencia = value === '&' ? '' : value; // por si viene &nbsp;
+            else if (label.includes('código referencia')) out.codigoReferencia = value === '&' ? '' : value;
             else if (label === 'estado') out.estado = value;
             else if (label.includes('fecha pedido')) out.fechaPedido = value;
             else if (label.includes('tipo de pedido')) out.tipoPedido = value;
@@ -142,21 +143,19 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
       const camionTable = allTables.find((tb) => tb.textContent && tb.textContent.includes('Placa del Camión'));
       if (camionTable) {
         const tds = Array.from(camionTable.querySelectorAll('td.Celda2'));
-        // Estructura esperada: [ "Placa del Camión", "AUT-705", "Capacidad Autorizada del Camión", "2520 (kg.)" ]
         if (tds.length >= 4) {
-          let weigth = norm(tds[3].innerText)
+          let weigth = norm(tds[3].innerText);
           out.camion.placa = norm(tds[1].innerText || tds[1].textContent);
-          out.camion.capacidadKg = norm(weigth.split[0] || tds[3].textContent.split(" ")[0]);
-          out.camion.un = limpiarParentesis(weigth.split(" ")[1]) || "";
+          out.camion.capacidadKg = norm(weigth.split(' ')[0] || tds[3].textContent.split(' ')[0]);
+          out.camion.un = limpiarParentesis(weigth.split(' ')[1]) || '';
         } else {
-          // Alternativa por posiciones (algunas páginas usan 4 celdas en una sola fila)
           const tr = camionTable.querySelector('tr.Fila');
           if (tr) {
             const c = Array.from(tr.querySelectorAll('td.Celda2')).map((x) => norm(x.innerText || x.textContent));
             if (c.length >= 4) {
               out.camion.placa = c[1] || '';
-              out.camion.capacidadKg = c[3].split(" ")[0] || '';
-              out.camion.un = limpiarParentesis(c[3].split(" ")[1]) || '';
+              out.camion.capacidadKg = c[3].split(' ')[0] || '';
+              out.camion.un = limpiarParentesis(c[3].split(' ')[1]) || '';
             }
           }
         }
@@ -173,33 +172,23 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
       if (prodTable) {
         const rows = Array.from(prodTable.querySelectorAll('tr.Fila'));
         if (rows.length) {
-          // La primera fila es el header
           const dataRows = rows.slice(1);
-
           dataRows.forEach((tr) => {
             const cells = Array.from(tr.querySelectorAll('td.Celda1, td.Celda'));
             const texts = cells.map((c) => norm(c.innerText || c.textContent));
             if (!texts.length) return;
 
-            // Detectar fila de TOTAL (suele tener "TOTAL" y colspan)
             const joined = texts.join(' ').toLowerCase();
             const isTotal = joined.includes('total') && texts.length >= 4;
 
             if (isTotal) {
-              // En tu HTML: última fila tiene cantidadRecibida en la penúltima celda visible
-              // Estructura (ejemplo):
-              // [ 'TOTAL', '', '', '', '20', '200', '' ] con Celda o Celda1
-              // Tomamos los últimos valores numéricos plausibles
               const nums = texts.filter((t) => t && t !== '&' && t !== 'TOTAL' && !isNaN(Number(t)));
               if (nums.length) {
-                // Heurística: último es subtotalKg, el anterior cantidadRecibida
                 const last = nums[nums.length - 1];
                 const prev = nums[nums.length - 2] || '';
                 out.totales = { cantidadRecibida: prev, subtotalKg: last };
               }
             } else {
-              // Fila normal de producto: columnas esperadas según tu HTML
-              // Producto, Marca, Cantidad Pedida, Cantidad Aceptada, Cantidad Vendida, Cantidad Recibida, Subtotal (Kg.), Estado
               const prod = {
                 producto: texts[0] || '',
                 marca: texts[1] || '',
@@ -210,7 +199,6 @@ async function obtenerYGuardarDetalle(context, codigoAutorizacion, refererUrl, o
                 subtotalKg: texts[6] || '',
                 estado: texts[7] || ''
               };
-              // Evitar empujar filas vacías
               const hasAny = Object.values(prod).some((v) => v);
               if (hasAny) out.productos.push(prod);
             }
@@ -243,7 +231,7 @@ app.post('/api/scrape', async (req, res) => {
 
   // Validar parámetros de entrada
   if (!codigo_autorizacion || !txt_fecini || !txt_fecfin) {
-    console.log = originalConsoleLog; // Restaurar para la respuesta
+    console.log = originalConsoleLog;
     return res.status(400).json({ error: 'Faltan parámetros requeridos: codigo_autorizacion, txt_fecini, txt_fecfin' });
   }
 
@@ -279,9 +267,9 @@ app.post('/api/scrape', async (req, res) => {
         // 1. Login
         console.log('Accediendo a login...');
         await page.goto('https://pvo.osinergmin.gob.pe/seguridad/login', { waitUntil: 'networkidle2', timeout: 30000 });
-        console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
+        console.log = originalConsoleLog;
         console.log('🌐 1. SE INGRESÓ A LA PÁGINA');
-        console.log = (...args) => writeLogToFile(args.join(' ')); // Volver a redirigir
+        console.log = (...args) => writeLogToFile(args.join(' '));
 
         // Esperar formulario
         await page.waitForSelector('input[name="j_username"]', { timeout: 15000 });
@@ -348,9 +336,9 @@ app.post('/api/scrape', async (req, res) => {
         await page.waitForFunction('typeof muestraPagina === "function"', { timeout: 15000 });
         await page.evaluate(() => muestraPagina('163', 'NO', 'NO'));
         await new Promise(resolve => setTimeout(resolve, 3000));
-        console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
+        console.log = originalConsoleLog;
         console.log('📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA');
-        console.log = (...args) => writeLogToFile(args.join(' ')); // Volver a redirigir
+        console.log = (...args) => writeLogToFile(args.join(' '));
 
         // 3. Enviar POST con el formulario
         console.log('Enviando formulario POST...');
@@ -445,11 +433,11 @@ app.post('/api/scrape', async (req, res) => {
         console.log('Contenido de la página:', pageContent.substring(0, 500), '...');
 
         if (results.error) {
-          console.log = originalConsoleLog; // Restaurar console.log
+          console.log = originalConsoleLog;
           return res.status(200).json({ results: [], message: results.error });
         }
 
-        // 6) NUEVO: abrir detalle, guardar y parsear para cada fila
+        // 6) Abrir detalle, guardar y parsear para cada fila
         const outDir = tsFolder();
         const ctx = page.browserContext();
         const referer = page.url();
@@ -461,23 +449,36 @@ app.post('/api/scrape', async (req, res) => {
             r.detalle = { error: 'Sin codigoAutorizacion' };
             continue;
           }
-          const det = await obtenerYGuardarDetalle(ctx, r.codigoAutorizacion, referer, outDir);
-          // Inyectar en JSON
-          if (det.detalle) r.detalle = det.detalle;
-          else r.detalle = { error: det.error || 'No se pudo parsear detalle' };
-          // r.detalleArchivos = { url: det.url, htmlPath: det.htmlPath, pngPath: det.pngPath };
+          // Solo obtener detalles si el estado es SOLICITADO o si SHOW_FULL_DETAILS es true
+          if (r.estado === 'SOLICITADO' || SHOW_FULL_DETAILS) {
+            const det = await obtenerYGuardarDetalle(ctx, r.codigoAutorizacion, referer, outDir);
+            if (det.detalle) r.detalle = det.detalle;
+            else r.detalle = { error: det.error || 'No se pudo parsear detalle' };
+          }
         }
 
-        console.log('Resultados obtenidos:', results);
-        console.log = originalConsoleLog; // Restaurar para mostrar mensaje en pantalla
+        // 7) Filtrar el resultado según el estado y la bandera SHOW_FULL_DETAILS
+        const filteredResults = results.map(result => {
+          if (result.estado === 'SOLICITADO' || SHOW_FULL_DETAILS) {
+            return result; // Devolver el resultado completo
+          } else {
+            // Devolver solo la cabecera, sin el campo detalle
+            const { detalle, ...cabecera } = result;
+            return cabecera;
+          }
+        });
+
+        console.log('Resultados obtenidos:', filteredResults);
+        console.log = originalConsoleLog;
         console.log('✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE');
         return res.status(200).json({
-          results        });
+          results: filteredResults
+        });
 
       } catch (err) {
         console.error(`Error en intento ${attempt}:`, err.message);
         if (attempt === retries) {
-          console.log = originalConsoleLog; // Restaurar console.log
+          console.log = originalConsoleLog;
           return res.status(500).json({ error: `Error tras ${retries} intentos: ${err.message}` });
         }
         attempt++;
@@ -487,8 +488,8 @@ app.post('/api/scrape', async (req, res) => {
   } finally {
     if (browser) {
       await browser.close();
-      browser = null; // Limpiar la variable global
-      console.log = originalConsoleLog; // Restaurar console.log
+      browser = null;
+      console.log = originalConsoleLog;
       console.log('🧹 NAVEGADOR CERRADO');
     }
   }
@@ -501,9 +502,9 @@ app.listen(port, () => {
 process.on('SIGINT', async () => {
   if (browser) {
     await browser.close();
-    browser = null; // Limpiar la variable global
+    browser = null;
   }
-  console.log = originalConsoleLog; // Restaurar console.log
+  console.log = originalConsoleLog;
   console.log('🛑 SERVER CERRADO');
   process.exit();
 });

@@ -1,0 +1,249 @@
+2025-09-23T18:11:30: 🚀 SERVER PRENDIDO EN EL PUERTO 3000
+2025-09-23T18:12:10: 🌐 1. SE INGRESÓ A LA PÁGINA
+2025-09-23T18:12:15: 📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA
+2025-09-23T18:12:19: ✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE
+2025-09-23T18:12:19: 🧹 NAVEGADOR CERRADO
+2025-09-23T18:17:47: Intento 1 de 3...
+2025-09-23T18:17:47: Accediendo a login...
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/login
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 200
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css
+2025-09-23T18:17:47: Solicitud: GET https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
+2025-09-23T18:17:47: Respuesta: https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:17:47: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png
+2025-09-23T18:17:47: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png - Status: 200
+2025-09-23T18:17:47: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf - Status: 200
+2025-09-23T18:17:48: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:17:48: Solicitud: GET https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=ca7j4og44kmd
+2025-09-23T18:17:48: Respuesta: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=ca7j4og44kmd - Status: 200
+2025-09-23T18:17:48: 🌐 1. SE INGRESÓ A LA PÁGINA
+2025-09-23T18:17:55: 📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA
+2025-09-23T18:17:58: ✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE
+2025-09-23T18:17:59: 🧹 NAVEGADOR CERRADO
+2025-09-23T18:21:29: Intento 1 de 3...
+2025-09-23T18:21:30: Accediendo a login...
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/login
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 200
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css
+2025-09-23T18:21:30: Solicitud: GET https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
+2025-09-23T18:21:30: Respuesta: https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:21:30: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png
+2025-09-23T18:21:30: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg - Status: 200
+2025-09-23T18:21:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf - Status: 200
+2025-09-23T18:21:30: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:21:30: Solicitud: GET https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=dj0lj1i2t10k
+2025-09-23T18:21:31: Respuesta: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=dj0lj1i2t10k - Status: 200
+2025-09-23T18:21:31: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/styles__ltr.css
+2025-09-23T18:21:31: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:21:31: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/styles__ltr.css - Status: 200
+2025-09-23T18:21:31: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:21:31: Solicitud: GET https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O
+2025-09-23T18:21:31: Solicitud: GET https://www.gstatic.com/recaptcha/api2/logo_48.png
+2025-09-23T18:21:31: Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2
+2025-09-23T18:21:31: Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2
+2025-09-23T18:21:31: Respuesta: https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O - Status: 200
+2025-09-23T18:21:31: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:21:31: Respuesta: https://www.gstatic.com/recaptcha/api2/logo_48.png - Status: 200
+2025-09-23T18:21:31: Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2 - Status: 200
+2025-09-23T18:21:31: Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2 - Status: 200
+2025-09-23T18:21:31: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico
+2025-09-23T18:21:31: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:21:31: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico - Status: 200
+2025-09-23T18:21:32: Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:21:32: Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:21:32: Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:21:32: Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:21:32: 🌐 1. SE INGRESÓ A LA PÁGINA
+2025-09-23T18:21:37: 📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA
+2025-09-23T18:21:40: ✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE
+2025-09-23T18:21:41: 🧹 NAVEGADOR CERRADO
+2025-09-23T18:22:17: Intento 1 de 3...
+2025-09-23T18:22:17: Accediendo a login...
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/login
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 200
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css
+2025-09-23T18:22:17: Solicitud: GET https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css - Status: 200
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
+2025-09-23T18:22:17: Respuesta: https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:22:17: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png
+2025-09-23T18:22:17: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png - Status: 200
+2025-09-23T18:22:17: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf - Status: 200
+2025-09-23T18:22:18: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:22:18: Solicitud: GET https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=f0n6b0j1ss72
+2025-09-23T18:22:18: Respuesta: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=f0n6b0j1ss72 - Status: 200
+2025-09-23T18:22:18: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/styles__ltr.css
+2025-09-23T18:22:18: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:22:18: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/styles__ltr.css - Status: 200
+2025-09-23T18:22:18: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:22:19: Solicitud: GET https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O
+2025-09-23T18:22:19: Solicitud: GET https://www.gstatic.com/recaptcha/api2/logo_48.png
+2025-09-23T18:22:19: Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2
+2025-09-23T18:22:19: Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2
+2025-09-23T18:22:19: Respuesta: https://www.gstatic.com/recaptcha/api2/logo_48.png - Status: 200
+2025-09-23T18:22:19: Respuesta: https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O - Status: 200
+2025-09-23T18:22:19: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:22:19: Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2 - Status: 200
+2025-09-23T18:22:19: Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2 - Status: 200
+2025-09-23T18:22:19: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico
+2025-09-23T18:22:19: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:22:19: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico - Status: 200
+2025-09-23T18:22:19: Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:22:19: Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:22:19: Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:22:19: Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:22:20: 🌐 1. SE INGRESÓ A LA PÁGINA
+2025-09-23T18:22:24: 📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA
+2025-09-23T18:22:28: ✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE
+2025-09-23T18:22:28: 🧹 NAVEGADOR CERRADO
+2025-09-23T18:23:28: Intento 1 de 3...
+2025-09-23T18:23:28: Accediendo a login...
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/login
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/login - Status: 200
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css
+2025-09-23T18:23:28: Solicitud: GET https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/css/bootstrap.css - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/style.css - Status: 200
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/login.css - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/include/compgeneral.js - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/bootstrap/js/bootstrap.js - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/third-party/jquery-validate.js - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/javascript/seguridad/utilSeguridad.js - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/comp.css - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font-awesome/font-awesome.css - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/logotipo_login.png - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/css/jquery.mCustomScrollbar.css - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Scripts/jquery/jquery-1.11.1.js - Status: 200
+2025-09-23T18:23:28: Respuesta: https://www.google.com/recaptcha/api.js?render=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:23:28: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png
+2025-09-23T18:23:28: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/sprite_login.png - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_login.jpg - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/bg_input_login.png - Status: 200
+2025-09-23T18:23:28: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/Content/font/KievitPro-Book.otf - Status: 200
+2025-09-23T18:23:29: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:23:29: Solicitud: GET https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=mg6p2gbdudeo
+2025-09-23T18:23:29: Respuesta: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD&co=aHR0cHM6Ly9wdm8ub3NpbmVyZ21pbi5nb2IucGU6NDQz&hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O&size=invisible&anchor-ms=20000&execute-ms=15000&cb=mg6p2gbdudeo - Status: 200
+2025-09-23T18:23:29: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/styles__ltr.css
+2025-09-23T18:23:29: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:23:29: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/styles__ltr.css - Status: 200
+2025-09-23T18:23:29: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:23:29: Solicitud: GET https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O
+2025-09-23T18:23:29: Solicitud: GET https://www.gstatic.com/recaptcha/api2/logo_48.png
+2025-09-23T18:23:29: Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2
+2025-09-23T18:23:29: Solicitud: GET https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2
+2025-09-23T18:23:29: Respuesta: https://www.google.com/recaptcha/api2/webworker.js?hl=es-419&v=44LqIOwVrGhp2lJ3fODa493O - Status: 200
+2025-09-23T18:23:29: Solicitud: GET https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js
+2025-09-23T18:23:29: Respuesta: https://www.gstatic.com/recaptcha/api2/logo_48.png - Status: 200
+2025-09-23T18:23:29: Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2 - Status: 200
+2025-09-23T18:23:29: Respuesta: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2 - Status: 200
+2025-09-23T18:23:29: Solicitud: GET https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico
+2025-09-23T18:23:30: Respuesta: https://www.gstatic.com/recaptcha/releases/44LqIOwVrGhp2lJ3fODa493O/recaptcha__es_419.js - Status: 200
+2025-09-23T18:23:30: Respuesta: https://pvo.osinergmin.gob.pe/seguridad/images/osinerg.ico - Status: 200
+2025-09-23T18:23:30: Solicitud: POST https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:23:30: Respuesta: https://www.google.com/recaptcha/api2/reload?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:23:30: Solicitud: POST https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD
+2025-09-23T18:23:30: Respuesta: https://www.google.com/recaptcha/api2/clr?k=6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD - Status: 200
+2025-09-23T18:23:30: 🌐 1. SE INGRESÓ A LA PÁGINA
+2025-09-23T18:23:35: 📄 2. SE INGRESÓ AL CONTENIDO DE LA PÁGINA
+2025-09-23T18:23:38: ✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE
+2025-09-23T18:23:39: 🧹 NAVEGADOR CERRADO
