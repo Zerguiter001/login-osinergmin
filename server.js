@@ -394,23 +394,39 @@ app.post('/api/scrape', async (req, res) => {
         console.log('No se encontró la tabla TblResultado');
       });
 
-      const results = await page.evaluate(() => {
+      const results = await page.evaluate((isFirst) => {
         const table = document.querySelector('table.TblResultado');
-        if (!table) {
-          return { error: 'No se encontró la tabla TblResultado' };
-        }
+        if (!table) return { error: 'No se encontró la tabla TblResultado' };
+
         const rows = Array.from(table.querySelectorAll('tr.Fila'));
-        if (rows.length === 0) {
-          return { error: 'No se encontraron filas con datos en la tabla' };
-        }
+        if (rows.length === 0) return { error: 'No se encontraron filas con datos en la tabla' };
+
         const validResults = [];
         const errors = [];
+
         rows.forEach((row, index) => {
           const cells = row.querySelectorAll('td.Celda1');
           if (cells.length < 9) {
-            errors.push(`Fila ${index + 1}: Número insuficiente de celdas (${cells.length})`);
+            if (isFirst) {
+              const obj = Array.from(cells).map(c => c.innerText.trim());
+              while (obj.length < 9) obj.push('');
+              validResults.push({
+                codigoAutorizacion: obj[0] || '',
+                codigoReferencia: obj[1] || '',
+                comprador: obj[2] || '',
+                vendedor: obj[3] || '',
+                tipoPedido: obj[4] || '',
+                canal: obj[5] || '',
+                fechaPedido: obj[6] || '',
+                fechaEntrega: obj[7] || '',
+                estado: obj[8] || ''
+              });
+            } else {
+              errors.push(`Fila ${index + 1}: Número insuficiente de celdas (${cells.length})`);
+            }
             return;
           }
+
           validResults.push({
             codigoAutorizacion: cells[0]?.innerText.trim() || '',
             codigoReferencia: cells[1]?.innerText.trim() || '',
@@ -423,14 +439,12 @@ app.post('/api/scrape', async (req, res) => {
             estado: cells[8]?.innerText.trim() || ''
           });
         });
-        if (errors.length > 0) {
-          console.log('Errores en filas:', errors);
-        }
-        if (validResults.length === 0) {
-          return { error: 'No se encontraron filas válidas con 9 celdas' };
-        }
+
+        if (errors.length > 0) console.log('Errores en filas:', errors);
+        if (validResults.length === 0) return { error: 'No se encontraron filas válidas' };
         return validResults;
-      });
+      }, isFirstRequest);
+
 
       const pageContent = await page.content();
       console.log('Contenido de la página:', pageContent.substring(0, 500), '...');
