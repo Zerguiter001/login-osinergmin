@@ -323,7 +323,7 @@ async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outD
   }
 }
 
-app.post('/api/scrape', async (req, res) => {
+app.post('/api/osigermin-Scoop', async (req, res) => {
   const startTime = Date.now();
   console.log('Inicio de solicitud:', new Date().toISOString());
   fs.writeFileSync('logs.txt', '', 'utf8');
