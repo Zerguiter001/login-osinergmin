@@ -1123,3 +1123,507 @@
 2025-10-06T10:16:09:     'C:\\Users\\JorgeTerrones\\Documents\\GitHub\\login-osinergmin\\server.js'
 2025-10-06T10:16:09:   ]
 2025-10-06T10:16:09: }
+2025-10-17T19:29:32: Error: Cannot find module 'dotenv'
+2025-10-17T19:29:32: Require stack:
+2025-10-17T19:29:32: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:29:32:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:29:32:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:29:32:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:29:32:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:29:32:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:29:32:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:29:32:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:29:32:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:29:32:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:29:32:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:29:32:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:29:32:   requireStack: [
+2025-10-17T19:29:32:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:29:32:   ]
+2025-10-17T19:29:32: }
+2025-10-17T19:29:37: Error: Cannot find module 'dotenv'
+2025-10-17T19:29:37: Require stack:
+2025-10-17T19:29:37: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:29:37:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:29:37:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:29:37:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:29:37:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:29:37:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:29:37:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:29:37:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:29:37:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:29:37:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:29:37:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:29:37:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:29:37:   requireStack: [
+2025-10-17T19:29:37:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:29:37:   ]
+2025-10-17T19:29:37: }
+2025-10-17T19:29:42: Error: Cannot find module 'dotenv'
+2025-10-17T19:29:42: Require stack:
+2025-10-17T19:29:42: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:29:42:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:29:42:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:29:42:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:29:42:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:29:42:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:29:42:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:29:42:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:29:42:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:29:42:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:29:42:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:29:42:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:29:42:   requireStack: [
+2025-10-17T19:29:42:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:29:42:   ]
+2025-10-17T19:29:42: }
+2025-10-17T19:29:48: Error: Cannot find module 'dotenv'
+2025-10-17T19:29:48: Require stack:
+2025-10-17T19:29:48: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:29:48:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:29:48:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:29:48:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:29:48:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:29:48:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:29:48:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:29:48:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:29:48:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:29:48:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:29:48:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:29:48:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:29:48:   requireStack: [
+2025-10-17T19:29:48:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:29:48:   ]
+2025-10-17T19:29:48: }
+2025-10-17T19:29:53: Error: Cannot find module 'dotenv'
+2025-10-17T19:29:53: Require stack:
+2025-10-17T19:29:53: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:29:53:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:29:53:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:29:53:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:29:53:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:29:53:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:29:53:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:29:53:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:29:53:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:29:53:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:29:53:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:29:53:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:29:53:   requireStack: [
+2025-10-17T19:29:53:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:29:53:   ]
+2025-10-17T19:29:53: }
+2025-10-17T19:29:58: Error: Cannot find module 'dotenv'
+2025-10-17T19:29:58: Require stack:
+2025-10-17T19:29:58: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:29:58:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:29:58:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:29:58:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:29:58:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:29:58:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:29:58:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:29:58:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:29:58:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:29:58:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:29:58:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:29:58:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:29:58:   requireStack: [
+2025-10-17T19:29:58:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:29:58:   ]
+2025-10-17T19:29:58: }
+2025-10-17T19:30:04: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:04: Require stack:
+2025-10-17T19:30:04: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:04:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:04:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:04:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:04:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:04:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:04:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:04:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:04:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:04:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:04:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:04:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:04:   requireStack: [
+2025-10-17T19:30:04:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:04:   ]
+2025-10-17T19:30:04: }
+2025-10-17T19:30:09: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:09: Require stack:
+2025-10-17T19:30:09: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:09:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:09:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:09:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:09:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:09:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:09:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:09:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:09:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:09:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:09:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:09:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:09:   requireStack: [
+2025-10-17T19:30:09:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:09:   ]
+2025-10-17T19:30:09: }
+2025-10-17T19:30:14: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:14: Require stack:
+2025-10-17T19:30:14: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:14:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:14:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:14:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:14:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:14:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:14:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:14:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:14:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:14:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:14:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:14:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:14:   requireStack: [
+2025-10-17T19:30:14:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:14:   ]
+2025-10-17T19:30:14: }
+2025-10-17T19:30:20: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:20: Require stack:
+2025-10-17T19:30:20: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:20:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:20:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:20:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:20:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:20:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:20:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:20:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:20:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:20:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:20:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:20:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:20:   requireStack: [
+2025-10-17T19:30:20:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:20:   ]
+2025-10-17T19:30:20: }
+2025-10-17T19:30:25: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:25: Require stack:
+2025-10-17T19:30:25: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:25:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:25:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:25:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:25:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:25:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:25:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:25:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:25:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:25:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:25:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:25:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:25:   requireStack: [
+2025-10-17T19:30:25:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:25:   ]
+2025-10-17T19:30:25: }
+2025-10-17T19:30:30: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:30: Require stack:
+2025-10-17T19:30:30: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:30:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:30:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:30:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:30:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:30:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:30:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:30:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:30:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:30:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:30:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:30:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:30:   requireStack: [
+2025-10-17T19:30:30:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:30:   ]
+2025-10-17T19:30:30: }
+2025-10-17T19:30:36: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:36: Require stack:
+2025-10-17T19:30:36: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:36:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:36:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:36:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:36:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:36:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:36:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:36:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:36:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:36:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:36:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:36:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:36:   requireStack: [
+2025-10-17T19:30:36:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:36:   ]
+2025-10-17T19:30:36: }
+2025-10-17T19:30:41: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:41: Require stack:
+2025-10-17T19:30:41: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:41:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:41:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:41:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:41:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:41:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:41:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:41:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:41:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:41:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:41:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:41:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:41:   requireStack: [
+2025-10-17T19:30:41:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:41:   ]
+2025-10-17T19:30:41: }
+2025-10-17T19:30:46: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:46: Require stack:
+2025-10-17T19:30:46: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:46:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:46:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:46:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:46:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:46:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:46:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:46:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:46:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:46:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:46:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:46:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:46:   requireStack: [
+2025-10-17T19:30:46:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:46:   ]
+2025-10-17T19:30:46: }
+2025-10-17T19:30:52: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:52: Require stack:
+2025-10-17T19:30:52: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:52:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:52:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:52:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:52:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:52:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:52:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:52:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:52:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:52:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:52:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:52:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:52:   requireStack: [
+2025-10-17T19:30:52:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:52:   ]
+2025-10-17T19:30:52: }
+2025-10-17T19:30:57: Error: Cannot find module 'dotenv'
+2025-10-17T19:30:57: Require stack:
+2025-10-17T19:30:57: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:30:57:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:30:57:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:30:57:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:30:57:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:30:57:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:30:57:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:30:57:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:30:57:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:30:57:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:30:57:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:30:57:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:30:57:   requireStack: [
+2025-10-17T19:30:57:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:30:57:   ]
+2025-10-17T19:30:57: }
+2025-10-17T19:31:02: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:02: Require stack:
+2025-10-17T19:31:02: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:02:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:02:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:02:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:02:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:02:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:02:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:02:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:02:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:02:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:02:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:02:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:02:   requireStack: [
+2025-10-17T19:31:02:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:02:   ]
+2025-10-17T19:31:02: }
+2025-10-17T19:31:07: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:07: Require stack:
+2025-10-17T19:31:07: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:07:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:07:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:07:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:07:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:07:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:07:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:07:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:07:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:07:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:07:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:07:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:07:   requireStack: [
+2025-10-17T19:31:07:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:07:   ]
+2025-10-17T19:31:07: }
+2025-10-17T19:31:13: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:13: Require stack:
+2025-10-17T19:31:13: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:13:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:13:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:13:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:13:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:13:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:13:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:13:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:13:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:13:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:13:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:13:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:13:   requireStack: [
+2025-10-17T19:31:13:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:13:   ]
+2025-10-17T19:31:13: }
+2025-10-17T19:31:18: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:18: Require stack:
+2025-10-17T19:31:18: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:18:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:18:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:18:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:18:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:18:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:18:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:18:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:18:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:18:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:18:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:18:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:18:   requireStack: [
+2025-10-17T19:31:18:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:18:   ]
+2025-10-17T19:31:18: }
+2025-10-17T19:31:23: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:23: Require stack:
+2025-10-17T19:31:23: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:23:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:23:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:23:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:23:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:23:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:23:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:23:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:23:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:23:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:23:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:23:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:23:   requireStack: [
+2025-10-17T19:31:23:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:23:   ]
+2025-10-17T19:31:23: }
+2025-10-17T19:31:29: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:29: Require stack:
+2025-10-17T19:31:29: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:29:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:29:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:29:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:29:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:29:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:29:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:29:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:29:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:29:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:29:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:29:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:29:   requireStack: [
+2025-10-17T19:31:29:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:29:   ]
+2025-10-17T19:31:29: }
+2025-10-17T19:31:34: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:34: Require stack:
+2025-10-17T19:31:34: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:34:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:34:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:34:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:34:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:34:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:34:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:34:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:34:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:34:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:34:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:34:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:34:   requireStack: [
+2025-10-17T19:31:34:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:34:   ]
+2025-10-17T19:31:34: }
+2025-10-17T19:31:39: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:39: Require stack:
+2025-10-17T19:31:39: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:39:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:39:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:39:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:39:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:39:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:39:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:39:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:39:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:39:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:39:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:39:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:39:   requireStack: [
+2025-10-17T19:31:39:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:39:   ]
+2025-10-17T19:31:39: }
+2025-10-17T19:31:45: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:45: Require stack:
+2025-10-17T19:31:45: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:45:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:45:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:45:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:45:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:45:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:45:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:45:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:45:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:45:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:45:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:45:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:45:   requireStack: [
+2025-10-17T19:31:45:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:45:   ]
+2025-10-17T19:31:45: }
+2025-10-17T19:31:50: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:50: Require stack:
+2025-10-17T19:31:50: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:50:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:50:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:50:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:50:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:50:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:50:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:50:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:50:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:50:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:50:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:50:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:50:   requireStack: [
+2025-10-17T19:31:50:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:50:   ]
+2025-10-17T19:31:50: }
+2025-10-17T19:31:55: Error: Cannot find module 'dotenv'
+2025-10-17T19:31:55: Require stack:
+2025-10-17T19:31:55: - C:\Users\user29\Documents\GitHub\login-osinergmin\server.js
+2025-10-17T19:31:55:     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+2025-10-17T19:31:55:     at Hook._require.Module.require (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+2025-10-17T19:31:55:     at require (node:internal/modules/helpers:147:16)
+2025-10-17T19:31:55:     at Object.<anonymous> (C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:1:1)
+2025-10-17T19:31:55:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-10-17T19:31:55:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-10-17T19:31:55:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-10-17T19:31:55:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-10-17T19:31:55:     at Object.<anonymous> (C:\Users\user29\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2025-10-17T19:31:55:     at Module._compile (node:internal/modules/cjs/loader:1706:14) {
+2025-10-17T19:31:55:   code: 'MODULE_NOT_FOUND',
+2025-10-17T19:31:55:   requireStack: [
+2025-10-17T19:31:55:     'C:\\Users\\user29\\Documents\\GitHub\\login-osinergmin\\server.js'
+2025-10-17T19:31:55:   ]
+2025-10-17T19:31:55: }

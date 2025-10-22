@@ -23,6 +23,7 @@ app.use(express.json());
 
 // Configuración del pool de páginas
 const MAX_PAGES = Number.parseInt(process.env.MAX_PAGES || '5', 10);
+const BROWSER_RESTART_INTERVAL_MINUTES = Number.parseInt(process.env.BROWSER_RESTART_INTERVAL_MINUTES || '15', 10);
 let browser = null;
 const pagePool = [];
 let initializing = false;
@@ -182,8 +183,31 @@ function releasePage(pageObj) {
   console.log('Página liberada al pool');
 }
 
+// Función para reiniciar el navegador y el pool de páginas
+async function restartBrowser() {
+  console.log('Verificando solicitudes activas antes de reiniciar...');
+  // Esperar hasta que todas las páginas estén libres
+  while (pagePool.some(p => p.inUse)) {
+    console.log('Esperando que las páginas se liberen...');
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+  console.log('Reiniciando navegador y pool de páginas...');
+  try {
+    if (browser) {
+      await browser.close();
+      browser = null;
+      pagePool.length = 0;
+      console.log('Navegador anterior cerrado');
+    }
+    await initializeBrowser();
+    console.log('Navegador reiniciado y pool de páginas actualizado');
+  } catch (err) {
+    console.error('Error al reiniciar el navegador:', err.message);
+  }
+}
+
 // Abrir detalle (opc=2), guardar HTML+PNG y extraer JSON
-async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outDir) {
+async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outDir, pageObj) {
   const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
   const startTime = Date.now();
   try {
@@ -319,6 +343,9 @@ async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outD
     return { url, htmlPath, pngPath, detalle };
   } catch (e) {
     console.error(`Error procesando detalle ${codigoAutorizacion}:`, e.message);
+    // Cerrar página defectuosa y remover del pool
+    await page.close();
+    pagePool.splice(pagePool.indexOf(pageObj), 1);
     return { url, error: e.message };
   }
 }
@@ -464,7 +491,7 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
         continue;
       }
       if (r.estado === 'SOLICITADO' || SHOW_FULL_DETAILS) {
-        const det = await obtenerYGuardarDetalle(page, r.codigoAutorizacion, referer, outDir);
+        const det = await obtenerYGuardarDetalle(page, r.codigoAutorizacion, referer, outDir, pageObj);
         if (det.detalle) r.detalle = det.detalle;
         else r.detalle = { error: det.error || 'No se pudo parsear detalle' };
         // Regresar a la página de consulta después de cada detalle
@@ -502,9 +529,14 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
 (async () => {
   try {
     await initializeBrowser();
-    app.listen(port, () => {
+    const server = app.listen(port, () => {
       console.log(`🚀 Servidor corriendo en el puerto ${port}`);
     });
+    // Configurar keep-alive para evitar cierres por inactividad
+    server.keepAliveTimeout = 120000; // 2 minutos
+    server.headersTimeout = 130000; // 2 minutos + margen
+    // Programar reinicio del navegador
+    setInterval(restartBrowser, BROWSER_RESTART_INTERVAL_MINUTES * 60 * 1000);
   } catch (error) {
     console.error('Error al iniciar el servidor:', error);
     console.log = originalConsoleLog;
