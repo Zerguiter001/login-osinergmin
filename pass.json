@@ -1,0 +1,19 @@
+{
+  "locales": {
+    "058": {
+      "nombre": "PISCO ALMACEN", 
+      "OSINERGMIN_USERNAME": "0322100",
+      "OSINERGMIN_PASSWORD": "12597083"
+    },
+    "059": {
+      "nombre": "ICA",
+      "OSINERGMIN_USERNAME": "0456700",
+      "OSINERGMIN_PASSWORD": "98765432"
+    },
+    "060": {
+      "nombre": "LIMA",
+      "OSINERGMIN_USERNAME": "0789100",
+      "OSINERGMIN_PASSWORD": "45678901"
+    }
+  }
+}

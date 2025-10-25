@@ -5,6 +5,9 @@ const qs = require('qs');
 const fs = require('fs');
 const path = require('path');
 
+// Cargar pass.json desde la raíz
+const passConfig = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'pass.json'), 'utf8'));
+
 // Configuración de logs
 const originalConsoleLog = console.log;
 const originalConsoleError = console.error;
@@ -21,11 +24,12 @@ originalConsoleLog(`🚀 SERVER PRENDIDO EN EL PUERTO ${port}`);
 const app = express();
 app.use(express.json());
 
-// Configuración del pool de páginas
-const MAX_PAGES = Number.parseInt(process.env.MAX_PAGES || '5', 10);
+// Configuración del pool de páginas y cola
+const MAX_TABS = 20; // Límite de 20 pestañas abiertas
 const BROWSER_RESTART_INTERVAL_MINUTES = Number.parseInt(process.env.BROWSER_RESTART_INTERVAL_MINUTES || '15', 10);
 let browser = null;
-const pagePool = [];
+const tabPool = [];
+const tabQueue = [];
 let initializing = false;
 
 // Configuración para detalles
@@ -61,7 +65,7 @@ function isValidDateFormat(dateStr) {
   return regex.test(dateStr);
 }
 
-// Función para inicializar el navegador y el pool de páginas autenticadas
+// Función para inicializar el navegador
 async function initializeBrowser() {
   if (initializing) return;
   initializing = true;
@@ -72,142 +76,181 @@ async function initializeBrowser() {
       args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
     });
 
-    // Crear y autenticar páginas en el pool
-    for (let i = 0; i < MAX_PAGES; i++) {
-      const page = await browser.newPage();
-      await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
-
-      if (process.env.SAVE_LIGHT === '1') {
-        await page.setRequestInterception(true);
-        page.on('request', (req) => {
-          const t = req.resourceType();
-          if (['image', 'font', 'stylesheet'].includes(t)) req.abort();
-          else req.continue();
-        });
-      }
-
-      console.log(`Autenticando página ${i + 1}...`);
-      await page.goto('https://pvo.osinergmin.gob.pe/seguridad/login', { waitUntil: 'domcontentloaded', timeout: 10000 });
-      await page.waitForSelector('input[name="j_username"]', { timeout: 8000 });
-
-      if (!process.env.OSINERGMIN_USERNAME || !process.env.OSINERGMIN_PASSWORD) {
-        throw new Error('Credenciales no definidas en el archivo .env');
-      }
-      await page.type('input[name="j_username"]', process.env.OSINERGMIN_USERNAME);
-      await page.type('input[name="j_password"]', process.env.OSINERGMIN_PASSWORD);
-
-      let recaptchaToken = null;
-      try {
-        recaptchaToken = await page.evaluate(() => {
-          return new Promise((resolve) => {
-            try {
-              grecaptcha.ready(() => {
-                grecaptcha.execute('6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD', { action: 'login' })
-                  .then(token => resolve(token))
-                  .catch(() => resolve(null));
-              });
-            } catch {
-              resolve(null);
-            }
-          });
-        });
-        console.log(`Token reCAPTCHA para página ${i + 1}:`, recaptchaToken || 'No se obtuvo token');
-      } catch (err) {
-        console.log(`Error al obtener token reCAPTCHA para página ${i + 1}:`, err.message);
-      }
-
-      if (recaptchaToken) {
-        await page.evaluate((token) => {
-          const input = document.createElement('input');
-          input.type = 'hidden';
-          input.name = 'g-recaptcha-response';
-          input.value = token;
-          document.querySelector('form').appendChild(input);
-        }, recaptchaToken);
-      }
-
-      await Promise.all([
-        page.click('button[type="submit"]'),
-        page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => {
-          console.log(`Navegación después del login no completada para página ${i + 1}, continuando...`);
-        }),
-      ]);
-
-      if (page.url().includes('login?error=UP')) {
-        throw new Error(`Fallo en el login para página ${i + 1}: credenciales inválidas o problema con reCAPTCHA`);
-      }
-
-      await page.waitForFunction('typeof muestraPagina === "function"', { timeout: 8000 });
-      await page.evaluate(() => muestraPagina('163', 'NO', 'NO'));
-      await new Promise(resolve => setTimeout(resolve, 500));
-
-      pagePool.push({ page, inUse: false });
-      console.log(`Página ${i + 1} autenticada y añadida al pool`);
-    }
-    console.log('Navegador y pool de páginas inicializados correctamente');
+    console.log('Navegador inicializado correctamente');
   } catch (err) {
     console.error('Error al inicializar el navegador:', err.message);
     if (browser) {
       await browser.close();
       browser = null;
     }
-    pagePool.length = 0;
     throw err;
   } finally {
     initializing = false;
   }
 }
 
-// Función para obtener una página disponible del pool
-async function getAvailablePage() {
-  let pageObj = pagePool.find(p => !p.inUse);
-  if (!pageObj) {
-    console.log('Esperando página disponible...');
-    await new Promise(resolve => {
-      const interval = setInterval(() => {
-        pageObj = pagePool.find(p => !p.inUse);
-        if (pageObj) {
-          clearInterval(interval);
-          resolve();
-        }
-      }, 100);
-    });
+// Función para crear y autenticar una nueva pestaña
+async function createAuthenticatedTab(credentials) {
+  try {
+    const page = await browser.newPage();
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
+
+    if (process.env.SAVE_LIGHT === '1') {
+      await page.setRequestInterception(true);
+      page.on('request', (req) => {
+        const t = req.resourceType();
+        if (['image', 'font', 'stylesheet'].includes(t)) req.abort();
+        else req.continue();
+      });
+    }
+
+    console.log(`Autenticando nueva pestaña con usuario ${credentials.OSINERGMIN_USERNAME}...`);
+    await page.goto('https://pvo.osinergmin.gob.pe/seguridad/login', { waitUntil: 'domcontentloaded', timeout: 10000 });
+    await page.waitForSelector('input[name="j_username"]', { timeout: 8000 });
+
+    if (!credentials.OSINERGMIN_USERNAME || !credentials.OSINERGMIN_PASSWORD) {
+      throw new Error('Credenciales no definidas para el local proporcionado');
+    }
+    await page.type('input[name="j_username"]', credentials.OSINERGMIN_USERNAME);
+    await page.type('input[name="j_password"]', credentials.OSINERGMIN_PASSWORD);
+
+    let recaptchaToken = null;
+    try {
+      recaptchaToken = await page.evaluate(() => {
+        return new Promise((resolve) => {
+          try {
+            grecaptcha.ready(() => {
+              grecaptcha.execute('6LeAU68UAAAAACp0Ci8TvE5lTITDDRQcqnp4lHuD', { action: 'login' })
+                .then(token => resolve(token))
+                .catch(() => resolve(null));
+            });
+          } catch {
+            resolve(null);
+          }
+        });
+      });
+      console.log(`Token reCAPTCHA:`, recaptchaToken || 'No se obtuvo token');
+    } catch (err) {
+      console.log(`Error al obtener token reCAPTCHA:`, err.message);
+    }
+
+    if (recaptchaToken) {
+      await page.evaluate((token) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'g-recaptcha-response';
+        input.value = token;
+        document.querySelector('form').appendChild(input);
+      }, recaptchaToken);
+    }
+
+    await Promise.all([
+      page.click('button[type="submit"]'),
+      page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 10000 }).catch(() => {
+        console.log(`Navegación después del login no completada, continuando...`);
+      }),
+    ]);
+
+    if (page.url().includes('login?error=UP')) {
+      throw new Error(`Fallo en el login: credenciales inválidas o problema con reCAPTCHA`);
+    }
+
+    await page.waitForFunction('typeof muestraPagina === "function"', { timeout: 8000 });
+    await page.evaluate(() => muestraPagina('163', 'NO', 'NO'));
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    return { page, inUse: false };
+  } catch (err) {
+    console.error('Error al crear y autenticar pestaña:', err.message);
+    if (page) await page.close();
+    throw err;
   }
-  pageObj.inUse = true;
-  return pageObj;
 }
 
-// Función para liberar una página al pool
-function releasePage(pageObj) {
-  pageObj.inUse = false;
-  console.log('Página liberada al pool');
+// Función para obtener una pestaña disponible o encolarse
+async function getAvailableTab(credentials) {
+  let tabObj = tabPool.find(t => !t.inUse);
+  if (tabObj) {
+    tabObj.inUse = true;
+    console.log('Pestaña disponible asignada del pool');
+    return tabObj;
+  }
+
+  if (tabPool.length < MAX_TABS) {
+    console.log('Creando nueva pestaña...');
+    tabObj = await createAuthenticatedTab(credentials);
+    tabPool.push(tabObj);
+    tabObj.inUse = true;
+    console.log(`Nueva pestaña creada, total: ${tabPool.length}`);
+    return tabObj;
+  }
+
+  console.log('Límite de pestañas alcanzado, encolando solicitud...');
+  return new Promise((resolve) => {
+    tabQueue.push({ credentials, resolve });
+    checkQueue();
+  });
 }
 
-// Función para reiniciar el navegador y el pool de páginas
+// Función para liberar una pestaña y procesar la cola
+async function releaseTab(tabObj) {
+  if (tabObj && tabObj.page) {
+    try {
+      await tabObj.page.close();
+      console.log('Pestaña cerrada');
+    } catch (err) {
+      console.error('Error al cerrar pestaña:', err.message);
+    }
+    const index = tabPool.indexOf(tabObj);
+    if (index !== -1) {
+      tabPool.splice(index, 1);
+      console.log(`Pestaña removida del pool, total: ${tabPool.length}`);
+    }
+    checkQueue();
+  }
+}
+
+// Función para procesar la cola
+async function checkQueue() {
+  if (tabQueue.length === 0 || tabPool.length >= MAX_TABS) return;
+
+  const { credentials, resolve } = tabQueue.shift();
+  try {
+    const tabObj = await createAuthenticatedTab(credentials);
+    tabPool.push(tabObj);
+    tabObj.inUse = true;
+    console.log(`Pestaña creada desde la cola, total: ${tabPool.length}`);
+    resolve(tabObj);
+  } catch (err) {
+    console.error('Error al procesar cola:', err.message);
+    checkQueue(); // Intentar con la siguiente solicitud
+  }
+}
+
+// Función para reiniciar el navegador
 async function restartBrowser() {
   console.log('Verificando solicitudes activas antes de reiniciar...');
-  // Esperar hasta que todas las páginas estén libres
-  while (pagePool.some(p => p.inUse)) {
-    console.log('Esperando que las páginas se liberen...');
+  while (tabPool.some(t => t.inUse) || tabQueue.length > 0) {
+    console.log('Esperando que las pestañas se liberen o cola se vacíe...');
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
-  console.log('Reiniciando navegador y pool de páginas...');
+  console.log('Reiniciando navegador...');
   try {
     if (browser) {
       await browser.close();
       browser = null;
-      pagePool.length = 0;
+      tabPool.length = 0;
       console.log('Navegador anterior cerrado');
     }
     await initializeBrowser();
-    console.log('Navegador reiniciado y pool de páginas actualizado');
+    console.log('Navegador reiniciado');
   } catch (err) {
     console.error('Error al reiniciar el navegador:', err.message);
   }
 }
 
 // Abrir detalle (opc=2), guardar HTML+PNG y extraer JSON
-async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outDir, pageObj) {
+async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outDir, tabObj) {
   const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
   const startTime = Date.now();
   try {
@@ -316,7 +359,7 @@ async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outD
               if (nums.length) {
                 const last = nums[nums.length - 1];
                 const prev = nums[nums.length - 2] || '';
-                out.totales = { cantidadRecibida: prev, subtotalKg: last };
+                out.totales = { cantidadPedida: prev, subtotalKg: last };
               }
             } else {
               const prod = {
@@ -343,9 +386,6 @@ async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl, outD
     return { url, htmlPath, pngPath, detalle };
   } catch (e) {
     console.error(`Error procesando detalle ${codigoAutorizacion}:`, e.message);
-    // Cerrar página defectuosa y remover del pool
-    await page.close();
-    pagePool.splice(pagePool.indexOf(pageObj), 1);
     return { url, error: e.message };
   }
 }
@@ -355,7 +395,7 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
   console.log('Inicio de solicitud:', new Date().toISOString());
   fs.writeFileSync('logs.txt', '', 'utf8');
 
-  const { codigo_autorizacion } = req.body;
+  const { codigo_autorizacion, U_RS_Local } = req.body;
   const txt_fecini = process.env.START_DATE;
   const txt_fecfin = getCurrentDate();
 
@@ -364,21 +404,38 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
     console.log = originalConsoleLog;
     return res.status(400).json({ error: 'Falta parámetro requerido: codigo_autorizacion' });
   }
+  if (!U_RS_Local) {
+    console.log = originalConsoleLog;
+    return res.status(400).json({ error: 'Falta parámetro requerido: U_RS_Local' });
+  }
   if (!txt_fecini || !isValidDateFormat(txt_fecini)) {
     console.log = originalConsoleLog;
     return res.status(400).json({ error: 'START_DATE no definida en .env o formato inválido (debe ser DD/MM/YYYY)' });
   }
 
-  if (!browser || pagePool.length === 0) {
+  // Obtener credenciales desde pass.json
+  const localKey = String(U_RS_Local).padStart(3, '0');
+  const credentials = passConfig.locales[localKey];
+  if (!credentials) {
     console.log = originalConsoleLog;
-    return res.status(500).json({ error: 'Navegador no inicializado' });
+    return res.status(400).json({ error: `No se encontraron credenciales para U_RS_Local: ${U_RS_Local}` });
   }
 
-  let pageObj;
+  // Inicializar navegador si no está activo
+  if (!browser) {
+    try {
+      await initializeBrowser();
+    } catch (err) {
+      console.log = originalConsoleLog;
+      return res.status(500).json({ error: `Error al inicializar el navegador: ${err.message}` });
+    }
+  }
+
+  let tabObj;
   try {
-    // Obtener una página del pool
-    pageObj = await getAvailablePage();
-    const page = pageObj.page;
+    // Obtener una pestaña disponible o encolarse
+    tabObj = await getAvailableTab(credentials);
+    const page = tabObj.page;
 
     page.on('request', request => {
       console.log(`Solicitud: ${request.method()} ${request.url()}`);
@@ -491,7 +548,7 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
         continue;
       }
       if (r.estado === 'SOLICITADO' || SHOW_FULL_DETAILS) {
-        const det = await obtenerYGuardarDetalle(page, r.codigoAutorizacion, referer, outDir, pageObj);
+        const det = await obtenerYGuardarDetalle(page, r.codigoAutorizacion, referer, outDir, tabObj);
         if (det.detalle) r.detalle = det.detalle;
         else r.detalle = { error: det.error || 'No se pudo parsear detalle' };
         // Regresar a la página de consulta después de cada detalle
@@ -519,30 +576,32 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
     console.log(`Fin de solicitud con error: ${Date.now() - startTime} ms`);
     return res.status(500).json({ error: `Error en la solicitud: ${err.message}` });
   } finally {
-    if (pageObj) {
-      releasePage(pageObj);
+    if (tabObj) {
+      await releaseTab(tabObj);
     }
   }
 });
 
-// Iniciar el servidor y el navegador
+// Iniciar el servidor
 (async () => {
   try {
-    await initializeBrowser();
     const server = app.listen(port, () => {
       console.log(`🚀 Servidor corriendo en el puerto ${port}`);
     });
     // Configurar keep-alive para evitar cierres por inactividad
     server.keepAliveTimeout = 120000; // 2 minutos
     server.headersTimeout = 130000; // 2 minutos + margen
-    // Programar reinicio del navegador
-    setInterval(restartBrowser, BROWSER_RESTART_INTERVAL_MINUTES * 60 * 1000);
   } catch (error) {
     console.error('Error al iniciar el servidor:', error);
     console.log = originalConsoleLog;
     process.exit(1);
   }
 })();
+
+// Programar reinicio periódico del navegador
+setInterval(() => {
+  restartBrowser();
+}, BROWSER_RESTART_INTERVAL_MINUTES * 60 * 1000);
 
 process.on('SIGINT', async () => {
   if (browser) {
