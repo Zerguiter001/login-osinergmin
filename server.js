@@ -217,6 +217,7 @@ async function createAuthenticatedTab(credentials) {
  *  - TODO el flujo de scraping (listado + detalles) con "PASO 1, 2, ..."
  * ------------------------------------------------------------------ */
 async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fecfin }) {
+  console.log("ENTRA AQUI")
   /* PASO 0: Preparación (listeners + utilidades + constantes de salida) */
   page.on('request', (request) => {
     console.log(`Solicitud: ${request.method()} ${request.url()}`);
