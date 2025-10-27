@@ -107,10 +107,22 @@ async function initializeBrowser() {
   initializing = true;
   try {
     console.log('Inicializando navegador...');
-    browser = await puppeteer.launch({
-      headless: 'new',
+
+    // 🔹 NUEVO: control por .env para ver el navegador en vivo sin cambiar tu lógica
+    const showBrowser = process.env.SHOW_BROWSER === '1';
+    const devtools = process.env.DEVTOOLS === '1';
+    const slowMo = Number.parseInt(process.env.SLOWMO || '0', 10);
+    const execPath = process.env.PUPPETEER_EXECUTABLE_PATH || undefined;
+
+    const launchOpts = {
+      headless: showBrowser ? false : 'new',
       args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
-    });
+      slowMo: showBrowser ? slowMo : 0,
+      devtools: showBrowser ? devtools : false,
+    };
+    if (execPath) launchOpts.executablePath = execPath;
+
+    browser = await puppeteer.launch(launchOpts);
     console.log('Navegador inicializado correctamente');
   } catch (err) {
     console.error('Error al inicializar el navegador:', err.message);
