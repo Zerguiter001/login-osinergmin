@@ -32,6 +32,7 @@ console.log = (...args) => {
     `${new Date().toISOString()} - ${args.join(' ')}\n`,
     'utf8'
   );
+  originalConsoleLog(...args); // 🔹 Agregado: También mostrar logs en consola para depuración inmediata
 };
 console.error = (...args) => {
   fs.appendFileSync(
@@ -39,6 +40,7 @@ console.error = (...args) => {
     `${new Date().toISOString()} - ERROR: ${args.join(' ')}\n`,
     'utf8'
   );
+  originalConsoleError(...args); // 🔹 Agregado: También mostrar errores en consola
 };
 
 const port = process.env.PORT || 3000;
@@ -108,7 +110,6 @@ async function initializeBrowser() {
   try {
     console.log('Inicializando navegador...');
 
-    // 🔹 NUEVO: control por .env para ver el navegador en vivo sin cambiar tu lógica
     const showBrowser = process.env.SHOW_BROWSER === '1';
     const devtools = process.env.DEVTOOLS === '1';
     const slowMo = Number.parseInt(process.env.SLOWMO || '0', 10);
@@ -169,7 +170,9 @@ async function createAuthenticatedTab(credentials) {
     await page.type('input[name="j_username"]', credentials.OSINERGMIN_USERNAME);
     await page.type('input[name="j_password"]', credentials.OSINERGMIN_PASSWORD);
 
-    // Intento no bloqueante de reCAPTCHA
+    // 🔹 Agregado: Log para verificar credenciales usadas
+    console.log(`Credenciales usadas - Username: ${credentials.OSINERGMIN_USERNAME}, Password: [HIDDEN]`);
+
     let recaptchaToken = null;
     try {
       recaptchaToken = await page.evaluate(() => {
@@ -208,6 +211,9 @@ async function createAuthenticatedTab(credentials) {
         .catch(() => console.log('Navegación post-login no completada, continuando...')),
     ]);
 
+    // 🔹 Agregado: Log para verificar URL después del login
+    console.log(`URL después del login: ${page.url()}`);
+
     if (page.url().includes('login?error=UP')) {
       throw new Error('Fallo en el login: credenciales inválidas o reCAPTCHA');
     }
@@ -216,6 +222,8 @@ async function createAuthenticatedTab(credentials) {
     await page.evaluate(() => muestraPagina('163', 'NO', 'NO'));
     await new Promise((r) => setTimeout(r, 500));
 
+    // 🔹 Agregado: Log para confirmar autenticación exitosa
+    console.log('Autenticación completada, pestaña lista');
     return { page, inUse: false };
   } catch (err) {
     console.error('Error al crear y autenticar pestaña:', err.message);
@@ -226,10 +234,10 @@ async function createAuthenticatedTab(credentials) {
 
 /* ------------------------------------------------------------------
  *  ⭐ FUNCIÓN ÚNICA DE SCRAPING ⭐
- *  - TODO el flujo de scraping (listado + detalles) con "PASO 1, 2, ..."
  * ------------------------------------------------------------------ */
 async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fecfin }) {
-  console.log("ENTRA AQUI")
+  console.log(`ENTRA AQUI - Iniciando scraping con codigo_autorizacion: ${codigo_autorizacion}, txt_fecini: ${txt_fecini}, txt_fecfin: ${txt_fecfin}`);
+  
   /* PASO 0: Preparación (listeners + utilidades + constantes de salida) */
   page.on('request', (request) => {
     console.log(`Solicitud: ${request.method()} ${request.url()}`);
@@ -242,27 +250,25 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
     }
   });
   const outDir = tsFolder();
+  console.log(`Directorio de salida: ${outDir}`);
 
-  /* Utilidad interna (misma lógica de antes) para parsear el DETALLE */
+  /* Utilidad interna para parsear el DETALLE */
   async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl) {
-    // PASO 5.1: Construir URL de detalle y navegar
     const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
     const startTime = Date.now();
     try {
       console.log(`Abriendo detalle ${codigoAutorizacion}: ${url}`);
       await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 10000 });
 
-      // PASO 5.2: (Opcional) Capturar HTML/PNG
       const base = path.join(outDir, `detalle_${codigoAutorizacion}`);
       const htmlPath = `${base}.html`;
       const pngPath = `${base}.png`;
       const html = await page.content();
-      // fs.writeFileSync(htmlPath, html, 'utf8'); // opcional
+      fs.writeFileSync(htmlPath, html, 'utf8'); // 🔹 Modificado: Guardar HTML siempre para depuración
       if (SAVE_SCREENSHOTS) {
         await page.screenshot({ path: pngPath, fullPage: true });
       }
 
-      // PASO 5.3: Parsear el DOM del detalle en el navegador
       const detalle = await page.evaluate(() => {
         const norm = (s) => (s || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
         const limpiarParentesis = (texto) => texto.replace(/[()]/g, '').toUpperCase();
@@ -284,7 +290,6 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
           totales: {},
         };
 
-        // Cabecera
         const tblFiltros = document.querySelector('table.TblFiltros');
         if (tblFiltros) {
           const filas = Array.from(tblFiltros.querySelectorAll('tr.Fila'));
@@ -311,7 +316,6 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
           });
         }
 
-        // Camión
         const allTables = Array.from(document.querySelectorAll('table'));
         const camionTable = allTables.find((tb) => tb.textContent && tb.textContent.includes('Placa del Camión'));
         if (camionTable) {
@@ -334,7 +338,6 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
           }
         }
 
-        // Productos
         const prodTable = Array.from(document.querySelectorAll('table.TblResultado')).find((tb) => {
           const headerRow = tb.querySelector('tr.Fila');
           if (!headerRow) return false;
@@ -393,7 +396,7 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
   }
 
   /* PASO 1: Construir payload del formulario (POST) */
-  console.log('Enviando formulario POST...');
+  console.log(`PASO 1: Construyendo payload para POST - codigo_autorizacion: ${codigo_autorizacion}`);
   const payload = qs.stringify({
     ind: '',
     opc: '1',
@@ -415,14 +418,18 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
     txt_fecini,
     txt_fecfin,
   });
+  console.log(`Payload construido: ${payload}`);
 
   /* PASO 2: Ir a la página de consulta */
+  console.log('PASO 2: Navegando a la página de consulta');
   await page.goto(
     'https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp',
     { waitUntil: 'domcontentloaded', timeout: 10000 }
   );
+  console.log(`PASO 2: Página de consulta cargada, URL: ${page.url()}`);
 
   /* PASO 3: Inyectar y enviar el formulario con método POST */
+  console.log('PASO 3: Inyectando y enviando formulario POST');
   await page.evaluate((payload) => {
     const form = document.createElement('form');
     form.method = 'POST';
@@ -437,15 +444,26 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
     document.body.appendChild(form);
     form.submit();
   }, payload);
+  console.log('PASO 3: Formulario POST enviado');
 
   /* PASO 4: Esperar la navegación + disponibilidad de la tabla de resultados */
+  console.log('PASO 4: Esperando navegación tras POST');
   await page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 10000 });
-  console.log('Esperando tabla de resultados...');
-  await page.waitForSelector('table.TblResultado', { timeout: 8000 }).catch(() => {
+  console.log(`PASO 4: Navegación completada, URL: ${page.url()}`);
+
+  console.log('PASO 4: Esperando tabla de resultados...');
+  await page.waitForSelector('table.TblResultado', { timeout: 8000 }).catch(async () => {
     console.log('No se encontró la tabla TblResultado');
+    // 🔹 Agregado: Guardar screenshot y HTML para depuración
+    const debugPath = path.join(outDir, 'debug_no_table');
+    await page.screenshot({ path: `${debugPath}.png`, fullPage: true });
+    const html = await page.content();
+    fs.writeFileSync(`${debugPath}.html`, html, 'utf8');
+    console.log(`Debug: Guardado screenshot y HTML en ${debugPath}`);
   });
 
   /* PASO 5: Parsear el listado de resultados (cabeceras) */
+  console.log('PASO 5: Parseando tabla de resultados');
   const results = await page.evaluate(() => {
     const table = document.querySelector('table.TblResultado');
     if (!table) return { error: 'No se encontró la tabla TblResultado' };
@@ -479,13 +497,16 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
     if (validResults.length === 0) return { error: 'No se encontraron filas válidas' };
     return validResults;
   });
+  console.log(`PASO 5: Resultados parseados: ${JSON.stringify(results)}`);
 
   /* PASO 6: Si no hay filas válidas, devolver mensaje */
   if (results.error) {
+    console.log(`PASO 6: Error en resultados: ${results.error}`);
     return { filteredResults: [], message: results.error };
   }
 
   /* PASO 7: Para cada fila, si aplica, abrir y parsear DETALLE; luego volver al listado */
+  console.log(`PASO 7: Procesando detalles para ${results.length} filas`);
   const referer = page.url();
   const limite = Math.min(results.length, MAX_DETALLES);
 
@@ -500,12 +521,13 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
       if (det.detalle) r.detalle = det.detalle;
       else r.detalle = { error: det.error || 'No se pudo parsear detalle' };
 
-      // PASO 5.4: Volver al referer (listado) para continuar con la siguiente fila
       await page.goto(referer, { waitUntil: 'domcontentloaded', timeout: 10000 });
+      console.log(`PASO 7: Detalle procesado para ${r.codigoAutorizacion}, volviendo a ${referer}`);
     }
   }
 
   /* PASO 8: Filtrar la salida según SHOW_FULL_DETAILS */
+  console.log('PASO 8: Filtrando resultados');
   const filteredResults = results.map((result) => {
     if (result.estado === 'SOLICITADO' || SHOW_FULL_DETAILS) {
       return result;
@@ -516,7 +538,7 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
   });
 
   /* PASO 9: Devolver los resultados */
-  console.log('Resultados obtenidos:', filteredResults);
+  console.log(`PASO 9: Resultados finales: ${JSON.stringify(filteredResults)}`);
   return { filteredResults };
 }
 
@@ -548,7 +570,6 @@ async function getAvailableTab(credentials) {
 }
 
 async function releaseTab(tabObj) {
-  // 1 request = 1 pestaña: se cierra y se remueve del pool
   if (tabObj && tabObj.page) {
     try {
       await tabObj.page.close();
@@ -576,7 +597,7 @@ async function checkQueue() {
     resolve(tabObj);
   } catch (err) {
     console.error('Error al procesar cola:', err.message);
-    checkQueue(); // intenta siguiente
+    checkQueue();
   }
 }
 
@@ -585,23 +606,28 @@ async function checkQueue() {
  * ------------------------------------------------------------------ */
 app.post('/api/osigermin-Scoop', async (req, res) => {
   const startTime = Date.now();
-  console.log('Inicio de solicitud:', new Date().toISOString());
-  fs.writeFileSync('logs.txt', '', 'utf8'); // limpia archivo de logs
+  console.log(`Inicio de solicitud: ${new Date().toISOString()}`);
 
   const { codigo_autorizacion, U_RS_Local } = req.body;
   const txt_fecini = process.env.START_DATE;
   const txt_fecfin = getCurrentDate();
 
+  // 🔹 Agregado: Log de parámetros recibidos
+  console.log(`Parámetros recibidos - codigo_autorizacion: ${codigo_autorizacion}, U_RS_Local: ${U_RS_Local}, txt_fecini: ${txt_fecini}, txt_fecfin: ${txt_fecfin}`);
+
   if (!codigo_autorizacion) {
     console.log = originalConsoleLog;
+    console.log('Error: Falta parámetro requerido: codigo_autorizacion');
     return res.status(400).json({ error: 'Falta parámetro requerido: codigo_autorizacion' });
   }
   if (!U_RS_Local) {
     console.log = originalConsoleLog;
+    console.log('Error: Falta parámetro requerido: U_RS_Local');
     return res.status(400).json({ error: 'Falta parámetro requerido: U_RS_Local' });
   }
   if (!txt_fecini || !isValidDateFormat(txt_fecini)) {
     console.log = originalConsoleLog;
+    console.log(`Error: START_DATE no definida o formato inválido (debe ser DD/MM/YYYY): ${txt_fecini}`);
     return res
       .status(400)
       .json({ error: 'START_DATE no definida en .env o formato inválido (debe ser DD/MM/YYYY)' });
@@ -611,23 +637,29 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
   const credentials = passConfig.locales[localKey];
   if (!credentials) {
     console.log = originalConsoleLog;
+    console.log(`Error: No se encontraron credenciales para U_RS_Local: ${U_RS_Local}`);
     return res
       .status(400)
       .json({ error: `No se encontraron credenciales para U_RS_Local: ${U_RS_Local}` });
   }
+  console.log(`Credenciales encontradas para localKey: ${localKey}`);
 
   if (!browser) {
     try {
       await initializeBrowser();
+      console.log('Navegador inicializado exitosamente');
     } catch (err) {
       console.log = originalConsoleLog;
+      console.log(`Error al inicializar el navegador: ${err.message}`);
       return res.status(500).json({ error: `Error al inicializar el navegador: ${err.message}` });
     }
   }
 
   let tabObj;
   try {
+    console.log('Obteniendo pestaña disponible...');
     tabObj = await getAvailableTab(credentials);
+    console.log('Pestaña asignada correctamente');
     const page = tabObj.page;
 
     const { filteredResults, message } = await realizarScraping(page, {
@@ -653,6 +685,7 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
     return res.status(500).json({ error: `Error en la solicitud: ${err.message}` });
   } finally {
     if (tabObj) {
+      console.log('Liberando pestaña...');
       await releaseTab(tabObj);
     }
   }
