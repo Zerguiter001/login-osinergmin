@@ -608,7 +608,8 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
   const startTime = Date.now();
   console.log(`Inicio de solicitud: ${new Date().toISOString()}`);
 
-  const { codigo_autorizacion, U_RS_Local } = req.body;
+ let { codigo_autorizacion, U_RS_Local } = req.body;
+  U_RS_Local = '058';
   const txt_fecini = process.env.START_DATE;
   const txt_fecfin = getCurrentDate();
 

@@ -954,3 +954,74 @@ Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 2025-10-30T11:05:11: Error en la solicitud: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2025-10-30T19:39:02: TypeError: Assignment to constant variable.
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:612:14
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:582:12)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:291:5)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:132:5
+2025-10-30T19:39:08: TypeError: Assignment to constant variable.
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:612:14
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:582:12)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:291:5)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:132:5
+2025-10-30T19:40:04: TypeError: Assignment to constant variable.
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:612:14
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:582:12)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:291:5)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:132:5
+2025-10-30T19:41:17: TypeError: Assignment to constant variable.
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:612:14
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:582:12)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:291:5)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:132:5
+2025-10-30T19:45:22: TypeError: Assignment to constant variable.
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:612:14
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:295:15
+    at processParams (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:582:12)
+    at next (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\router\index.js:291:5)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:132:5
+2025-10-31T10:25:01: Error procesando detalle 61589372048: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:25:20: Error procesando detalle 61589372048: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:26:19: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:26:53: Error procesando detalle 61589381191: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:28:27: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:39:17: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:40:30: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:40:56: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:43:01: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:44:02: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:47:37: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:52:22: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T10:52:45: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T11:06:04: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T11:23:37: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
+2025-10-31T14:07:06: Error procesando detalle 61589392724: Cannot read properties of undefined (reading 'replace')
