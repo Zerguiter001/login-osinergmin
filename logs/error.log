@@ -1,0 +1,956 @@
+2025-10-25T16:34:21: Error al crear y autenticar pestaña: page.waitForTimeout is not a function
+2025-10-25T16:34:21: Error en la solicitud: page.waitForTimeout is not a function
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Error 500 del servidor en https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\server.js:253:15
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:549:9)
+    at process.processTimers (node:internal/timers:523:7)
+2025-10-28T11:16:13: SyntaxError: Unexpected token '“', ..."S_Local": “058”
+}" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-28T11:16:34: SyntaxError: Unexpected number in JSON at position 65 (line 3 column 20)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-28T11:17:36: SyntaxError: Unexpected token '“', ..."S_Local": “058”
+}" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-28T11:17:43: SyntaxError: Unexpected token '“', ..."S_Local": “058”
+}" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-30T11:05:11: Error en la solicitud: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.

@@ -1,0 +1,1331 @@
+2025-10-27T19:06:58.006Z - Inicializando navegador...
+2025-10-27T19:06:58.808Z - Navegador inicializado correctamente
+2025-10-27T19:06:58.810Z - Creando nueva pestaña...
+2025-10-27T19:06:58.871Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T19:07:01.101Z - Token reCAPTCHA: 0cAFcWeA7xczF2YDoc7JXo5-wxSyI35TNdopHzQGtoDSdjgr8w2ft-ZF1_Qe_F4mqGXPILoqw-xpUuNDAIonGHBOfZayqTZFbDQZERLMyiORbOwzc_rQcW1AAi3EWRjhVCRzU_eNTRnsWqlCVyLwsIBtZOFLAtBIIlglsZwafOFt2KaKc9lnkgNBhBJZrSEUZbwgdRYEaRySbfbDNKum9jeZdARarfMHNTE5KKkYa7TSlfFtF1j-ziywDIZwHBF0ugfaOkriNderctN-EjO-_dyz153wvh4iULJwvusYUAr5wuzwR15auIsuiwtMKxxSnZPSglsnY4PqdLiyayjdv8Lp-ADuFDbe3S3W021ov8BIU0S7pwvo1ECh2sBfNfvxJtMVBqyTIe5Z4Xa2RSCiH1lfcSNWEaQqZ7GoTcnOwEMqbE5e1aifvdrSHQ1hyFmHMMc-9ewFDunX9oIPu2xQvjnCLORlE_sHT7cKNRGJEk3HzloFEyxKOMEOCRv3iZyl3NcnB3Q_riQN3FHVIiSQYlz5GE6W5rLeAa0t1r55fDEtSkJm7maOaZPvkP3as3D0tszmXGXrBSB6aaWze27lXemt4kdiHDkxCzCVbvqOFjhu57HNYw2YNpkuvo58-4kVmIiG2BEJWBXFgnMujHAfsQ6C3XmVaWZgZudJHrP2kub7mqfw_FlUMSe8vApYuszthZjkAXRImNaSW6J4dtYWE9f6ja0qUdahJ-RdUoMmlBqSYp-MbzweDZaIKzPSI2gM-nyS5XTl1NFJruu8u62ixW2kUVjev3ydx6RaTqNxBZylui94hh3uUSeGk
+2025-10-27T19:07:02.771Z - Nueva pestaña creada, total: 1
+2025-10-27T19:07:02.772Z - ENTRA AQUI
+2025-10-27T19:07:02.773Z - Enviando formulario POST...
+2025-10-27T19:07:02.780Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T19:07:02.868Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T19:07:02.896Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T19:07:02.985Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T19:07:03.004Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T19:07:03.005Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T19:07:03.006Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T19:07:03.006Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T19:07:03.144Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T19:07:03.147Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T19:07:03.148Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T19:07:03.316Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T19:07:03.317Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T19:07:03.318Z - Esperando tabla de resultados...
+2025-10-27T19:07:11.320Z - No se encontró la tabla TblResultado
+2025-10-27T19:39:51.314Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T19:40:07.367Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T19:40:18.164Z - Inicio de solicitud: 2025-10-27T19:40:18.164Z
+2025-10-27T19:40:18.165Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T19:40:18.166Z - Credenciales encontradas para localKey: 058
+2025-10-27T19:40:18.166Z - Inicializando navegador...
+2025-10-27T19:40:18.644Z - Navegador inicializado correctamente
+2025-10-27T19:40:18.645Z - Navegador inicializado exitosamente
+2025-10-27T19:40:18.646Z - Obteniendo pestaña disponible...
+2025-10-27T19:40:18.647Z - Creando nueva pestaña...
+2025-10-27T19:40:18.706Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T19:40:20.122Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T19:40:21.022Z - Token reCAPTCHA: 0cAFcWeA5YV9ni_eR-al-1dvAlimeXW1ZBLbZ0hwNZ2_qbrWTts1nggDispDv8YThB4GNvOHNfNPgODVYiwjJVCtf7y_QnM6AnhZDG7Sdkez-kWg9C5ivj37FGk8o9X8eEzyLADtYWNh1BKhYspHtxYD484cvnjvcBwg5o4pkkgfIjl0L8ITI0fQ3ZhzD8b9KgsxO-KqX8HkLkABzV5DjNOgIi9-1m-kuZkQCCkV3Camk7ESOkmWxIbgCtAYw-h1yvPHnYz4e-U5OFHfWGc24ub6D9M3AGdsWGQv7ly7w3R-W1CIVIm8acVjCyVZMH6ghtqRwuE9WddwAcvWXZz1FEReXDxd8n8Sa5fg8pUeBOsNGSKXMNtg3MDYEWitXx42gH8xXkQAiqQXcMDdIAhrL80BtYpT6Q6c2ZT7er5IZ66ic0VD0mvPhEggJvv5Jrzx6W_XAUp8VN86L9q5vrw-Evnkjj-Goou5nlKARbAU0KuWS5gwkZvQUYHMO91BSqhGqvZ4YodyYkH64FTfNwdv8kb1AtqLg-J9bj8Q9XzKH5wQe-E3RchFXG2xvMd0SS766fcxYsewFpbv8iZj_YSFwsXmJQ8Yfkw4GwWY2K1SzF3MhkFpkgMjla1V9u-sDQfz-wmKb5vNLn_qTR3AqIP7z6svLxgzfvG957-AoMO1R82XzqSXkueC3pkVN9_YA4plIYnb_0u-0uyBc6B6IhmA-5BJ9mEE62r45pEdtBwQRV53eudwfc6FDK4wndA1X4y-W0PInWVpirtJPvCJva1rkR5DXVr2MTqNj5lotLyyP5idgdCCjKt97c766_dM1AX3MhjA9gLHuAGktAwIWGfaZM0jjlojI1xF9jNA
+2025-10-27T19:40:22.257Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T19:40:22.776Z - Autenticación completada, pestaña lista
+2025-10-27T19:40:22.777Z - Nueva pestaña creada, total: 1
+2025-10-27T19:40:22.777Z - Pestaña asignada correctamente
+2025-10-27T19:40:22.778Z - ENTRA AQUI - Iniciando scraping con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T19:40:22.780Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_14-40-22
+2025-10-27T19:40:22.780Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T19:40:22.782Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T19:40:22.782Z - PASO 2: Navegando a la página de consulta
+2025-10-27T19:40:22.789Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T19:40:22.876Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T19:40:22.894Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T19:40:22.894Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T19:40:22.902Z - PASO 3: Formulario POST enviado
+2025-10-27T19:40:22.903Z - PASO 4: Esperando navegación tras POST
+2025-10-27T19:40:22.910Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T19:40:23.003Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T19:40:23.019Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T19:40:23.020Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T19:40:23.021Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T19:40:23.022Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T19:40:23.111Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T19:40:23.113Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T19:40:23.114Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T19:40:23.202Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T19:40:23.203Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T19:40:23.204Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T19:40:23.204Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T19:40:31.207Z - No se encontró la tabla TblResultado
+2025-10-27T19:40:31.285Z - Debug: Guardado screenshot y HTML en C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_14-40-22\debug_no_table
+2025-10-27T19:40:31.286Z - PASO 5: Parseando tabla de resultados
+2025-10-27T19:40:31.288Z - PASO 5: Resultados parseados: {"error":"No se encontró la tabla TblResultado"}
+2025-10-27T19:40:31.288Z - PASO 6: Error en resultados: No se encontró la tabla TblResultado
+2025-10-27T21:14:01.494Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:14:06.050Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:14:15.269Z - Inicio de solicitud: 2025-10-27T21:14:15.269Z
+2025-10-27T21:14:15.270Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:14:15.270Z - Credenciales encontradas para localKey: 058
+2025-10-27T21:14:15.271Z - Inicializando navegador...
+2025-10-27T21:14:15.737Z - Navegador inicializado correctamente
+2025-10-27T21:14:15.739Z - Navegador inicializado exitosamente
+2025-10-27T21:14:15.739Z - Intento 1 de 3: Obteniendo pestaña disponible...
+2025-10-27T21:14:15.740Z - Creando nueva pestaña...
+2025-10-27T21:14:15.828Z - Cookies limpiadas antes de la autenticación
+2025-10-27T21:14:15.831Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T21:14:18.440Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T21:14:18.554Z - Token reCAPTCHA: 0cAFcWeA5rKjEUeE4LzVk5oNBeaqxNU39_WJ4fG_uFX5KunojAd6_tpJ8eqy7vNpqtVOo1C6lfhIjg8x9MCWre5ZZT5ZNWfkxZ7bpEld7FzGMM9byMp-2ikXw0nUEAewyGpQYTpOiurh1h3rbzSRvqQOSZVssTXzDPY4Ljpzce4KSo2u65VlkjuO2HQohQhusqAJumHo6TLWol75GNKJfXVgn-FsvKwl7D2i2Dq6NT35G1PxkpibpY7jZcl9EVbmSylYhTH0Rilf-3a-4nPeWeAimLQYGJ146fIUKbFn88zKu7BO1CqIg3QdfOfnwF7RziNrwgyPaxr6pPZl-gEtbR8txlhKyn8VbXvlbuiewKXJbP46PEKZxewTYFXYkdWGr6KYYCxx4JBzi8eEkjlPInUCR9O7uDz_-5YF1TEVEtjlKbYK2lvae_3mQGERf19vqgw-cGMbec_zevt8JciSjdyKRRNOYHxDrlPVa5n0WVPvS3QpEThO7zXw1e1BtJLGJ9-qBnjI5HYoX-3EWGyUUipAuE48Ngzdlzj4nrmIgpHuNmctWVzL-J91tQwGjfhSikd6L5rpnLzcLUZn33c2SzpoO8mKSAdfxyp8UxE82dcCS_fwno7VJSOFA0Au6xcYW9oMKC0X6ysjlsyRyEzPs4y3WI6tuiX_D7uqCCDdizH_jtQrD7dI8BK2mYMovASZrLbbYLP_PAq1gwcC7Bo5g5fVoiRoLCswlQSz71sSvUye-ESSmZZTlgHHP3GSB29GiMYYpwmRIjHvLtC_j86wUKW-9Opx5frsyzLEyLx1BQ9zuJLyqefP8AmBE
+2025-10-27T21:14:20.535Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T21:14:21.047Z - Autenticación completada, pestaña lista
+2025-10-27T21:14:21.048Z - Nueva pestaña creada, total: 1
+2025-10-27T21:14:21.049Z - Pestaña asignada correctamente
+2025-10-27T21:14:21.050Z - ENTRA AQUI - Iniciando scraping con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:14:21.051Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-14-21
+2025-10-27T21:14:21.051Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:14:21.052Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:14:21.053Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:14:21.059Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:14:21.155Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:14:21.694Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:14:21.695Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:14:21.698Z - PASO 3: Formulario POST enviado
+2025-10-27T21:14:21.699Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:14:21.704Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:14:21.809Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 302
+2025-10-27T21:14:21.810Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:14:21.811Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-10-27T21:14:21.906Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:14:21.925Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:14:21.926Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:14:21.928Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-10-27T21:14:21.942Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-10-27T21:14:22.022Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:14:22.024Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:14:22.025Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:14:22.215Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:14:22.237Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:14:22.952Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:14:22.953Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:14:22.968Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:14:22.971Z - PASO 5: Resultados parseados: {"error":"No se encontraron filas válidas"}
+2025-10-27T21:14:22.972Z - PASO 6: Error en resultados: No se encontraron filas válidas
+2025-10-27T21:19:14.296Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:19:21.010Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:19:52.215Z - Inicio de solicitud: 2025-10-27T21:19:52.215Z
+2025-10-27T21:19:52.217Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:19:52.218Z - Credenciales encontradas para localKey: 058
+2025-10-27T21:19:52.218Z - Inicializando navegador...
+2025-10-27T21:19:52.801Z - Navegador inicializado correctamente
+2025-10-27T21:19:52.801Z - Navegador inicializado exitosamente
+2025-10-27T21:19:52.802Z - Intento 1 de 3: Obteniendo pestaña disponible...
+2025-10-27T21:19:52.803Z - Creando nueva pestaña...
+2025-10-27T21:19:52.940Z - Cookies limpiadas antes de la autenticación
+2025-10-27T21:19:52.943Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T21:19:55.529Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T21:19:55.659Z - Token reCAPTCHA: 0cAFcWeA6GK-9hh_-Zkdgrr-6hlhZFqV-tnSQQ-_nhQ8VtDl8v1pWlBHxd90CfoRRe4bpPFr__wYzb8siZg8Z8gAjoJ0vzlQrEy72qprPJVzh8l3G9eRT0GNhsA2CXc5v-emqlfGNbeT25hXWNjHAhQTlEhQWg46ICaVi6-g9bQV4Dp--euLbDn5P6v0ozxwO_66SRwEQHI_JAbDIdq8A1AMicFZj8SzV8nhKl89SJwlLqazvEUKz7jUS7UcOwOCTxNL4CszcDcasVGtlsGic32wfKWnggxWujbaK81t7K_8ODrZhwMhCwad4p2GzhgVL8SwN2a_kK7VQ2Jp56ViNALilEzOA12mK0m7NCEBDhaUnM2_4tdMg91xO14E7ueN-71GZ8FuI8IuPibQZZuvmAYqhtnk48QyemyJ2xqQArz7cErJRS8gji-2MMv_H34vIPa2SC0453BGDBD71rYy5ShmIP2zPd_PTYLRs79tDlTAYEzkDZ9n4UzBWRkZp3wYrXVlsGes-pKv60Ny3xCr21kNW041Bzt9ztAVjJ-3-LM3eR9sXp4MpZsQfvHBgehhH32DiSbuHhvldzo2ifLd10pIaAmkbrohhXL0GuatuyjF8P7LhoLifb008NX-Zua9PcjwYiQuEPkkEVpGjZ1Qg6Na2UUj0lhGi2BPFFQAYmS6qwYARrMOcPIDlMdgyFPbOClOG6L5zK0B_xDi9pXLoGKCkF0SgN1xuXgWYRuOf0BLms9X-9x-MHmhbdDN-e5DpolWIxmNnEEgIOSOzHYOAA-aK0H9y2pKSK9A
+2025-10-27T21:19:57.478Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T21:19:57.994Z - Autenticación completada, pestaña lista
+2025-10-27T21:19:57.995Z - Nueva pestaña creada, total: 1
+2025-10-27T21:19:57.995Z - Pestaña asignada correctamente
+2025-10-27T21:19:57.999Z - Cookies limpiadas antes de iniciar scraping
+2025-10-27T21:19:58.000Z - ENTRA AQUI - Iniciando scraping (intento 1) con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:19:58.002Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-19-58
+2025-10-27T21:19:58.002Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:19:58.004Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:19:58.004Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:19:58.010Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:19:58.096Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:19:58.662Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:19:58.663Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:19:58.668Z - PASO 3: Formulario POST enviado
+2025-10-27T21:19:58.668Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:19:58.675Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:19:58.856Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 302
+2025-10-27T21:19:58.858Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:19:58.858Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-10-27T21:19:58.948Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:19:58.965Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:19:58.966Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:19:58.967Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-10-27T21:19:58.968Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-10-27T21:19:59.055Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:19:59.057Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:19:59.058Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:19:59.143Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:19:59.144Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:19:59.773Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:19:59.774Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:19:59.788Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:19:59.791Z - PASO 5: Resultados parseados: {"error":"No se encontraron filas válidas"}
+2025-10-27T21:19:59.791Z - PASO 6: Error en resultados: No se encontraron filas válidas. Reintentando (2/2)...
+2025-10-27T21:19:59.794Z - Cookies limpiadas antes de reintento
+2025-10-27T21:20:01.797Z - ENTRA AQUI - Iniciando scraping (intento 2) con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:20:01.798Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-20-01
+2025-10-27T21:20:01.799Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:20:01.799Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:20:01.800Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:20:01.809Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:20:01.810Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:20:01.898Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:20:01.899Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:20:02.432Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:20:02.433Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:20:02.437Z - PASO 3: Formulario POST enviado
+2025-10-27T21:20:02.438Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:20:02.444Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:20:02.444Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:20:02.538Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T21:20:02.538Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T21:20:02.555Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:20:02.556Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:20:02.562Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T21:20:02.563Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T21:20:02.564Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T21:20:02.564Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T21:20:02.565Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T21:20:02.566Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T21:20:02.652Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:20:02.653Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:20:02.656Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:20:02.657Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:20:02.658Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:20:02.658Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:20:02.770Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:20:02.770Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:20:02.773Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:20:02.774Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:20:03.298Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:20:03.299Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:20:18.303Z - No se encontró la tabla TblResultado
+2025-10-27T21:20:18.383Z - Debug: Guardado screenshot y HTML en C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-20-01\debug_no_table_attempt_2
+2025-10-27T21:20:18.383Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:20:18.385Z - PASO 5: Resultados parseados: {"error":"No se encontró la tabla TblResultado"}
+2025-10-27T21:20:18.386Z - PASO 6: Error en resultados: No se encontró la tabla TblResultado
+2025-10-27T21:23:26.182Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:23:28.550Z - Inicio de solicitud: 2025-10-27T21:23:28.550Z
+2025-10-27T21:23:28.551Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:23:28.551Z - Credenciales encontradas para localKey: 058
+2025-10-27T21:23:28.552Z - Inicializando navegador...
+2025-10-27T21:23:29.293Z - Navegador inicializado correctamente
+2025-10-27T21:23:29.293Z - Navegador inicializado exitosamente
+2025-10-27T21:23:29.294Z - Intento 1 de 3: Obteniendo pestaña disponible...
+2025-10-27T21:23:29.295Z - Creando nueva pestaña...
+2025-10-27T21:23:29.871Z - Cookies limpiadas antes de la autenticación
+2025-10-27T21:23:29.935Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T21:23:36.326Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T21:23:36.595Z - Token reCAPTCHA: 0cAFcWeA5Cpru91NJm9SJZaOM0Ta63cb57iplqjJJlbuMQsd_HJ9iAdGB55LlLLB1xPlWpLVsY8C6lnsjlTFjOvdBTFo8uBNG9SaDyIDXUjdLIeWe6FSBxYQcnZZEcBdfHF-C8NO5QdiHikU1T0CjWAm2K31Yapl1hK8aL8umz5shgLMQDikLckjzig6aimc_I1Q3FVos13XqfZY7t1VDt1xSHlrklXTG6VSPVwpTm0hjDeOW8KKhTcZi1gjj__H4W7Ni2GtPPu0Z5DJw4SdQMaWSbJjyMXQ-7PMlpbLLUl2YW7yaDF9sJHgawb_jEB7p5rR5sbqJaf0GEMVXABu3GNGQyZDuX_6yppRuoB1p5v5iPCaNToX_qRPZN9_EUgTbp7ecdGQy605juNF7H69vH6d8Cbegu5iRrbhjvLPgPxX4q2r0-vWCBAi3KgitjlQQCfJH_Gyvy2opYeN-mfE5dW90IL1rU44JhipT9l0Jmjsc3xA9UHrFm-DjVv1UtFAtTzV-21gf7py3fTmDR4If6zD3ACF3Zr502zWH9WVLdVRczSzPJTIFGp8HkiVE0tCGsmoBZF4NXTAPf3EvsQ-WNx5zKyLYMr0V0o3AZPr3IwAAA_H_2sXw0JBcP8stsscBnsNAfiEI6Vv9lA_B9bIg_OVkj1Dp_kgnF7q2us4QtpJtDspI6EHVuh0IOhRKD2v518SMqgMuMRBa5IYvXuIOCvLfB0x4ChyfbENsAnBvGfo5caH3CDEYlQgB0Z38KKuGnyFfPtUWViBlzK9bIpkUzZKFX1oMtQQv4Gx-C-XufeSDxy5Nr0azg6nmoe-3A3hbuNKDVSxVVhzhE
+2025-10-27T21:23:39.489Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T21:23:40.543Z - Autenticación completada, pestaña lista
+2025-10-27T21:23:40.544Z - Nueva pestaña creada, total: 1
+2025-10-27T21:23:40.544Z - Pestaña asignada correctamente
+2025-10-27T21:23:40.669Z - Cookies limpiadas antes de iniciar scraping
+2025-10-27T21:23:40.671Z - ENTRA AQUI - Iniciando scraping (intento 1) con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:23:40.672Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-23-40
+2025-10-27T21:23:40.672Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:23:40.674Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:23:40.674Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:23:40.742Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:23:40.905Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:23:41.493Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:23:41.494Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:23:41.558Z - PASO 3: Formulario POST enviado
+2025-10-27T21:23:41.559Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:23:41.566Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:23:41.731Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 302
+2025-10-27T21:23:41.732Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:23:41.733Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-10-27T21:23:41.945Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:23:41.959Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:23:41.960Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:23:42.023Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-10-27T21:23:42.085Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-10-27T21:23:42.130Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:23:42.132Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:23:42.133Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:23:42.287Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:23:42.307Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:23:42.949Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:23:42.950Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:23:43.634Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:23:43.698Z - PASO 5: Resultados parseados: [{"codigoAutorizacion":"61584157794","codigoReferencia":"","comprador":"Distribuidor de Cilindros - CANALIZA S.A.","vendedor":"Planta Envasadora -\n LLAMA GAS S.A. - PLANTA PISCO","tipoPedido":"Simple","canal":"I","fechaPedido":"20/10/2025 11:43:29","fechaEntrega":"20/10/2025","estado":"SOLICITADO"}]
+2025-10-27T21:23:43.699Z - PASO 7: Procesando detalles para 1 filas
+2025-10-27T21:23:43.700Z - Abriendo detalle 61584157794: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61584157794&opc=2
+2025-10-27T21:23:43.767Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61584157794&opc=2
+2025-10-27T21:23:43.937Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61584157794&opc=2 - Status: 302
+2025-10-27T21:23:43.939Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_detalle_balon.jsp
+2025-10-27T21:23:43.939Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-10-27T21:23:44.100Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_detalle_balon.jsp - Status: 200
+2025-10-27T21:23:44.117Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:23:44.119Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js
+2025-10-27T21:23:44.120Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:23:44.121Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_imprimir_r.jpg
+2025-10-27T21:23:44.276Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js - Status: 200
+2025-10-27T21:23:44.278Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg
+2025-10-27T21:23:44.279Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-10-27T21:23:44.280Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js
+2025-10-27T21:23:44.280Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js
+2025-10-27T21:23:44.281Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css
+2025-10-27T21:23:44.282Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:23:44.436Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js - Status: 200
+2025-10-27T21:23:44.605Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-10-27T21:23:45.032Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js - Status: 200
+2025-10-27T21:23:45.039Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:23:45.040Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:23:45.194Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:23:45.195Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:23:45.199Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp
+2025-10-27T21:23:45.354Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp - Status: 200
+2025-10-27T21:23:45.361Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:23:45.362Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-10-27T21:23:45.363Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-10-27T21:23:45.363Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:23:45.364Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png
+2025-10-27T21:23:45.529Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-10-27T21:23:45.530Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:23:45.688Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-10-27T21:23:45.693Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:23:45.694Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:23:45.847Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:23:45.848Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:23:46.536Z - Detalle 61584157794 procesado en 2836 ms
+2025-10-27T21:23:46.604Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:23:46.762Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:23:46.779Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:23:46.783Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:23:46.842Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-10-27T21:23:46.904Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-10-27T21:23:46.938Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:23:46.940Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:23:46.940Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:23:47.094Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:23:47.095Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:23:47.689Z - PASO 7: Detalle procesado para 61584157794, volviendo a https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:23:47.690Z - PASO 8: Filtrando resultados
+2025-10-27T21:23:47.691Z - PASO 9: Resultados finales: [{"codigoAutorizacion":"61584157794","codigoReferencia":"","comprador":"Distribuidor de Cilindros - CANALIZA S.A.","vendedor":"Planta Envasadora -\n LLAMA GAS S.A. - PLANTA PISCO","tipoPedido":"Simple","canal":"I","fechaPedido":"20/10/2025 11:43:29","fechaEntrega":"20/10/2025","estado":"SOLICITADO","detalle":{"cabeceraTitulo":"LLAMA GAS S.A. - PLANTA ICA - LLAMA GAS S.A. - PLANTA PISCO","agenteVendedor":"LLAMA GAS S.A. - PLANTA PISCO","tipoVendedor":"PLANTA ENVASADORA DE GLP","codigoAutorizacion":"61584157794","codigoReferencia":"","estado":"SOLICITADO","fechaPedido":"20/10/2025 11:43:29","tipoPedido":"Simple","numeroFactura":"","fechaEmisionFactura":"","numeroGuiaRemision":"","agenteComprador":"CANALIZA S.A.","camion":{"placa":"ALN-877","capacidadKg":"5400","un":"KG."},"productos":[{"producto":"Cilindros de 45 Kg de GLP","marca":"Ahorragas","cantidadPedida":"12","cantidadAceptada":"540","cantidadVendida":"SOLICITADO","cantidadRecibida":"","subtotalKg":"","estado":""},{"producto":"Cilindros de 5 Kg de GLP","marca":"Ahorragas","cantidadPedida":"10","cantidadAceptada":"50","cantidadVendida":"SOLICITADO","cantidadRecibida":"","subtotalKg":"","estado":""}],"totales":{"cantidadPedida":"22","subtotalKg":"590"}}}]
+2025-10-27T21:24:03.110Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:24:05.004Z - Inicio de solicitud: 2025-10-27T21:24:05.004Z
+2025-10-27T21:24:05.005Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:24:05.006Z - Credenciales encontradas para localKey: 058
+2025-10-27T21:24:05.007Z - Inicializando navegador...
+2025-10-27T21:24:05.747Z - Navegador inicializado correctamente
+2025-10-27T21:24:05.748Z - Navegador inicializado exitosamente
+2025-10-27T21:24:05.748Z - Intento 1 de 3: Obteniendo pestaña disponible...
+2025-10-27T21:24:05.749Z - Creando nueva pestaña...
+2025-10-27T21:24:06.324Z - Cookies limpiadas antes de la autenticación
+2025-10-27T21:24:06.387Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T21:24:12.690Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T21:24:12.919Z - Token reCAPTCHA: 0cAFcWeA6tmDzs8srYFm6_QFBUDAo_HLO17eq4RyG3YCxVX0cqHJvRnHLIHvy2bYMxAtU6a5XlT6f7fyUbX2Sz18JSuphOtKWEkCsVMhgPWd9ho4PKC7mAPjLF2UWZeFRMf0ln7lP5AfhucXcQnOfWDm2RrOAOG4d_HzBH66pGrnanXAYFG-UX-px3_oaun9KWTDp0Uj9AMRRQ2GabSPWuAyC4DzD9nXrkRa9bxRMBB91PfhqqkmjMHmjvBIJk94mJNgW9trB3XwjsXC8GGXIcG7pgB5LDvpo9yU2mlmbu4C3vURO-pikqs3mPSMYYWJsxudw4bgI5EQWAoETMkwL_EYlnY3OcYC8RgluMhd3mnKgr6muZFwGLVy2CTwtzy8qJ8QhyoWoTVXM8abzqUzznheJfh0HuL29RP0ADthMPuO61a96TS6b_LruCeyxb_DxXSgae-qA_0hgrH2HCU0NJCvHhWo3OiREciVr9HvIxyFRUHZZjTNQqwB0FBaAQCIYLmYyvRJPIEtSZv1kxn_MLWqXXsybDcFHFHGSjw1uGTfc8XJZylpdSpBHic5IGELf-MN3s2RlbQ2ikhdwj61ql0k21DSrNuQN_PV-Jo-07Epvi9ZjyPKsJBPV1GD9RPywj7CvlQcCSbiUlUOiow6weDhm3lSYmV6kyIB2hSrSPRi55graDJkxs_RUVt893hexIJqhvhUzicxgBj5mTRK8MfI5y13ELI2hDii4M-hjFWw8oUdj6jkn_pD2daQYKkcjTBLVLxUCOWyd_TCjDgf2MEIT77ndtdfN7N3neDUct5KPK5iIGJfmrADc
+2025-10-27T21:24:16.130Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T21:24:17.196Z - Autenticación completada, pestaña lista
+2025-10-27T21:24:17.198Z - Nueva pestaña creada, total: 1
+2025-10-27T21:24:17.199Z - Pestaña asignada correctamente
+2025-10-27T21:24:17.323Z - Cookies limpiadas antes de iniciar scraping
+2025-10-27T21:24:17.325Z - ENTRA AQUI - Iniciando scraping (intento 1) con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:24:17.326Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-24-17
+2025-10-27T21:24:17.327Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:24:17.328Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:24:17.329Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:24:17.397Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:24:17.556Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:24:18.135Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:24:18.136Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:24:18.200Z - PASO 3: Formulario POST enviado
+2025-10-27T21:24:18.201Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:24:18.207Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:24:18.417Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T21:24:18.436Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:24:18.437Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T21:24:18.438Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T21:24:18.496Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T21:24:18.597Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:24:18.599Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:24:18.601Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:24:18.756Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:24:18.758Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:24:19.771Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:24:19.772Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:24:34.774Z - No se encontró la tabla TblResultado
+2025-10-27T21:24:34.970Z - Debug: Guardado screenshot y HTML en C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-24-17\debug_no_table_attempt_1
+2025-10-27T21:24:34.971Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:24:35.033Z - PASO 5: Resultados parseados: {"error":"No se encontró la tabla TblResultado"}
+2025-10-27T21:24:35.034Z - PASO 6: Error en resultados: No se encontró la tabla TblResultado. Reintentando (2/2)...
+2025-10-27T21:24:35.160Z - Cookies limpiadas antes de reintento
+2025-10-27T21:24:37.161Z - ENTRA AQUI - Iniciando scraping (intento 2) con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:24:37.163Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-24-37
+2025-10-27T21:24:37.163Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:24:37.164Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:24:37.164Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:24:37.232Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:24:37.233Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:24:37.559Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:24:37.560Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:24:38.563Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:24:38.563Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:24:38.627Z - PASO 3: Formulario POST enviado
+2025-10-27T21:24:38.628Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:24:38.634Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:24:38.634Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:24:38.829Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T21:24:38.830Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T21:24:38.848Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:24:38.848Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:24:38.849Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T21:24:38.850Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T21:24:38.851Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T21:24:38.851Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T21:24:38.911Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T21:24:38.912Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T21:24:39.093Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:24:39.094Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:24:39.095Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:24:39.096Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:24:39.097Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:24:39.097Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:24:39.251Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:24:39.252Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:24:39.340Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:24:39.341Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:24:41.343Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:24:41.344Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:24:56.346Z - No se encontró la tabla TblResultado
+2025-10-27T21:24:56.536Z - Debug: Guardado screenshot y HTML en C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-24-37\debug_no_table_attempt_2
+2025-10-27T21:24:56.537Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:24:56.599Z - PASO 5: Resultados parseados: {"error":"No se encontró la tabla TblResultado"}
+2025-10-27T21:24:56.600Z - PASO 6: Error en resultados: No se encontró la tabla TblResultado
+2025-10-27T21:25:47.513Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:25:49.695Z - Inicio de solicitud: 2025-10-27T21:25:49.695Z
+2025-10-27T21:25:49.696Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:25:49.697Z - Credenciales encontradas para localKey: 058
+2025-10-27T21:25:49.698Z - Inicializando navegador...
+2025-10-27T21:25:50.446Z - Navegador inicializado correctamente
+2025-10-27T21:25:50.447Z - Navegador inicializado exitosamente
+2025-10-27T21:25:50.448Z - Intento 1 de 3: Obteniendo pestaña disponible...
+2025-10-27T21:25:50.449Z - Creando nueva pestaña...
+2025-10-27T21:25:51.026Z - Cookies limpiadas antes de la autenticación
+2025-10-27T21:25:51.090Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T21:25:57.364Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T21:25:57.627Z - Token reCAPTCHA: 0cAFcWeA7rtZH5hlo7p_CsEkdFcYGP4TIHp0TWqTgJ2400SqhUShvuCVr4RfJZ4PKXPPpy2Sy2LnkkzcgJcf7EgF-FMsu3BPqnfSb5KYzH7HdPR2xDKX4ofaMdT-KyBNKgpCJuITr-fjPU2gabZavySyBW_01LlYZKmZgguGV9kPz7UP7WaxTyWI6hMqaapRwPmSZ9b4fxz1fz5BRwRNzpr2t5WaAXHpYq5NiyPo8inlDPm_snenXFHipRFlF8GzxapxeLFdt2lZa9Q6GXga2SiwIhMMXCAW56U4OQ5B2YE1g_DkJHAy-H90u417ZKiUeBeM1OUmm3aHgHODNa1IlrgXvUMHtE4P5pDjzEJd5gSS6Yd59P_ujwqVzcgDBTnc11YK7bNDh2G4GlJYaKqfWD6EZHs2JPX54Gs8Gd4F1EJK5MfpHhZV_Vem5tWdO4ktCrF_n8BvZH6iMc5ZCF_qCczIhGQnUyD_0v1vyxKzrJujpGnC-Xflo-LfhVkLiNxokIvDGw1BcUWx_7WVj5X5yJ6YkopMNC7J3EoZOXOMsq6PXOYbWO4sPxxNhl_JG9xodnv-8x7ZFMh2RQwlZOX1esxEG15QrMAxhSnjw9YNg0k7LM7Vjf3O0FY6S69bNCC2J1RAUWDS5hQVkriGVjF2epBYrMLfr1FgZvkqjX2oyf37l77yeSNQjQ8drXBO6uD7TRvqo-X_KvyqhpqZfshwedsJsm6CDhgaeH1l5LAa0LEYQzCAWRQcBQsf78v87-TbzK94-zUeO0HMNxMP9TulogORaRVT8fACvyV2uXkTTyWVvYVYH2BUjr2OW5Ty6TG01dsI03vH6tutFL82wtW7RWoZuORwEHe1X2yxpqTug06ufiWfTMoo79fKo
+2025-10-27T21:26:00.528Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T21:26:01.594Z - Autenticación completada, pestaña lista
+2025-10-27T21:26:01.595Z - Nueva pestaña creada, total: 1
+2025-10-27T21:26:01.596Z - Pestaña asignada correctamente
+2025-10-27T21:26:01.723Z - Cookies limpiadas antes de iniciar scraping
+2025-10-27T21:26:01.725Z - ENTRA AQUI - Iniciando scraping (intento 1) con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:26:01.727Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-26-01
+2025-10-27T21:26:01.727Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:26:01.729Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:26:01.730Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:26:01.799Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:26:02.036Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:26:02.054Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:02.057Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:02.059Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js
+2025-10-27T21:26:02.060Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-10-27T21:26:02.060Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/camion.gif
+2025-10-27T21:26:02.061Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg
+2025-10-27T21:26:02.210Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:02.212Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js - Status: 200
+2025-10-27T21:26:02.214Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:02.215Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:02.293Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-10-27T21:26:02.375Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:02.377Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_limpiar_r.jpg
+2025-10-27T21:26:02.380Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:02.381Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg
+2025-10-27T21:26:02.382Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-10-27T21:26:02.383Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js
+2025-10-27T21:26:02.384Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js
+2025-10-27T21:26:02.384Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css
+2025-10-27T21:26:02.531Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js - Status: 200
+2025-10-27T21:26:02.682Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-10-27T21:26:02.832Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js - Status: 200
+2025-10-27T21:26:02.845Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp
+2025-10-27T21:26:02.846Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_buscar_r.jpg
+2025-10-27T21:26:02.847Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/combo/cmbAgente.jsp?defaultLabel=--%20Seleccione%20--
+2025-10-27T21:26:02.848Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:26:02.849Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/show-calendar.gif
+2025-10-27T21:26:02.993Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp - Status: 200
+2025-10-27T21:26:02.995Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/combo/cmbAgente.jsp?defaultLabel=--%20Seleccione%20-- - Status: 200
+2025-10-27T21:26:02.999Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:26:03.004Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:03.005Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-10-27T21:26:03.006Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-10-27T21:26:03.007Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:03.008Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png
+2025-10-27T21:26:03.009Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:03.010Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-10-27T21:26:03.011Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:03.012Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:03.155Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-10-27T21:26:03.157Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:03.157Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-10-27T21:26:03.257Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:03.260Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:03.261Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:03.301Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-10-27T21:26:03.308Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:03.309Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:03.407Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:03.409Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:03.453Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:03.454Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:04.015Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:26:04.016Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:26:04.080Z - PASO 3: Formulario POST enviado
+2025-10-27T21:26:04.081Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:26:04.085Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:26:04.240Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 302
+2025-10-27T21:26:04.242Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:26:04.243Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-10-27T21:26:04.394Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:26:04.415Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:04.417Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:04.478Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-10-27T21:26:04.541Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-10-27T21:26:04.564Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:04.566Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:04.567Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:04.714Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:04.715Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:05.515Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:26:05.516Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:26:06.206Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:26:06.272Z - PASO 5: Resultados parseados: [{"codigoAutorizacion":"61584157794","codigoReferencia":"","comprador":"Distribuidor de Cilindros - CANALIZA S.A.","vendedor":"Planta Envasadora -\n LLAMA GAS S.A. - PLANTA PISCO","tipoPedido":"Simple","canal":"I","fechaPedido":"20/10/2025 11:43:29","fechaEntrega":"20/10/2025","estado":"SOLICITADO"}]
+2025-10-27T21:26:06.273Z - PASO 7: Procesando detalles para 1 filas
+2025-10-27T21:26:06.274Z - Abriendo detalle 61584157794: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61584157794&opc=2
+2025-10-27T21:26:06.344Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61584157794&opc=2
+2025-10-27T21:26:06.504Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet?codigoAutorizacion=61584157794&opc=2 - Status: 302
+2025-10-27T21:26:06.506Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_detalle_balon.jsp
+2025-10-27T21:26:06.506Z - Respuesta fallida: No se pudo leer el cuerpo de la respuesta
+2025-10-27T21:26:06.658Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_detalle_balon.jsp - Status: 200
+2025-10-27T21:26:06.675Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:06.676Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js
+2025-10-27T21:26:06.677Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:06.678Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_imprimir_r.jpg
+2025-10-27T21:26:06.822Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_jquery.js - Status: 200
+2025-10-27T21:26:06.824Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/botones/btn_cerrar_ventana_r.jpg
+2025-10-27T21:26:06.825Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-10-27T21:26:06.826Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:06.827Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js
+2025-10-27T21:26:06.828Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js
+2025-10-27T21:26:06.828Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/jquery-ui.css
+2025-10-27T21:26:06.976Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.blockUI.js - Status: 200
+2025-10-27T21:26:07.277Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-10-27T21:26:07.502Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery-ui.js - Status: 200
+2025-10-27T21:26:07.510Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:07.511Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:07.656Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:07.657Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:07.663Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp
+2025-10-27T21:26:07.810Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/cabecera.jsp - Status: 200
+2025-10-27T21:26:07.818Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:07.819Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js
+2025-10-27T21:26:07.820Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js
+2025-10-27T21:26:07.820Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:07.821Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo_home.png
+2025-10-27T21:26:07.964Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/compgeneral.js - Status: 200
+2025-10-27T21:26:07.965Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:08.126Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/jquery.js - Status: 200
+2025-10-27T21:26:08.130Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:08.131Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:08.279Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:08.281Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:09.259Z - Detalle 61584157794 procesado en 2985 ms
+2025-10-27T21:26:09.329Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:26:09.478Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp - Status: 200
+2025-10-27T21:26:09.501Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/GLP5.css
+2025-10-27T21:26:09.502Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:26:09.564Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/lupita.gif
+2025-10-27T21:26:09.629Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/otros/lupita.gif
+2025-10-27T21:26:09.649Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:26:09.655Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:26:09.656Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:26:09.801Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:26:09.803Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:26:10.483Z - PASO 7: Detalle procesado para 61584157794, volviendo a https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido_listado.jsp
+2025-10-27T21:26:10.484Z - PASO 8: Filtrando resultados
+2025-10-27T21:26:10.485Z - PASO 9: Resultados finales: [{"codigoAutorizacion":"61584157794","codigoReferencia":"","comprador":"Distribuidor de Cilindros - CANALIZA S.A.","vendedor":"Planta Envasadora -\n LLAMA GAS S.A. - PLANTA PISCO","tipoPedido":"Simple","canal":"I","fechaPedido":"20/10/2025 11:43:29","fechaEntrega":"20/10/2025","estado":"SOLICITADO","detalle":{"cabeceraTitulo":"LLAMA GAS S.A. - PLANTA ICA - LLAMA GAS S.A. - PLANTA PISCO","agenteVendedor":"LLAMA GAS S.A. - PLANTA PISCO","tipoVendedor":"PLANTA ENVASADORA DE GLP","codigoAutorizacion":"61584157794","codigoReferencia":"","estado":"SOLICITADO","fechaPedido":"20/10/2025 11:43:29","tipoPedido":"Simple","numeroFactura":"","fechaEmisionFactura":"","numeroGuiaRemision":"","agenteComprador":"CANALIZA S.A.","camion":{"placa":"ALN-877","capacidadKg":"5400","un":"KG."},"productos":[{"producto":"Cilindros de 45 Kg de GLP","marca":"Ahorragas","cantidadPedida":"12","cantidadAceptada":"540","cantidadVendida":"SOLICITADO","cantidadRecibida":"","subtotalKg":"","estado":""},{"producto":"Cilindros de 5 Kg de GLP","marca":"Ahorragas","cantidadPedida":"10","cantidadAceptada":"50","cantidadVendida":"SOLICITADO","cantidadRecibida":"","subtotalKg":"","estado":""}],"totales":{"cantidadPedida":"22","subtotalKg":"590"}}}]
+2025-10-27T21:27:56.382Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T21:28:51.946Z - Inicio de solicitud: 2025-10-27T21:28:51.946Z
+2025-10-27T21:28:51.947Z - Parámetros recibidos - codigo_autorizacion: 61584157794, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:28:51.948Z - Credenciales encontradas para localKey: 058
+2025-10-27T21:28:51.948Z - Inicializando navegador...
+2025-10-27T21:28:52.698Z - Navegador inicializado correctamente
+2025-10-27T21:28:52.699Z - Navegador inicializado exitosamente
+2025-10-27T21:28:52.699Z - Obteniendo pestaña disponible...
+2025-10-27T21:28:52.700Z - Creando nueva pestaña...
+2025-10-27T21:28:53.240Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-27T21:28:58.308Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-27T21:28:58.545Z - Token reCAPTCHA: 0cAFcWeA7UOFPro0ULzi6ycAvcn1-Yj4Fi4Mp8O2X2pr1MphUEY2UNxhB0AUwCMeklJ5szi-wb1gTID1dDhbbHf_vRClDl3SQs0jcDvk25x6MLzdXZYR-NZEV-U_JPb-6nCbjSdoaqRq0ESqtTETogKFiusO3DTaA0uxtDXRhXPKNBL3NjydpKwTHqNUU8j-t8NkZZbwjavfuv_r2QF6aEEs7X2IaJ-l-9HvicT96_oC54z4-ips0GRFNAtAma1Pc3F-5NSGKiQiPixAZn9I5P1mdHVl5QrBuxSSmFKSdmDUhreORXlLhZwaYa_m6YXHUvXd_vD8Kj5_1vYYSZ2l9_PvgEAd2ADE-vUQkq84Ho3TmeZ6gbIphWdGXMTrelkoD15XSbNr_FbZ9eco4DWN1gBvqhBb-3FOudFf0_oNd4CQvy4DPxhv67En_fdpKLGqt5S-L8mTJyVp3OvA3F8R4h1OXUNXPUOc3h6UjH9C1wdVIuPFWgtBZqmp8WG-RDdH6z2I3kMnenCfMgcfy5BAD3-Gv7pjCH0qtRoAkJwBFcm_N9D_DAPcLOJSDUJSpa2TDvTvfLhrZpWsf3pwNJ1jVJ7SROPvK9zoyK1fatd1v6uPaIUVUTVHchsRxg0goCbcPE1hG2zGInNELI-xSkdmvQVETcpcAngfNU-9gVKzOssgy6dbSa6FYfniZTpQVQo8wgNEdPdiEKPURTx1CF1-05x9fB17q2FcTEn9WONPPv4eCI9k_A8RmJFBIvqqiLAHc07lfX3HANQfQ2KkrcyZGjSb4vYrmfcRHikH3Mm4qpB2xbWRAx0YekJJ8
+2025-10-27T21:29:01.057Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-27T21:29:02.130Z - Autenticación completada, pestaña lista
+2025-10-27T21:29:02.131Z - Nueva pestaña creada, total: 1
+2025-10-27T21:29:02.131Z - Pestaña asignada correctamente
+2025-10-27T21:29:02.132Z - ENTRA AQUI - Iniciando scraping con codigo_autorizacion: 61584157794, txt_fecini: 01/09/2025, txt_fecfin: 27/10/2025
+2025-10-27T21:29:02.133Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-29-02
+2025-10-27T21:29:02.134Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61584157794
+2025-10-27T21:29:02.135Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61584157794&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=27%2F10%2F2025
+2025-10-27T21:29:02.136Z - PASO 2: Navegando a la página de consulta
+2025-10-27T21:29:02.202Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:29:02.352Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-27T21:29:02.366Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-27T21:29:02.367Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-27T21:29:02.433Z - PASO 3: Formulario POST enviado
+2025-10-27T21:29:02.434Z - PASO 4: Esperando navegación tras POST
+2025-10-27T21:29:02.447Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:29:02.607Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-27T21:29:02.642Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-27T21:29:02.644Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-27T21:29:02.645Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-27T21:29:02.695Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-27T21:29:02.904Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-27T21:29:02.907Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-27T21:29:02.909Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-27T21:29:03.057Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-27T21:29:03.058Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-27T21:29:03.059Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-27T21:29:03.059Z - PASO 4: Esperando tabla de resultados...
+2025-10-27T21:29:11.061Z - No se encontró la tabla TblResultado
+2025-10-27T21:29:11.254Z - Debug: Guardado screenshot y HTML en C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-27_16-29-02\debug_no_table
+2025-10-27T21:29:11.254Z - PASO 5: Parseando tabla de resultados
+2025-10-27T21:29:11.317Z - PASO 5: Resultados parseados: {"error":"No se encontró la tabla TblResultado"}
+2025-10-27T21:29:11.318Z - PASO 6: Error en resultados: No se encontró la tabla TblResultado
+2025-10-27T22:18:49.703Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-27T22:40:24.666Z - 🚀 Servidor corriendo en el puerto 3006
+2025-10-28T16:16:13.139Z - ERROR: SyntaxError: Unexpected token '“', ..."S_Local": “058”
+}" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-28T16:16:34.681Z - ERROR: SyntaxError: Unexpected number in JSON at position 65 (line 3 column 20)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-28T16:16:48.800Z - Inicio de solicitud: 2025-10-28T16:16:48.800Z
+2025-10-28T16:16:48.801Z - Parámetros recibidos - codigo_autorizacion: 61582771899, U_RS_Local: 058, txt_fecini: 01/09/2025, txt_fecfin: 28/10/2025
+2025-10-28T16:16:48.801Z - Credenciales encontradas para localKey: 058
+2025-10-28T16:16:48.802Z - Inicializando navegador...
+2025-10-28T16:16:52.368Z - Navegador inicializado correctamente
+2025-10-28T16:16:52.369Z - Navegador inicializado exitosamente
+2025-10-28T16:16:52.369Z - Obteniendo pestaña disponible...
+2025-10-28T16:16:52.370Z - Creando nueva pestaña...
+2025-10-28T16:16:54.945Z - Autenticando nueva pestaña con usuario 0322100...
+2025-10-28T16:17:00.245Z - Credenciales usadas - Username: 0322100, Password: [HIDDEN]
+2025-10-28T16:17:00.564Z - Token reCAPTCHA: 0cAFcWeA47OS38_cJyU_vxjvJTBDCirSUrmmptj5rcrK33l7x2TTq8jXsCrFaQsEqZZIxGBcpQyZnIeAuPqNKHd_O7dEe5i4JE2jKWXLv-qNXud4m5Wlzm1ixJygshqWYXspHOBG2s0nI1Eq9Q-59Zva60Vfas9u7l2QaLsto6dwomPNnjxbqq623czI3PCLGgi8k6JLZFgWuZtA7WTCvORyy-94jzYK12GVl30sYaoOGlfh6BQorw7PHNn4lUuzsfccr_t1clrmyn9BX8porgKGMdcPIvBz3bceXHdwxaxbLR1rjgmNFBYFtcoG3DiRS-g1jdyzCDGM75HlkR31hdsvzY9zZUdPVTEjCXedsto5SX-OEbx56GUkilzQO8e9HiXxJKJMBSR5Lp8AXFokirjkeC-fMBwkOWgdBfXBkW_c_yduoHsyIAZEgSN0o6Cl3BxiPfNShPRXJiMDq0hR9VacG-ajTLf523nR6n8HW0yjVBkDMwvlcdxoEc4ERuT9xWEGtQyXGdcyTYjLPSAY5LGE6rgN4pHtE1EHOO2ylUwAgZ-K7P3OGVU4mYR2pqu_qi9vtZbdUuGq1hi6c7kZY-Sc1zbwT7KoN1__ZYadX8QAC-BNaUXAgAS_WCI7qxjtBi7Zq6GfMqbXFquNqEyooKlVc2YNqgkGNtp4xE_cZDYY_Zm9JZvODn9Oz_7Il5jtOFi1w8wRI6XAaBH6Mct_pWRAhnosmNAmYGsOt7h72A2KM9EBTdiKtH2_AabPk_dORChu-d_bM4QTeC_N2IST1atqVyIZnjGsGCJ9hxg37SpWSGRRJPx9iTiJ0vQ8how3w5KK57uxwqQglMaPg7AlWghwKR1Dq6Ni5bJ9KbLvL7w7GRbTOgvoRn6PU
+2025-10-28T16:17:04.312Z - URL después del login: https://pvo.osinergmin.gob.pe/seguridad/autenticacion/validaSegUsuario
+2025-10-28T16:17:05.388Z - Autenticación completada, pestaña lista
+2025-10-28T16:17:05.389Z - Nueva pestaña creada, total: 1
+2025-10-28T16:17:05.389Z - Pestaña asignada correctamente
+2025-10-28T16:17:05.390Z - ENTRA AQUI - Iniciando scraping con codigo_autorizacion: 61582771899, txt_fecini: 01/09/2025, txt_fecfin: 28/10/2025
+2025-10-28T16:17:05.391Z - Directorio de salida: C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-28_11-17-05
+2025-10-28T16:17:05.391Z - PASO 1: Construyendo payload para POST - codigo_autorizacion: 61582771899
+2025-10-28T16:17:05.393Z - Payload construido: ind=&opc=1&codvendope=&codigoAgente=&tipoUsuario=C&codigo_referencia=&codigo_autorizacion=61582771899&tipoOperacion=&tipoAgente=&nombreAgente=&tipoDocumento=&numeroDocumento=&estadoOrdenPedido=&canalOrdenPedido=&tipoOrdenPedido=&txt_placa=&tipoFecha=&txt_fecini=01%2F09%2F2025&txt_fecfin=28%2F10%2F2025
+2025-10-28T16:17:05.393Z - PASO 2: Navegando a la página de consulta
+2025-10-28T16:17:05.463Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-28T16:17:05.616Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp - Status: 200
+2025-10-28T16:17:05.632Z - PASO 2: Página de consulta cargada, URL: https://pvo.osinergmin.gob.pe/scopglp3/jsp/consultas/consulta_orden_pedido.jsp
+2025-10-28T16:17:05.632Z - PASO 3: Inyectando y enviando formulario POST
+2025-10-28T16:17:05.696Z - PASO 3: Formulario POST enviado
+2025-10-28T16:17:05.696Z - PASO 4: Esperando navegación tras POST
+2025-10-28T16:17:05.702Z - Solicitud: POST https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-28T16:17:05.852Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet - Status: 500
+2025-10-28T16:17:05.867Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js
+2025-10-28T16:17:05.869Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/logo.jpg
+2025-10-28T16:17:05.869Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/images/LogoSCOP.gif
+2025-10-28T16:17:05.931Z - Respuesta fallida: 
+<html>
+<head>
+<title>Sistema de Control de Ordenes de Pedidos</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html">
+<base href='/scopglp3/include/commons/error.jsp' >
+</head>
+<script type="text/javascript" src="../scripts/general_script.js"></script>
+<style>
+.Barra
+{
+	BACKGROUND-COLOR: #020650;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Verdana;
+	HEIGHT: 24px;
+	font-style: italic;
+	text-align:left;
+}
+.mensajes {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-style: normal; 
+	line-height: normal; 
+	color: #003366;}
+</style>
+<script type="text/javascript">
+	maximize();
+</script>
+
+
+<body bgcolor="#eeeeee" topmargin="0">
+  <table width="100%" height="70%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="middle">
+      	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                <tr> 
+                  <td width="40%" align="left"><img src="../../images/logo.jpg" width="300"></td>
+                  <td width="60%" align="center">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="5">&nbsp;</td></tr>
+                  <tr><td height="30" class="Barra">&nbsp;&nbsp;Error</td></tr>
+                  <tr><td height="5">&nbsp;</td></tr>
+                  </table>
+                  </td>
+                </tr>
+                <tr height="200"> 
+                  <td width="40%" bgcolor="#ffffff" align="center">
+                  <img src="../../images/LogoSCOP.gif" width="200">
+                  </td>
+                  <td width="60%" bgcolor="#ffffff" align="center" class="mensajes">
+                  Se present&oacute; un error inesperado, favor de intentarlo nuevamente o comunicarse con el Centro de Control SCOP - CCSCOP al siguiente número:</br>2193410 opci&oacute;n 4
+                  </td>
+                </tr>
+                <tr height="5"> 
+                  <td colspan="2" width="100%" bgcolor="#020650"></td>                  
+                </tr>
+              </table>              
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+2025-10-28T16:17:06.016Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/general_script.js - Status: 200
+2025-10-28T16:17:06.018Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js
+2025-10-28T16:17:06.019Z - Solicitud: GET https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js
+2025-10-28T16:17:06.165Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/sortable.min.js - Status: 200
+2025-10-28T16:17:06.167Z - Respuesta: https://pvo.osinergmin.gob.pe/scopglp3/include/scripts/paginador.min.js - Status: 200
+2025-10-28T16:17:06.167Z - PASO 4: Navegación completada, URL: https://pvo.osinergmin.gob.pe/scopglp3/servlet/com.osinerg.scopglp.servlets.ConsultaOrdenPedidoServlet
+2025-10-28T16:17:06.168Z - PASO 4: Esperando tabla de resultados...
+2025-10-28T16:17:14.180Z - No se encontró la tabla TblResultado
+2025-10-28T16:17:14.409Z - Debug: Guardado screenshot y HTML en C:\Users\user29\Documents\GitHub\login-osinergmin\detalles\2025-10-28_11-17-05\debug_no_table
+2025-10-28T16:17:14.409Z - PASO 5: Parseando tabla de resultados
+2025-10-28T16:17:14.485Z - PASO 5: Resultados parseados: {"error":"No se encontró la tabla TblResultado"}
+2025-10-28T16:17:14.486Z - PASO 6: Error en resultados: No se encontró la tabla TblResultado
+2025-10-28T16:17:36.939Z - ERROR: SyntaxError: Unexpected token '“', ..."S_Local": “058”
+}" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-28T16:17:43.237Z - ERROR: SyntaxError: Unexpected token '“', ..."S_Local": “058”
+}" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\user29\Documents\GitHub\login-osinergmin\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-10-30T16:05:11.388Z - ERROR: Error en la solicitud: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
