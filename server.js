@@ -249,10 +249,15 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
       console.log(`Respuesta fallida: ${text}`);
     }
   });
-  const outDir = tsFolder();
-  console.log(`Directorio de salida: ${outDir}`);
 
-  /* Utilidad interna para parsear el DETALLE */
+  // CARPETA FIJA PARA HTML DEL DETALLE
+  const HTML_DIR = path.join(process.cwd(), 'HTML');
+  if (!fs.existsSync(HTML_DIR)) {
+    fs.mkdirSync(HTML_DIR, { recursive: true });
+    console.log(`Carpeta HTML creada: ${HTML_DIR}`);
+  }
+
+  /* Utilidad interna para parsear y guardar el DETALLE */
   async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl) {
     const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
     const startTime = Date.now();
@@ -260,14 +265,11 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
       console.log(`Abriendo detalle ${codigoAutorizacion}: ${url}`);
       await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 10000 });
 
-      const base = path.join(outDir, `detalle_${codigoAutorizacion}`);
-      const htmlPath = `${base}.html`;
-      const pngPath = `${base}.png`;
+      // RUTA FIJA EN CARPETA HTML/
+      const htmlPath = path.join(HTML_DIR, `detalle_${codigoAutorizacion}.html`);
       const html = await page.content();
-      fs.writeFileSync(htmlPath, html, 'utf8'); // 🔹 Modificado: Guardar HTML siempre para depuración
-      if (SAVE_SCREENSHOTS) {
-        await page.screenshot({ path: pngPath, fullPage: true });
-      }
+      fs.writeFileSync(htmlPath, html, 'utf8');
+      console.log(`HTML del detalle guardado: ${htmlPath}`);
 
       const detalle = await page.evaluate(() => {
         const norm = (s) => (s || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
@@ -388,7 +390,7 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
       });
 
       console.log(`Detalle ${codigoAutorizacion} procesado en ${Date.now() - startTime} ms`);
-      return { url, htmlPath, pngPath, detalle };
+      return { url, htmlPath, detalle };
     } catch (e) {
       console.error(`Error procesando detalle ${codigoAutorizacion}:`, e.message);
       return { url, error: e.message };
@@ -454,12 +456,10 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
   console.log('PASO 4: Esperando tabla de resultados...');
   await page.waitForSelector('table.TblResultado', { timeout: 8000 }).catch(async () => {
     console.log('No se encontró la tabla TblResultado');
-    // 🔹 Agregado: Guardar screenshot y HTML para depuración
-    const debugPath = path.join(outDir, 'debug_no_table');
-    await page.screenshot({ path: `${debugPath}.png`, fullPage: true });
+    const debugPath = path.join(HTML_DIR, 'debug_no_table.html');
     const html = await page.content();
-    fs.writeFileSync(`${debugPath}.html`, html, 'utf8');
-    console.log(`Debug: Guardado screenshot y HTML en ${debugPath}`);
+    fs.writeFileSync(debugPath, html, 'utf8');
+    console.log(`Debug: HTML guardado en ${debugPath}`);
   });
 
   /* PASO 5: Parsear el listado de resultados (cabeceras) */
