@@ -32,7 +32,7 @@ console.log = (...args) => {
     `${new Date().toISOString()} - ${args.join(' ')}\n`,
     'utf8'
   );
-  originalConsoleLog(...args); // 🔹 Agregado: También mostrar logs en consola para depuración inmediata
+  originalConsoleLog(...args);
 };
 console.error = (...args) => {
   fs.appendFileSync(
@@ -40,11 +40,11 @@ console.error = (...args) => {
     `${new Date().toISOString()} - ERROR: ${args.join(' ')}\n`,
     'utf8'
   );
-  originalConsoleError(...args); // 🔹 Agregado: También mostrar errores en consola
+  originalConsoleError(...args);
 };
 
 const port = process.env.PORT || 3000;
-originalConsoleLog(`🚀 SERVER PRENDIDO EN EL PUERTO ${port}`);
+originalConsoleLog(`SERVER PRENDIDO EN EL PUERTO ${port}`);
 
 /* ------------------------------------------------------------------
  *  EXPRESS APP
@@ -55,7 +55,7 @@ app.use(express.json());
 /* ------------------------------------------------------------------
  *  POOL DE PESTAÑAS (TABS) Y COLA (QUEUE)
  * ------------------------------------------------------------------ */
-const MAX_TABS = 20; // Límite de pestañas abiertas en paralelo
+const MAX_TABS = 20;
 let browser = null;
 const tabPool = [];
 const tabQueue = [];
@@ -170,7 +170,6 @@ async function createAuthenticatedTab(credentials) {
     await page.type('input[name="j_username"]', credentials.OSINERGMIN_USERNAME);
     await page.type('input[name="j_password"]', credentials.OSINERGMIN_PASSWORD);
 
-    // 🔹 Agregado: Log para verificar credenciales usadas
     console.log(`Credenciales usadas - Username: ${credentials.OSINERGMIN_USERNAME}, Password: [HIDDEN]`);
 
     let recaptchaToken = null;
@@ -211,7 +210,6 @@ async function createAuthenticatedTab(credentials) {
         .catch(() => console.log('Navegación post-login no completada, continuando...')),
     ]);
 
-    // 🔹 Agregado: Log para verificar URL después del login
     console.log(`URL después del login: ${page.url()}`);
 
     if (page.url().includes('login?error=UP')) {
@@ -222,7 +220,6 @@ async function createAuthenticatedTab(credentials) {
     await page.evaluate(() => muestraPagina('163', 'NO', 'NO'));
     await new Promise((r) => setTimeout(r, 500));
 
-    // 🔹 Agregado: Log para confirmar autenticación exitosa
     console.log('Autenticación completada, pestaña lista');
     return { page, inUse: false };
   } catch (err) {
@@ -230,6 +227,61 @@ async function createAuthenticatedTab(credentials) {
     if (page) await page.close();
     throw err;
   }
+}
+
+/* ------------------------------------------------------------------
+ *  FUNCIÓN HARDCODE: GENERAR RESULTADO EN DURO (SIN SCRAPING)
+ * ------------------------------------------------------------------ */
+function generarResultadoHardcode(codigo_autorizacion, txt_fecini, txt_fecfin) {
+  const codigo = codigo_autorizacion || "AUT999999";
+  return [
+    {
+      codigoAutorizacion: codigo,
+      codigoReferencia: "REF123456",
+      comprador: "EMPRESA PRUEBA S.A.C.",
+      vendedor: "PLANTA GLP CENTRAL",
+      tipoPedido: "NORMAL",
+      canal: "DISTRIBUIDOR",
+      fechaPedido: txt_fecini,
+      fechaEntrega: txt_fecfin,
+      estado: "SOLICITADO",
+      detalle: {
+        cabeceraTitulo: "DETALLE DE ORDEN DE PEDIDO",
+        agenteVendedor: "PLANTA GLP CENTRAL",
+        tipoVendedor: "PLANTA",
+        codigoAutorizacion: codigo,
+        codigoReferencia: "REF123456",
+        estado: "SOLICITADO",
+        fechaPedido: txt_fecini,
+        tipoPedido: "NORMAL",
+        numeroFactura: "",
+        fechaEmisionFactura: "",
+        numeroGuiaRemision: "",
+        agenteComprador: "EMPRESA PRUEBA S.A.C.",
+        camion: {
+          placa: "XYZ-789",
+          capacidadKg: "12000",
+          un: "KG"
+        },
+        productos: [
+          {
+            producto: "GLP GRANEL",
+            marca: "NINGUNA",
+            cantidadPedida: "8000",
+            cantidadAceptada: "8000",
+            cantidadVendida: "0",
+            cantidadRecibida: "0",
+            subtotalKg: "8000",
+            estado: "SOLICITADO"
+          }
+        ],
+        totales: {
+          cantidadPedida: "8000",
+          subtotalKg: "8000"
+        }
+      }
+    }
+  ];
 }
 
 /* ------------------------------------------------------------------
@@ -250,14 +302,12 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
     }
   });
 
-  // CARPETA FIJA PARA HTML DEL DETALLE
   const HTML_DIR = path.join(process.cwd(), 'HTML');
   if (!fs.existsSync(HTML_DIR)) {
     fs.mkdirSync(HTML_DIR, { recursive: true });
     console.log(`Carpeta HTML creada: ${HTML_DIR}`);
   }
 
-  /* Utilidad interna para parsear y guardar el DETALLE */
   async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl) {
     const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
     const startTime = Date.now();
@@ -265,7 +315,6 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
       console.log(`Abriendo detalle ${codigoAutorizacion}: ${url}`);
       await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 10000 });
 
-      // RUTA FIJA EN CARPETA HTML/
       const htmlPath = path.join(HTML_DIR, `detalle_${codigoAutorizacion}.html`);
       const html = await page.content();
       fs.writeFileSync(htmlPath, html, 'utf8');
@@ -608,12 +657,11 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
   const startTime = Date.now();
   console.log(`Inicio de solicitud: ${new Date().toISOString()}`);
 
- let { codigo_autorizacion, U_RS_Local } = req.body;
+  let { codigo_autorizacion, U_RS_Local } = req.body;
   U_RS_Local = '058';
   const txt_fecini = process.env.START_DATE;
   const txt_fecfin = getCurrentDate();
 
-  // 🔹 Agregado: Log de parámetros recibidos
   console.log(`Parámetros recibidos - codigo_autorizacion: ${codigo_autorizacion}, U_RS_Local: ${U_RS_Local}, txt_fecini: ${txt_fecini}, txt_fecfin: ${txt_fecfin}`);
 
   if (!codigo_autorizacion) {
@@ -645,6 +693,16 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
   }
   console.log(`Credenciales encontradas para localKey: ${localKey}`);
 
+  // === MODO HARDCODE: ACTIVADO DESDE .env ===
+  const MODO_HARDCODE = process.env.CAMPOS_SOLICITADO === '1' || process.env.CAMPOS_SOLICITADO === 1;
+  if (MODO_HARDCODE) {
+    console.log('MODO HARDCODE ACTIVADO - DEVOLVIENDO DATOS EN DURO');
+    const hardcodeResults = generarResultadoHardcode(codigo_autorizacion, txt_fecini, txt_fecfin);
+    console.log = originalConsoleLog;
+    console.log('RESULTADOS HARDCODE DEVUELTOS');
+    return res.status(200).json({ results: hardcodeResults });
+  }
+
   if (!browser) {
     try {
       await initializeBrowser();
@@ -671,11 +729,11 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
 
     console.log = originalConsoleLog;
     if (message) {
-      console.log('✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE (sin datos)');
+      console.log('3. RESULTADOS OBTENIDOS EXITOSAMENTE (sin datos)');
       console.log(`Fin de solicitud: ${Date.now() - startTime} ms`);
       return res.status(200).json({ results: [], message });
     } else {
-      console.log('✅ 3. RESULTADOS OBTENIDOS EXITOSAMENTE');
+      console.log('3. RESULTADOS OBTENIDOS EXITOSAMENTE');
       console.log(`Fin de solicitud: ${Date.now() - startTime} ms`);
       return res.status(200).json({ results: filteredResults });
     }
@@ -698,10 +756,10 @@ app.post('/api/osigermin-Scoop', async (req, res) => {
 async function main() {
   try {
     const server = app.listen(port, () => {
-      console.log(`🚀 Servidor corriendo en el puerto ${port}`);
+      console.log(`Servidor corriendo en el puerto ${port}`);
     });
-    server.keepAliveTimeout = 120000; // 2 minutos
-    server.headersTimeout = 130000;   // 2 minutos + margen
+    server.keepAliveTimeout = 120000;
+    server.headersTimeout = 130000;
   } catch (error) {
     console.error('Error al iniciar el servidor:', error);
     console.log = originalConsoleLog;
@@ -723,7 +781,7 @@ process.on('SIGINT', async () => {
     browser = null;
   }
   console.log = originalConsoleLog;
-  console.log('🛑 SERVER CERRADO');
+  console.log('SERVER CERRADO');
   process.exit();
 });
 
@@ -733,6 +791,6 @@ process.on('SIGTERM', async () => {
     browser = null;
   }
   console.log = originalConsoleLog;
-  console.log('🛑 SERVER CERRADO');
+  console.log('SERVER CERRADO');
   process.exit();
 });
