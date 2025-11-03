@@ -258,144 +258,153 @@ async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fec
   }
 
   /* Utilidad interna para parsear y guardar el DETALLE */
-  async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl) {
-    const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
-    const startTime = Date.now();
-    try {
-      console.log(`Abriendo detalle ${codigoAutorizacion}: ${url}`);
-      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 10000 });
+async function obtenerYGuardarDetalle(page, codigoAutorizacion, refererUrl) {
+  const url = `${DETALLE_ENDPOINT}?codigoAutorizacion=${encodeURIComponent(codigoAutorizacion)}&opc=2`;
+  const startTime = Date.now();
+  try {
+    console.log(`Abriendo detalle ${codigoAutorizacion}: ${url}`);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 10000 });
 
-      // RUTA FIJA EN CARPETA HTML/
-      const htmlPath = path.join(HTML_DIR, `detalle_${codigoAutorizacion}.html`);
-      const html = await page.content();
-      fs.writeFileSync(htmlPath, html, 'utf8');
-      console.log(`HTML del detalle guardado: ${htmlPath}`);
+    const htmlPath = path.join(HTML_DIR, `detalle_${codigoAutorizacion}.html`);
+    const html = await page.content();
+    fs.writeFileSync(htmlPath, html, 'utf8');
+    console.log(`HTML guardado: ${htmlPath}`);
 
-      const detalle = await page.evaluate(() => {
-        const norm = (s) => (s || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
-        const limpiarParentesis = (texto) => texto.replace(/[()]/g, '').toUpperCase();
-        const out = {
-          cabeceraTitulo: '',
-          agenteVendedor: '',
-          tipoVendedor: '',
-          codigoAutorizacion: '',
-          codigoReferencia: '',
-          estado: '',
-          fechaPedido: '',
-          tipoPedido: '',
-          numeroFactura: '',
-          fechaEmisionFactura: '',
-          numeroGuiaRemision: '',
-          agenteComprador: '',
-          camion: { placa: '', capacidadKg: '', un: '' },
-          productos: [],
-          totales: {},
+    const detalle = await page.evaluate(() => {
+      const norm = (s) => (s || '').replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+
+      const out = {
+        cabeceraTitulo: '',
+        agenteVendedor: '',
+        tipoVendedor: '',
+        codigoAutorizacion: '',
+        codigoReferencia: '',
+        estado: '',
+        fechaPedido: '',
+        tipoPedido: '',
+        numeroFactura: '',
+        fechaEmisionFactura: '',
+        numeroGuiaRemision: '',
+        agenteComprador: '',
+        camion: { placa: '', capacidadKg: '', un: '' },
+        productos: [],
+        totales: { cantidadPedida: '', subtotalKg: '' }
+      };
+
+      // === 1. CABECERA ===
+      const tblFiltros = document.querySelector('table.TblFiltros');
+      if (tblFiltros) {
+        const celda3 = tblFiltros.querySelector('.Celda3');
+        if (celda3) out.cabeceraTitulo = norm(celda3.textContent);
+
+        tblFiltros.querySelectorAll('tr.Fila').forEach(tr => {
+          const tds = tr.querySelectorAll('.Celda2');
+          if (tds.length >= 2) {
+            const label = norm(tds[0].textContent).toLowerCase();
+            const value = norm(tds[1].textContent);
+            if (label.includes('agente vendedor')) out.agenteVendedor = value;
+            else if (label.includes('tipo vendedor')) out.tipoVendedor = value;
+            else if (label.includes('código autorización')) out.codigoAutorizacion = value;
+            else if (label.includes('código referencia')) out.codigoReferencia = value === '&nbsp;' ? '' : value;
+            else if (label === 'estado') out.estado = value;
+            else if (label.includes('fecha pedido')) out.fechaPedido = value;
+            else if (label.includes('tipo de pedido')) out.tipoPedido = value;
+            else if (label.includes('número factura')) out.numeroFactura = value;
+            else if (label.includes('número guia')) out.numeroGuiaRemision = value;
+            else if (label.includes('agente comprador')) out.agenteComprador = value;
+          }
+        });
+      }
+
+      // === 2. CAMIÓN ===
+      const camionTable = Array.from(document.querySelectorAll('table'))
+        .find(tb => tb.textContent && tb.textContent.includes('Placa del Camión'));
+      if (camionTable) {
+        const cells = camionTable.querySelectorAll('td');
+        if (cells.length >= 4) {
+          out.camion.placa = norm(cells[1].textContent);
+          const capText = norm(cells[3].textContent);
+          out.camion.capacidadKg = capText.split(' ')[0] || '';
+          out.camion.un = capText.includes('kg') ? 'KG.' : '';
+        }
+      }
+
+      // === 3. PRODUCTOS Y TOTALES ===
+      const prodTable = document.querySelector('table.TblResultado');
+      if (!prodTable) return out;
+
+      const rows = Array.from(prodTable.querySelectorAll('tr.Fila'));
+      if (rows.length === 0) return out;
+
+      const headers = Array.from(rows[0].querySelectorAll('td, th'))
+        .map(h => norm(h.textContent).toLowerCase());
+
+      const esGranel = headers.includes('solicitada') && headers.includes('aceptada');
+      const esEnvasado = headers.includes('producto') && headers.includes('marca');
+
+      rows.slice(1).forEach(tr => {
+        const cells = Array.from(tr.querySelectorAll('td'));
+        const texts = cells.map(c => norm(c.textContent));
+
+        // === TOTALES ===
+        if (texts.some(t => t.toLowerCase().includes('total'))) {
+          const totalCells = tr.querySelectorAll('td');
+          if (esEnvasado) {
+            out.totales.cantidadPedida = norm(totalCells[2]?.textContent) || ''; // 47
+            out.totales.subtotalKg = norm(totalCells[3]?.textContent) || '';     // 675
+          } else if (esGranel) {
+            out.totales.cantidadPedida = norm(totalCells[5]?.textContent).replace(' gls', '') || '';
+            out.totales.subtotalKg = '';
+          }
+          return;
+        }
+
+        // === PRODUCTO ===
+        const prod = {
+          producto: '',
+          marca: '',
+          cantidadPedida: '',
+          cantidadAceptada: '',
+          cantidadVendida: '',
+          cantidadRecibida: '',
+          subtotalKg: '',
+          estado: ''
         };
 
-        const tblFiltros = document.querySelector('table.TblFiltros');
-        if (tblFiltros) {
-          const filas = Array.from(tblFiltros.querySelectorAll('tr.Fila'));
-          const celda3 = tblFiltros.querySelector('.Celda3');
-          if (celda3) out.cabeceraTitulo = norm(celda3.textContent);
-
-          filas.forEach((tr) => {
-            const tds = Array.from(tr.querySelectorAll('.Celda2'));
-            if (tds.length === 2) {
-              const label = norm(tds[0].textContent).toLowerCase();
-              const value = norm(tds[1].textContent);
-              if (label.includes('agente vendedor')) out.agenteVendedor = value;
-              else if (label.includes('tipo vendedor')) out.tipoVendedor = value;
-              else if (label.includes('código autorización')) out.codigoAutorizacion = value;
-              else if (label.includes('código referencia')) out.codigoReferencia = value === '&' ? '' : value;
-              else if (label === 'estado') out.estado = value;
-              else if (label.includes('fecha pedido')) out.fechaPedido = value;
-              else if (label.includes('tipo de pedido')) out.tipoPedido = value;
-              else if (label.includes('número factura')) out.numeroFactura = value;
-              else if (label.includes('fecha emisión de factura')) out.fechaEmisionFactura = value;
-              else if (label.includes('número guia de remisión') || label.includes('número guía de remisión')) out.numeroGuiaRemision = value;
-              else if (label.includes('agente comprador')) out.agenteComprador = value;
-            }
-          });
+        if (esGranel) {
+          prod.producto = texts[0] || '';
+          prod.cantidadPedida = texts[5]?.replace(' gls', '') || '';
+          prod.cantidadAceptada = texts[6]?.replace(' gls', '') || '';
+          prod.cantidadVendida = texts[7]?.replace(' gls', '') || '';
+          prod.cantidadRecibida = texts[8]?.replace(' gls', '') || '';
+          prod.estado = texts[10] || '';
+        } else if (esEnvasado) {
+          prod.producto = texts[0] || '';
+          prod.marca = texts[1] || '';
+          prod.cantidadPedida = texts[2] || '';
+          prod.subtotalKg = texts[3] || '';
+          prod.estado = texts[4] || '';
         }
 
-        const allTables = Array.from(document.querySelectorAll('table'));
-        const camionTable = allTables.find((tb) => tb.textContent && tb.textContent.includes('Placa del Camión'));
-        if (camionTable) {
-          const tds = Array.from(camionTable.querySelectorAll('td.Celda2'));
-          if (tds.length >= 4) {
-            let weigth = norm(tds[3].innerText);
-            out.camion.placa = norm(tds[1].innerText || tds[1].textContent);
-            out.camion.capacidadKg = norm(weigth.split(' ')[0] || tds[3].textContent.split(' ')[0]);
-            out.camion.un = limpiarParentesis(weigth.split(' ')[1]) || '';
-          } else {
-            const tr = camionTable.querySelector('tr.Fila');
-            if (tr) {
-              const c = Array.from(tr.querySelectorAll('td.Celda2')).map((x) => norm(x.innerText || x.textContent));
-              if (c.length >= 4) {
-                out.camion.placa = c[1] || '';
-                out.camion.capacidadKg = c[3].split(' ')[0] || '';
-                out.camion.un = limpiarParentesis(c[3].split(' ')[1]) || '';
-              }
-            }
-          }
+        if (Object.values(prod).some(v => v)) {
+          out.productos.push(prod);
         }
-
-        const prodTable = Array.from(document.querySelectorAll('table.TblResultado')).find((tb) => {
-          const headerRow = tb.querySelector('tr.Fila');
-          if (!headerRow) return false;
-          const headers = Array.from(headerRow.querySelectorAll('td.Celda, th.Celda')).map((h) =>
-            norm(h.textContent).toLowerCase()
-          );
-          return headers.includes('producto') && headers.includes('marca');
-        });
-
-        if (prodTable) {
-          const rows = Array.from(prodTable.querySelectorAll('tr.Fila'));
-          if (rows.length) {
-            const dataRows = rows.slice(1);
-            dataRows.forEach((tr) => {
-              const cells = Array.from(tr.querySelectorAll('td.Celda1, td.Celda'));
-              const texts = cells.map((c) => norm(c.innerText || c.textContent));
-              if (!texts.length) return;
-
-              const joined = texts.join(' ').toLowerCase();
-              const isTotal = joined.includes('total') && texts.length >= 4;
-
-              if (isTotal) {
-                const nums = texts.filter((t) => t && t !== '&' && t !== 'TOTAL' && !isNaN(Number(t)));
-                if (nums.length) {
-                  const last = nums[nums.length - 1];
-                  const prev = nums[nums.length - 2] || '';
-                  out.totales = { cantidadPedida: prev, subtotalKg: last };
-                }
-              } else {
-                const prod = {
-                  producto: texts[0] || '',
-                  marca: texts[1] || '',
-                  cantidadPedida: texts[2] || '',
-                  cantidadAceptada: texts[3] || '',
-                  cantidadVendida: texts[4] || '',
-                  cantidadRecibida: texts[5] || '',
-                  subtotalKg: texts[6] || '',
-                  estado: texts[7] || '',
-                };
-                const hasAny = Object.values(prod).some((v) => v);
-                if (hasAny) out.productos.push(prod);
-              }
-            });
-          }
-        }
-
-        return out;
       });
 
-      console.log(`Detalle ${codigoAutorizacion} procesado en ${Date.now() - startTime} ms`);
-      return { url, htmlPath, detalle };
-    } catch (e) {
-      console.error(`Error procesando detalle ${codigoAutorizacion}:`, e.message);
-      return { url, error: e.message };
-    }
+      return out;
+    });
+
+    // GUARDAR JSON
+    const jsonPath = path.join(HTML_DIR, `detalle_${codigoAutorizacion}.json`);
+    fs.writeFileSync(jsonPath, JSON.stringify(detalle, null, 2), 'utf8');
+    console.log(`JSON guardado: ${jsonPath}`);
+
+    return { url, htmlPath, detalle };
+  } catch (e) {
+    console.error(`Error en detalle ${codigoAutorizacion}:`, e.message);
+    return { url, error: e.message };
   }
+}
 
   /* PASO 1: Construir payload del formulario (POST) */
   console.log(`PASO 1: Construyendo payload para POST - codigo_autorizacion: ${codigo_autorizacion}`);
