@@ -124,6 +124,10 @@ async function initializeBrowser() {
     if (execPath) launchOpts.executablePath = execPath;
 
     browser = await puppeteer.launch(launchOpts);
+    browser.on('disconnected', () => {
+      console.log('Navegador desconectado! Limpiando instancia global...');
+      browser = null;
+    });
     console.log('Navegador inicializado correctamente');
   } catch (err) {
     console.error('Error al inicializar el navegador:', err.message);
@@ -141,6 +145,9 @@ async function initializeBrowser() {
  *  AUTENTICACIÓN Y CREACIÓN DE PESTAÑA
  * ------------------------------------------------------------------ */
 async function createAuthenticatedTab(credentials) {
+  if (!browser || !browser.isConnected()) {
+    throw new Error('El navegador no está conectado o no ha sido inicializado.');
+  }
   let page;
   try {
     page = await browser.newPage();
@@ -289,7 +296,7 @@ function generarResultadoHardcode(codigo_autorizacion, txt_fecini, txt_fecfin) {
  * ------------------------------------------------------------------ */
 async function realizarScraping(page, { codigo_autorizacion, txt_fecini, txt_fecfin }) {
   console.log(`ENTRA AQUI - Iniciando scraping con codigo_autorizacion: ${codigo_autorizacion}, txt_fecini: ${txt_fecini}, txt_fecfin: ${txt_fecfin}`);
-  
+
   /* PASO 0: Preparación (listeners + utilidades + constantes de salida) */
   page.on('request', (request) => {
     console.log(`Solicitud: ${request.method()} ${request.url()}`);
